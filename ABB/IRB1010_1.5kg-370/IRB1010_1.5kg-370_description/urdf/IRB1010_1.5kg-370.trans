@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<robot name="IRB1010_1.5kg-370" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+</robot>

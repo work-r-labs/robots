@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find CRB15000_5kg-950_description)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="CRB15000_5kg-950" args="joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/CRB15000_5kg-950/joint_states"/>
+</node>
+
+</launch>

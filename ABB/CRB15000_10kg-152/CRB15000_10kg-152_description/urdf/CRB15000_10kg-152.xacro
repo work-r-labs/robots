@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<robot name="CRB15000_10kg-152" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find CRB15000_10kg-152_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find CRB15000_10kg-152_description)/urdf/CRB15000_10kg-152.trans" />
+<xacro:include filename="$(find CRB15000_10kg-152_description)/urdf/CRB15000_10kg-152.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.0011656606666003504 -0.00011127786600189595 0.0985691713362607" rpy="0 0 0"/>
+    <mass value="43.321834194728716"/>
+    <inertia ixx="0.254824" iyy="0.26074" izz="0.191484" ixy="-0.000567" iyz="-0.000372" ixz="-0.003894"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRB15000_10kg-152_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRB15000_10kg-152_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+</robot>

@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<robot name="IRB1010_1.5kg-370" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find IRB1010_1.5kg-370_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find IRB1010_1.5kg-370_description)/urdf/IRB1010_1.5kg-370.trans" />
+<xacro:include filename="$(find IRB1010_1.5kg-370_description)/urdf/IRB1010_1.5kg-370.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.007414978279902329 -0.0483132373536217 0.05950830185044145" rpy="0 0 0"/>
+    <mass value="20.582962138924515"/>
+    <inertia ixx="0.107334" iyy="0.048566" izz="0.105477" ixy="0.014261" iyz="0.000746" ixz="0.000141"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB1010_1.5kg-370_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB1010_1.5kg-370_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+</robot>
