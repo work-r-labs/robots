@@ -42,15 +42,17 @@ usd_paths = [project_root / p for p in usd_paths]
 
 world.scene.add_default_ground_plane()
 
+
 def sanitize_name(name: str) -> str:
     return name.replace("-", "_")
+
 
 scene_path = Path("scene.usd").resolve()
 add_reference_to_stage(str(scene_path), "/scene")
 
-spacing = 5         # m  – centre-to-centre distance between robots
-n       = len(usd_paths)
-side    = math.ceil(math.sqrt(n)) 
+spacing = 5  # m  – centre-to-centre distance between robots
+n = len(usd_paths)
+side = math.ceil(math.sqrt(n))
 robots: dict[str, SingleArticulation] = {}
 for i, usd_path in enumerate(usd_paths):
     print(f"Loading {usd_path}")
@@ -60,7 +62,7 @@ for i, usd_path in enumerate(usd_paths):
     # row, col = divmod(i, side)      # integer grid coordinates
     # x = col * spacing               # metres in X
     # y = row * spacing               # metres in Y
-    # z = 0.0  
+    # z = 0.0
 
     # xform = XFormPrim(prim_path)
     # xform.set_local_poses(
@@ -79,5 +81,5 @@ while True:
     for name, robot in robots.items():
         print(f"moving {name}")
         ndof = len(robot.get_joint_positions())
-        robot.set_joint_positions(np.array([np.sin(i/100)]), joint_indices=[0])
+        robot.set_joint_positions(np.array([np.sin(i / 100)]), joint_indices=[0])
     i += 1
