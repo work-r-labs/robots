@@ -50,3 +50,5 @@ bash process.sh INPUT_FILE
 ## Resources
 
 * **ABB Robot Models Spreadsheet**: https://docs.google.com/spreadsheets/d/1CGoqaV-FV7UAYWtw-b55ihwH7Zm8Z7hNbWZzfseqUVU/edit?usp=sharing
+
+**IsaacSim Typings**: https://github.com/work-r-labs/isaacsim_typings
