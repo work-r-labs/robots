@@ -3,11 +3,13 @@
 # Script to process unprocessed ABB robot models
 # Run each command to process the remaining robots
 
-echo "Processing unprocessed ABB robot models..."
+echo "All 25 ABB robot models have been processed and have USD files."
+echo "No additional processing needed at this time."
 
-# Positioner Robots (Not Processed)
-bash process.sh ABB/Positioners/Irbpa-250_D1000_IRC5_rev02_CAD_description/urdf/Irbpa-250_D1000_IRC5_rev02_CAD.xacro
-bash process.sh ABB/Positioners/Irbpk-600_D1200-L1600_IRC5_rev02_CAD_description/urdf/Irbpk-600_D1200-L1600_IRC5_rev02_CAD.xacro
-bash process.sh ABB/Positioners/Irbpr-1000_D1200-L2000_IRC5_rev02_CAD_description/urdf/Irbpr-1000_D1200-L2000_IRC5_rev02_CAD.xacro
+# All robots are now complete:
+# - 22 standard robots fully processed with USD files
+# - 3 positioner robots fully processed with USD files
+# Total: 25 robots processed
 
-echo "Processing completed for all remaining robots."
+# If new robots are added to the ABB directory, add their process commands here:
+# bash process.sh INPUT_FILE

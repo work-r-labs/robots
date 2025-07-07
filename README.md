@@ -28,14 +28,14 @@ This repository contains ABB industrial robot models in URDF format for ROS and 
 | **IRB8700_800-350** | [XACRO](ABB/IRB8700_800-350/IRB8700_800-350_description/urdf/IRB8700_800-350.xacro) | [Processed](generated/IRB8700_800_350_v1/IRB8700_800_350.urdf) | [USD](generated/IRB8700_800_350_v1/IRB8700_800_350/IRB8700_800_350.usd) | ✅ Complete |
 | **IRB920_6kg-550-180-STD** | [XACRO](ABB/IRB920_6kg-550-180-STD/ABB_IRB920_6kg-550-180-STD_description/urdf/ABB_IRB920_6kg-550-180-STD.xacro) | [Processed](generated/IRB920_6kg-550-180-STD_v1/IRB920_6kg_550_180_STD.urdf) | [USD](generated/IRB920_6kg_550_180_STD_v1/IRB920_6kg_550_180_STD/IRB920_6kg_550_180_STD.usd) | ✅ Complete |
 | **IRB920_6kg_55-180-STD** | [URDF](ABB/IRB920_6kg_55-180-STD/abb_irb920.urdf) | [Processed](generated/abb_irb920_v1/abb_irb920.urdf) | [USD](generated/abb_irb920_v1/abb_irb920/abb_irb920.usd) | ✅ Complete |
-| **IRBPA-250_D1000** | [XACRO](ABB/Positioners/Irbpa-250_D1000_IRC5_rev02_CAD_description/urdf/Irbpa-250_D1000_IRC5_rev02_CAD.xacro) | ⏳ Not Processed | ⏳ Not Processed | ⏳ Not Processed |
-| **IRBPK-600_D1200-L1600** | [XACRO](ABB/Positioners/Irbpk-600_D1200-L1600_IRC5_rev02_CAD_description/urdf/Irbpk-600_D1200-L1600_IRC5_rev02_CAD.xacro) | ⏳ Not Processed | ⏳ Not Processed | ⏳ Not Processed |
-| **IRBPR-1000_D1200-L2000** | [XACRO](ABB/Positioners/Irbpr-1000_D1200-L2000_IRC5_rev02_CAD_description/urdf/Irbpr-1000_D1200-L2000_IRC5_rev02_CAD.xacro) | ⏳ Not Processed | ⏳ Not Processed | ⏳ Not Processed |
+| **IRBPA-250_D1000** | [XACRO](ABB/Positioners/Irbpa-250_D1000_IRC5_rev02_CAD_description/urdf/Irbpa-250_D1000_IRC5_rev02_CAD.xacro) | [Processed](generated/Irbpa_250_D1000_IRC5_rev02_CAD_v1/Irbpa_250_D1000_IRC5_rev02_CAD.urdf) | [USD](generated/Irbpa_250_D1000_IRC5_rev02_CAD_v1/Irbpa_250_D1000_IRC5_rev02_CAD/Irbpa_250_D1000_IRC5_rev02_CAD.usd) | ✅ Complete |
+| **IRBPK-600_D1200-L1600** | [XACRO](ABB/Positioners/Irbpk-600_D1200-L1600_IRC5_rev02_CAD_description/urdf/Irbpk-600_D1200-L1600_IRC5_rev02_CAD.xacro) | [Processed](generated/Irbpk_600_D1200_L1600_IRC5_rev02_CAD_v1/Irbpk_600_D1200_L1600_IRC5_rev02_CAD.urdf) | [USD](generated/Irbpk_600_D1200_L1600_IRC5_rev02_CAD_v1/Irbpk_600_D1200_L1600_IRC5_rev02_CAD/Irbpk_600_D1200_L1600_IRC5_rev02_CAD.usd) | ✅ Complete |
+| **IRBPR-1000_D1200-L2000** | [XACRO](ABB/Positioners/Irbpr-1000_D1200-L2000_IRC5_rev02_CAD_description/urdf/Irbpr-1000_D1200-L2000_IRC5_rev02_CAD.xacro) | [Processed](generated/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD_v1/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD.urdf) | [USD](generated/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD_v1/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD.usd) | ✅ Complete |
 
 ### Status Summary
-- **✅ Complete**: 22 robots fully processed with USD files
+- **✅ Complete**: 25 robots fully processed with USD files
 - **🔄 Processed, awaiting USD**: 0 robots with processed URDF but no USD file
-- **⏳ Not Processed**: 3 robots awaiting processing
+- **⏳ Not Processed**: 0 robots awaiting processing
 - **Total**: 25 ABB robot models
 
 ## Quick Start
