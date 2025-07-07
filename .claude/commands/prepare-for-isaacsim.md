@@ -15,3 +15,5 @@ Complete the following steps:
 2. in the new file, sanitise the names of links, joints, meshes etc such that all names contain only numbers, letters and underscores. When copying meshes into the generated output folder, you will need to rename them if you have sanitised their names.
 3. in the new file, remove all uses of materials
 4. in the new file, remove the ros specific path system, have all mesh paths start at `meshes/`.
+
+Remember that when moving mesh files, you MUST rename them to match the sanitized name in the URDF. Mesh names with dashes are never ok.

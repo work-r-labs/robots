@@ -1,9 +1,11 @@
 #!/bin/bash
 
-# No robots need processing - all 19 ABB robot models are complete
-# All robots have been processed and have USD files generated
+# Script to process unprocessed ABB robot models
+# Run each command to process the remaining robots
 
-echo "All robots have been processed successfully!"
-echo "Total robots: 19"
-echo "Complete: 19"
-echo "Awaiting processing: 0"
+echo "Processing unprocessed ABB robot models..."
+
+# All robots have been processed. This script is now empty.
+# New robots can be added here when they are introduced to the repository.
+
+echo "All robots have been processed. No remaining robots to process."
