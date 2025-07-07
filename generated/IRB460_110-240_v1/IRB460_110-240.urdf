@@ -1,0 +1,375 @@
+<?xml version="1.0" ?>
+<robot name="IRB">
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.00047265427344061095 0.00022521743129826438 0.10710458522749428" rpy="0 0 0"/>
+    <mass value="525.9349191232106"/>
+    <inertia ixx="19.556185" iyy="19.029067" izz="35.059349" ixy="0.049764" iyz="-0.012683" ixz="0.640439"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB_460_110_240_IRC5_SWING_REV1_1">
+  <inertial>
+    <origin xyz="0.1479736895719858 0.022761055102656597 0.33869054926173536" rpy="0 0 0"/>
+    <mass value="806.4368082449564"/>
+    <inertia ixx="76.482905" iyy="52.073631" izz="67.802552" ixy="1.364182" iyz="1.867355" ixz="-14.61929"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.23" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_SWING_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.23" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_SWING_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB_460_110_240_IRC5_LOWER_ARM_REV1_1">
+  <inertial>
+    <origin xyz="0.021141065890108557 0.1345265972876942 0.3975547114414125" rpy="0 0 0"/>
+    <mass value="101.58763769736647"/>
+    <inertia ixx="13.123586" iyy="12.838128" izz="1.170117" ixy="0.016335" iyz="0.705578" ixz="0.046741"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.26 0.1165 -0.7425" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_LOWER_ARM_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="-0.26 0.1165 -0.7425" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_LOWER_ARM_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB_460_110_240_IRC5_UPPER_ARM_REV1_1">
+  <inertial>
+    <origin xyz="0.1595701111359898 -0.041615704209256185 0.045782223297883284" rpy="0 0 0"/>
+    <mass value="82.64024688781541"/>
+    <inertia ixx="0.579951" iyy="15.392221" izz="15.390174" ixy="-0.207263" iyz="-0.011478" ixz="-0.093142"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.26 -0.0375 -1.6875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_UPPER_ARM_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="-0.26 -0.0375 -1.6875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_UPPER_ARM_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB_460_110_240_IRC5_TILT_REV1_1">
+  <inertial>
+    <origin xyz="0.18276208938234428 0.05871995833431365 -0.06060888516090168" rpy="0 0 0"/>
+    <mass value="77.58314898991108"/>
+    <inertia ixx="1.092912" iyy="1.21663" izz="0.911375" ixy="0.024538" iyz="0.146783" ixz="0.10834"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.285 0.075 -1.6875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_TILT_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="-1.285 0.075 -1.6875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_TILT_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB_460_110_240_IRC5_DISK_REV1_1">
+  <inertial>
+    <origin xyz="-0.0002924294844590669 3.1886745176816403e-10 -0.014407242463541525" rpy="0 0 0"/>
+    <mass value="4.672631003253398"/>
+    <inertia ixx="0.008833" iyy="0.008905" izz="0.016784" ixy="-0.0" iyz="0.0" ixz="3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.505 -0.0 -1.47" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_DISK_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="-1.505 -0.0 -1.47" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_DISK_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB_460_110_240_IRC5_TILT_REV1_1_duplicate">
+  <inertial>
+    <origin xyz="-0.04705091061765576 0.17071995833431367 -0.2534448851609017" rpy="0 0 0"/>
+    <mass value="77.58314898991108"/>
+    <inertia ixx="1.092912" iyy="1.21663" izz="0.911375" ixy="0.024538" iyz="0.146783" ixz="0.10834"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.514813 0.187 -1.880336" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_TILT_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="-1.514813 0.187 -1.880336" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_TILT_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB_460_110_240_IRC5_UPPER_LINK_REV1_1">
+  <inertial>
+    <origin xyz="0.5125010791034306 0.043500002477088046 2.9607169338419226e-07" rpy="0 0 0"/>
+    <mass value="11.111897542619332"/>
+    <inertia ixx="0.005543" iyy="1.816052" izz="1.812639" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.489813 0.208 -1.880336" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_UPPER_LINK_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="-0.489813 0.208 -1.880336" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_UPPER_LINK_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB_460_110_240_IRC5_LINK_PLATE_REV1_1">
+  <inertial>
+    <origin xyz="-0.006404757105329673 -0.0657559957077182 0.08262207289221557" rpy="0 0 0"/>
+    <mass value="22.38352697996098"/>
+    <inertia ixx="0.159625" iyy="0.567049" izz="0.429862" ixy="-0.01341" iyz="-0.001838" ixz="-0.031947"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.26 0.147 -1.6875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_LINK_PLATE_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="-0.26 0.147 -1.6875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_LINK_PLATE_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB_460_110_240_IRC5_LINK_PLATE_REV1_1_duplicate">
+  <inertial>
+    <origin xyz="0.25847924289467034 0.07124400429228178 -0.058218927107784424" rpy="0 0 0"/>
+    <mass value="22.38352697996098"/>
+    <inertia ixx="0.159625" iyy="0.567049" izz="0.429862" ixy="-0.01341" iyz="-0.001838" ixz="-0.031947"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.004884 0.284 -1.828341" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_LINK_PLATE_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0.004884 0.284 -1.828341" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_LINK_PLATE_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB_460_110_240_IRC5_LOWER_LINK_REV1_1">
+  <inertial>
+    <origin xyz="-0.029524874453877394 0.02250000377797473 0.47250091396373517" rpy="0 0 0"/>
+    <mass value="11.329950439757278"/>
+    <inertia ixx="1.578857" iyy="1.592496" izz="0.015818" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.004884 0.284 -0.883341" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_LOWER_LINK_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0.004884 0.284 -0.883341" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_LOWER_LINK_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB_460_110_240_IRC5_UPPER_ARM_REV1_1_duplicate">
+  <inertial>
+    <origin xyz="0.5595701111359899 0.1033842957907438 0.045782223297883284" rpy="0 0 0"/>
+    <mass value="82.64024688781541"/>
+    <inertia ixx="0.579951" iyy="15.392221" izz="15.390174" ixy="-0.207263" iyz="-0.011478" ixz="-0.093142"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.14 0.1075 -1.6875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_UPPER_ARM_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0.14 0.1075 -1.6875" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_UPPER_ARM_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB_460_110_240_IRC5_P_LINK_REV1_1">
+  <inertial>
+    <origin xyz="-2.6260499746966204e-08 0.06933699492165933 0.47250025806478735" rpy="0 0 0"/>
+    <mass value="23.128450658047104"/>
+    <inertia ixx="3.678366" iyy="3.683008" izz="0.025159" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.14 0.1065 -0.7425" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_P_LINK_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0.14 0.1065 -0.7425" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_P_LINK_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB_460_110_240_IRC5_P_ARM_REV1_1">
+  <inertial>
+    <origin xyz="-0.12344687725766842 0.04917519895421878 -0.00020777506504110477" rpy="0 0 0"/>
+    <mass value="41.46703883825704"/>
+    <inertia ixx="0.327476" iyy="1.330739" izz="1.138431" ixy="0.139194" iyz="0.028958" ixz="-0.14106"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.26 0.129 -0.7425" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_P_ARM_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="-0.26 0.129 -0.7425" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB_460_110_240_IRC5_P_ARM_REV1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.0 0.0 0.23" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="IRB_460_110_240_IRC5_SWING_REV1_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="0.26 -0.1165 0.5125" rpy="0 0 0"/>
+  <parent link="IRB_460_110_240_IRC5_SWING_REV1_1"/>
+  <child link="IRB_460_110_240_IRC5_LOWER_ARM_REV1_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="Revolute_14" type="continuous">
+  <origin xyz="-0.4 0.009 0.945" rpy="0 0 0"/>
+  <parent link="IRB_460_110_240_IRC5_LOWER_ARM_REV1_1"/>
+  <child link="IRB_460_110_240_IRC5_UPPER_ARM_REV1_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute_15" type="continuous">
+  <origin xyz="1.654813 -0.0795 0.192836" rpy="0 0 0"/>
+  <parent link="IRB_460_110_240_IRC5_UPPER_ARM_REV1_1"/>
+  <child link="IRB_460_110_240_IRC5_TILT_REV1_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute_16" type="continuous">
+  <origin xyz="-0.009813 0.187 -0.410336" rpy="0 0 0"/>
+  <parent link="IRB_460_110_240_IRC5_TILT_REV1_1"/>
+  <child link="IRB_460_110_240_IRC5_DISK_REV1_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="Revolute_17" type="continuous">
+  <origin xyz="1.025 0.021 0.0" rpy="0 0 0"/>
+  <parent link="IRB_460_110_240_IRC5_UPPER_LINK_REV1_1"/>
+  <child link="IRB_460_110_240_IRC5_TILT_REV1_1_duplicate"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute_18" type="continuous">
+  <origin xyz="0.494697 0.076 0.051995" rpy="0 0 0"/>
+  <parent link="IRB_460_110_240_IRC5_LINK_PLATE_REV1_1"/>
+  <child link="IRB_460_110_240_IRC5_UPPER_LINK_REV1_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute_19" type="continuous">
+  <origin xyz="-0.264884 -0.1675 1.085841" rpy="0 0 0"/>
+  <parent link="IRB_460_110_240_IRC5_LOWER_ARM_REV1_1"/>
+  <child link="IRB_460_110_240_IRC5_LINK_PLATE_REV1_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute_20" type="continuous">
+  <origin xyz="0.0 0.0 0.945" rpy="0 0 0"/>
+  <parent link="IRB_460_110_240_IRC5_LOWER_LINK_REV1_1"/>
+  <child link="IRB_460_110_240_IRC5_LINK_PLATE_REV1_1_duplicate"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute_21" type="continuous">
+  <origin xyz="-0.004884 -0.284 0.653341" rpy="0 0 0"/>
+  <parent link="IRB_460_110_240_IRC5_SWING_REV1_1"/>
+  <child link="IRB_460_110_240_IRC5_LOWER_LINK_REV1_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute_22" type="continuous">
+  <origin xyz="0.0 -0.001 0.945" rpy="0 0 0"/>
+  <parent link="IRB_460_110_240_IRC5_P_LINK_REV1_1"/>
+  <child link="IRB_460_110_240_IRC5_UPPER_ARM_REV1_1_duplicate"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute_23" type="continuous">
+  <origin xyz="-0.4 0.0225 0.0" rpy="0 0 0"/>
+  <parent link="IRB_460_110_240_IRC5_P_ARM_REV1_1"/>
+  <child link="IRB_460_110_240_IRC5_P_LINK_REV1_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute_24" type="continuous">
+  <origin xyz="0.26 -0.129 0.5125" rpy="0 0 0"/>
+  <parent link="IRB_460_110_240_IRC5_SWING_REV1_1"/>
+  <child link="IRB_460_110_240_IRC5_P_ARM_REV1_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+</robot>

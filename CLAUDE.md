@@ -49,6 +49,11 @@ The conversion process uses Claude Code to process URDF files with the `/prepare
 the input XACRO/URDF file for importing into IsaacSim. This makes sure expansions/naming/filepaths are all correct.
 The processed URDF file is then manually imported into IsaacSim where a USD file is created.
 
+### Process a robot's input URDF/XACRO file
+```bash
+bash process.sh INPUT_FILE
+```
+
 ## Isaac Sim Integration
 
 The `scripts/view.py` script demonstrates how to:
