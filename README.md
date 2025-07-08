@@ -15,6 +15,8 @@ This repository contains ABB industrial robot models in URDF format for ROS and 
 | **IRB1200_5kg-90** | [XACRO](ABB/IRB1200_5kg-90/IRB1200_5-90-STD_description/urdf/IRB1200_5-90-STD.xacro) | [Processed](generated/IRB1200_5_90_STD_v1/IRB1200_5_90_STD.urdf) | [USD](generated/IRB1200_5_90_STD_v1/IRB1200_5_90_STD/IRB1200_5_90_STD.usd) | ✅ Complete |
 | **IRB1200H_5-90-STD** | [XACRO](ABB/IRB1200H_5-90-STD/IRB1200H_5-90-STD_description/urdf/IRB1200H_5-90-STD.xacro) | [Processed](generated/IRB1200H_5_90_STD_v1/IRB1200H_5_90_STD.urdf) | [USD](generated/IRB1200H_5_90_STD_v1/IRB1200H_5_90_STD/IRB1200H_5_90_STD.usd) | ✅ Complete |
 | **IRB1200H_7-70-STD** | [XACRO](ABB/IRB1200H_7-70-STD/IRB1200H_7-70-STD_description/urdf/IRB1200H_7-70-STD.xacro) | [Processed](generated/IRB1200H_7_70_STD_v1/IRB1200H_7_70_STD.urdf) | [USD](generated/IRB1200H_7_70_STD_v1/IRB1200H_7_70_STD/IRB1200H_7_70_STD.usd) | ✅ Complete |
+| **IRB14000_Yumi** | [XACRO](ABB/IRB14000_Yumi/IRB14000_rev01_description/urdf/IRB14000_rev01.xacro) | - | - | ⏳ Not Processed |
+| **IRB14050_SAYuMi** | [XACRO](ABB/IRB14050_SAYuMi/IRB14050_SAYuMi_-_rev00_description/urdf/IRB14050_SAYuMi_-_rev00.xacro) | - | - | ⏳ Not Processed |
 | **IRB1520ID_4-150** | [XACRO](ABB/IRB1520ID_4-150/IRB1520ID_4_150_description/urdf/IRB1520ID_4_150.xacro) | [Processed](generated/IRB1520ID_4_150_v1/IRB1520ID_4_150.urdf) | [USD](generated/IRB1520ID_4_150_v1/IRB1520ID_4_150/IRB1520ID_4_150.usd) | ✅ Complete |
 | **IRB1600_X-120** | [XACRO](ABB/IRB1600_X-120/IRB1600_X-120_description/urdf/IRB1600_X-120.xacro) | [Processed](generated/IRB1600_X-120_v1/IRB1600_X-120.urdf) | [USD](generated/IRB1600_X-120_v1/IRB1600_X-120/IRB1600_X-120.usd) | ✅ Complete |
 | **IRB460_110-240** | [XACRO](ABB/IRB460_110-240/IRB_description/urdf/IRB.xacro) | [Processed](generated/IRB460_110-240_v1/IRB460_110-240.urdf) | [USD](generated/IRB460_110-240_v1/IRB460_110-240/IRB460_110-240.usd) | ✅ Complete |
@@ -26,7 +28,10 @@ This repository contains ABB industrial robot models in URDF format for ROS and 
 | **IRB6750S_185-390** | [XACRO](ABB/IRB6750S_185-390/IRB6750S_185-390-LID_description/urdf/IRB6750S_185-390-LID.xacro) | [Processed](generated/IRB6750S_185-390-LID_v1/IRB6750S_185-390-LID.urdf) | [USD](generated/IRB6750S_185-390-LID_v1/IRB6750S_185-390-LID/IRB6750S_185-390-LID.usd) | ✅ Complete |
 | **IRB8700_550-420-SW6** | [XACRO](ABB/IRB8700_550-420-SW6/IRB8700_550-420-SW6_description/urdf/IRB8700_550-420-SW6.xacro) | [Processed](generated/IRB8700_550-420-SW6_v1/IRB8700_550-420-SW6.urdf) | [USD](generated/IRB8700_550-420-SW6_v1/IRB8700_550-420-SW6/IRB8700_550-420-SW6.usd) | ✅ Complete |
 | **IRB8700_800-350** | [XACRO](ABB/IRB8700_800-350/IRB8700_800-350_description/urdf/IRB8700_800-350.xacro) | [Processed](generated/IRB8700_800_350_v1/IRB8700_800_350.urdf) | [USD](generated/IRB8700_800_350_v1/IRB8700_800_350/IRB8700_800_350.usd) | ✅ Complete |
+| **IRB910INV-350** | [XACRO](ABB/IRB910INV-350/IRB_description/urdf/IRB.xacro) | - | - | ⏳ Not Processed |
+| **IRB910INV-550** | [XACRO](ABB/IRB910INV-550/IRB_description/urdf/IRB.xacro) | - | - | ⏳ Not Processed |
 | **IRB920_6kg-550-180-STD** | [XACRO](ABB/IRB920_6kg-550-180-STD/ABB_IRB920_6kg-550-180-STD_description/urdf/ABB_IRB920_6kg-550-180-STD.xacro) | [Processed](generated/IRB920_6kg-550-180-STD_v1/IRB920_6kg_550_180_STD.urdf) | [USD](generated/IRB920_6kg_550_180_STD_v1/IRB920_6kg_550_180_STD/IRB920_6kg_550_180_STD.usd) | ✅ Complete |
+| **IRB920_6kg-650-180-STD** | [XACRO](ABB/IRB920_6kg-650-180-STD/IRB920_6kg-650-180-STD_OmniCore_rev00_Assembly_description/urdf/IRB920_6kg-650-180-STD_OmniCore_rev00_Assembly.xacro) | - | - | ⏳ Not Processed |
 | **IRB920_6kg_55-180-STD** | [URDF](ABB/IRB920_6kg_55-180-STD/abb_irb920.urdf) | [Processed](generated/abb_irb920_v1/abb_irb920.urdf) | [USD](generated/abb_irb920_v1/abb_irb920/abb_irb920.usd) | ✅ Complete |
 | **IRBPA-250_D1000** | [XACRO](ABB/Positioners/Irbpa-250_D1000_IRC5_rev02_CAD_description/urdf/Irbpa-250_D1000_IRC5_rev02_CAD.xacro) | [Processed](generated/Irbpa_250_D1000_IRC5_rev02_CAD_v1/Irbpa_250_D1000_IRC5_rev02_CAD.urdf) | [USD](generated/Irbpa_250_D1000_IRC5_rev02_CAD_v1/Irbpa_250_D1000_IRC5_rev02_CAD/Irbpa_250_D1000_IRC5_rev02_CAD.usd) | ✅ Complete |
 | **IRBPK-600_D1200-L1600** | [XACRO](ABB/Positioners/Irbpk-600_D1200-L1600_IRC5_rev02_CAD_description/urdf/Irbpk-600_D1200-L1600_IRC5_rev02_CAD.xacro) | [Processed](generated/Irbpk_600_D1200_L1600_IRC5_rev02_CAD_v1/Irbpk_600_D1200_L1600_IRC5_rev02_CAD.urdf) | [USD](generated/Irbpk_600_D1200_L1600_IRC5_rev02_CAD_v1/Irbpk_600_D1200_L1600_IRC5_rev02_CAD/Irbpk_600_D1200_L1600_IRC5_rev02_CAD.usd) | ✅ Complete |
@@ -35,8 +40,8 @@ This repository contains ABB industrial robot models in URDF format for ROS and 
 ### Status Summary
 - **✅ Complete**: 25 robots fully processed with USD files
 - **🔄 Processed, awaiting USD**: 0 robots with processed URDF but no USD file
-- **⏳ Not Processed**: 0 robots awaiting processing
-- **Total**: 25 ABB robot models
+- **⏳ Not Processed**: 5 robots awaiting processing
+- **Total**: 30 ABB robot models
 
 ## Quick Start
 
