@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find IRB930_12kg-1050-300-STD_Omnicore_rev00_Assembly_description)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="IRB930_12kg-1050-300-STD_Omnicore_rev00_Assembly" args="Revolute 1_position_controller Revolute 2_position_controller Slider 3_position_controller joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/IRB930_12kg-1050-300-STD_Omnicore_rev00_Assembly/joint_states"/>
+</node>
+
+</launch>
