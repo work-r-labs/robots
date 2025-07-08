@@ -1,5 +1,4 @@
 import shutil
-import shutil
 import math
 import numpy as np
 from pathlib import Path
@@ -23,7 +22,10 @@ world = World()
 project_root = Path(__file__).parent.parent
 
 usd_paths = [
-    "generated/abb_irb920_v1/abb_irb920/abb_irb920.usd",
+    # "generated/abb_irb920_v1/abb_irb920/abb_irb920.usd",
+    "generated/IRB920_6kg_650_180_STD_v1/IRB920_6kg_650_180_STD/IRB920_6kg_650_180_STD.usd",
+    "generated/IRB920T_6kg_450_180_STD_v1/IRB920T_6kg_450_180_STD/IRB920T_6kg_450_180_STD.usd",
+    "generated/IRB930_12kg_1050_300_STD_v1/IRB930_12kg_1050_300_STD/IRB930_12kg_1050_300_STD.usd",
     "generated/CRB15000_10kg_152_v1/CRB15000_10kg_152/CRB15000_10kg_152.usd",
     "generated/CRB15000_12kg_127_v1/CRB15000_12kg_127/CRB15000_12kg_127.usd",
     "generated/CRB15000_5kg_950_v1/CRB15000_5kg_950/CRB15000_5kg_950.usd",
@@ -33,8 +35,13 @@ usd_paths = [
     "generated/IRB1200_5_90_STD_v1/IRB1200_5_90_STD/IRB1200_5_90_STD.usd",
     "generated/IRB1200H_5_90_STD_v1/IRB1200H_5_90_STD/IRB1200H_5_90_STD.usd",
     "generated/IRB1200H_7_70_STD_v1/IRB1200H_7_70_STD/IRB1200H_7_70_STD.usd",
+    "generated/IRB14000_Yumi_v1/IRB14000_Yumi/IRB14000_Yumi.usd",
+    "generated/IRB14050_SAYuMi_v1/IRB14050_SAYuMi/IRB14050_SAYuMi.usd",
     "generated/IRB1520ID_4_150_v1/IRB1520ID_4_150/IRB1520ID_4_150.usd",
     "generated/IRB1600_X-120_v1/IRB1600_X-120/IRB1600_X-120.usd",
+    "generated/Irbpa_250_D1000_IRC5_rev02_CAD_v1/Irbpa_250_D1000_IRC5_rev02_CAD/Irbpa_250_D1000_IRC5_rev02_CAD.usd",
+    "generated/Irbpk_600_D1200_L1600_IRC5_rev02_CAD_v1/Irbpk_600_D1200_L1600_IRC5_rev02_CAD/Irbpk_600_D1200_L1600_IRC5_rev02_CAD.usd",
+    "generated/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD_v1/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD.usd",
     # "generated/IRB460_110-240_v1/IRB460_110-240/IRB460_110-240.usd",
     "generated/IRB52_7-1_2-Short_v1/IRB52_7-1_2-Short/IRB52_7-1_2-Short.usd",
     "generated/IRB52_7-1_45-Long_v1/IRB52_7-1_45-Long/IRB52_7-1_45-Long.usd",
@@ -44,10 +51,9 @@ usd_paths = [
     "generated/IRB6750S_185-390-LID_v1/IRB6750S_185-390-LID/IRB6750S_185-390-LID.usd",
     "generated/IRB8700_550-420-SW6_v1/IRB8700_550-420-SW6/IRB8700_550-420-SW6.usd",
     "generated/IRB8700_800_350_v1/IRB8700_800_350/IRB8700_800_350.usd",
+    # "generated/IRB910INV-350_v1/IRB910INV-350/IRB910INV-350.usd",
+    # "generated/IRB910INV-550_v1/IRB910INV-550/IRB910INV-550.usd",
     # "generated/IRB920_6kg_550_180_STD_v1/IRB920_6kg_550_180_STD/IRB920_6kg_550_180_STD.usd",
-    "generated/Irbpa_250_D1000_IRC5_rev02_CAD_v1/Irbpa_250_D1000_IRC5_rev02_CAD/Irbpa_250_D1000_IRC5_rev02_CAD.usd",
-    "generated/Irbpk_600_D1200_L1600_IRC5_rev02_CAD_v1/Irbpk_600_D1200_L1600_IRC5_rev02_CAD/Irbpk_600_D1200_L1600_IRC5_rev02_CAD.usd",
-    "generated/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD_v1/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD.usd",
 ]
 usd_paths = [project_root / p for p in usd_paths]
 
@@ -88,6 +94,7 @@ def set_xform(prim_path, x, y, z, rot=None):
 
 spacing = 5  # m  – centre-to-centre distance between robots
 n = len(usd_paths)
+side = math.ceil(math.sqrt(n))
 robots: dict[str, SingleArticulation] = {}
 for i, usd_path in enumerate(usd_paths):
     print(f"Loading {usd_path}")
@@ -98,8 +105,9 @@ for i, usd_path in enumerate(usd_paths):
     row = i
     col = 0
 
-    x = 0
-    y = row * spacing + i / 25  # metres in Y
+    side = 1 if i % 2 == 0 else -1
+    x = col * spacing + side + (side * i / 16)  # metres in X
+    y = row * spacing + i  # metres in Y
     z = 0.0
 
     if side == -1:

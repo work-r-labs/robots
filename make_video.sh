@@ -27,7 +27,7 @@ import shutil
 
 # Get all PNG files and sort them numerically in descending order
 files = [f for f in os.listdir('.') if f.endswith('.png')]
-files.sort(key=lambda x: int(x.split('.')[0]), reverse=False)
+files.sort(key=lambda x: int(x.split('.')[0]), reverse=True)
 
 # Copy files to temp directory with sequential names
 for i, file in enumerate(files):
