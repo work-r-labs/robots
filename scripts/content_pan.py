@@ -66,7 +66,7 @@ camera = Camera(
     "/World/cam",
     name="cam",
     resolution=(1920, 1080),
-    position=[7, 0, 0.6],
+    position=[7, 0, 0.8],
     orientation=camera_orientation_wxyz,
 )
 
@@ -92,35 +92,19 @@ def set_xform(prim_path, x, y, z, rot=None):
     )
 
 
-spacing = 5  # m  – centre-to-centre distance between robots
-n = len(usd_paths)
-side = math.ceil(math.sqrt(n))
+spacing = 3  # m  – centre-to-centre distance between robots
 robots: dict[str, SingleArticulation] = {}
 for i, usd_path in enumerate(usd_paths):
     print(f"Loading {usd_path}")
     prim_path = sanitize_name(f"/World/robots/{usd_path.stem}")
     add_reference_to_stage(str(usd_path), prim_path)
 
-    # row, col = divmod(i, side)  # integer grid coordinates
-    row = i
-    col = 0
-
-    side = 1 if i % 2 == 0 else -1
-    x = col * spacing + side + (side * i / 16)  # metres in X
-    y = row * spacing + i  # metres in Y
-    z = 0.0
-
-    if side == -1:
-        rot = None
-    else:
-        rot_xyzw = R.from_euler("xyz", [0, 0, 180], degrees=True).as_quat()
-        rot_wxyz = list(map(float, [rot_xyzw[-1], *rot_xyzw[:-1]]))
-        rot = [rot_wxyz]
+    x = i * spacing
+    y = 0
+    z = 0
 
     xform = XFormPrim(prim_path)
-    xform.set_local_poses(
-        translations=np.array([list(map(float, [x, y, z]))]), orientations=rot
-    )
+    xform.set_local_poses(translations=np.array([list(map(float, [x, y, z]))]))
 
     robot = SingleArticulation(prim_path=prim_path)
     robots[prim_path] = robot
@@ -156,7 +140,7 @@ if render_dir.exists():
 render_dir.mkdir(exist_ok=False)
 
 # run
-i = 60 * 15
+i = -400
 while True:
     world.step(render=True)
     for name, robot in robots.items():
@@ -175,10 +159,16 @@ while True:
             joints[5] = np.sin(i / 20)
 
         robot.set_joint_positions(positions=np.array(joints))
-    camera.set_world_pose(position=[0, i / 3, 0.6])
+    speed_div = 8
+    camera.set_world_pose(
+        position=[
+            i / speed_div,
+            11 + (i / speed_div / 140) * 4,
+            0.6 + (i / speed_div / 140) * 1.5,
+        ]
+    )
     rgba = camera.get_current_frame()["rgba"][..., :-1][..., ::-1]
     cv2.imwrite(f"ignore_render/{i}.png", rgba)
-    i -= 1
-    if i == -60:
-        i = 60 * 14
-        break
+    i += 1
+    if i / speed_div > 140:
+        i = -100
