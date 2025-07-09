@@ -21,7 +21,7 @@
   </collision>
 </link>
 
-<link name="IRB930_12kg_1050_300_STD_Omnicore_rev00_LINK1_CAD_1">
+<link name="link_1">
   <inertial>
     <origin xyz="0.2327296030011868 1.4055626305918504e-05 0.06880622166244083" rpy="0 0 0"/>
     <mass value="104.004672609044"/>
@@ -30,18 +30,18 @@
   <visual>
     <origin xyz="0.0 -0.0 -0.272" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB930_12kg_1050_300_STD_Omnicore_rev00_LINK1_CAD_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="0.0 -0.0 -0.272" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB930_12kg_1050_300_STD_Omnicore_rev00_LINK1_CAD_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="IRB930_12kg_1050_300_STD_Omnicore_rev00_LINK2_CAD_1">
+<link name="link_2">
   <inertial>
     <origin xyz="0.19660142039319195 1.5190891070566326e-06 0.0902432804337342" rpy="0 0 0"/>
     <mass value="199.4580874558294"/>
@@ -50,18 +50,18 @@
   <visual>
     <origin xyz="-0.56 -0.0 -0.3955" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB930_12kg_1050_300_STD_Omnicore_rev00_LINK2_CAD_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="-0.56 -0.0 -0.3955" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB930_12kg_1050_300_STD_Omnicore_rev00_LINK2_CAD_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="IRB930_12kg_1050_300_STD_Omnicore_rev00_LINK3_CAD_1">
+<link name="link_3">
   <inertial>
     <origin xyz="0.00017131478414600387 8.969678527760666e-06 0.014896846408127051" rpy="0 0 0"/>
     <mass value="1.6450553674720612"/>
@@ -70,37 +70,67 @@
   <visual>
     <origin xyz="-1.05 -0.0 -0.5642" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB930_12kg_1050_300_STD_Omnicore_rev00_LINK3_CAD_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="-1.05 -0.0 -0.5642" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB930_12kg_1050_300_STD_Omnicore_rev00_LINK3_CAD_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<joint name="Revolute_1" type="continuous">
+<joint name="joint_1" type="continuous">
   <origin xyz="0.0 0.0 0.272" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="IRB930_12kg_1050_300_STD_Omnicore_rev00_LINK1_CAD_1"/>
+  <child link="link_1"/>
   <axis xyz="0.0 0.0 1.0"/>
 </joint>
 
-<joint name="Revolute_2" type="continuous">
+<joint name="joint_2" type="continuous">
   <origin xyz="0.56 0.0 0.1235" rpy="0 0 0"/>
-  <parent link="IRB930_12kg_1050_300_STD_Omnicore_rev00_LINK1_CAD_1"/>
-  <child link="IRB930_12kg_1050_300_STD_Omnicore_rev00_LINK2_CAD_1"/>
+  <parent link="link_1"/>
+  <child link="link_2"/>
   <axis xyz="0.0 0.0 1.0"/>
 </joint>
 
-<joint name="Slider_3" type="prismatic">
+<joint name="joint_3" type="prismatic">
   <origin xyz="0.49 0.0 0.1687" rpy="0 0 0"/>
-  <parent link="IRB930_12kg_1050_300_STD_Omnicore_rev00_LINK2_CAD_1"/>
-  <child link="IRB930_12kg_1050_300_STD_Omnicore_rev00_LINK3_CAD_1"/>
+  <parent link="link_2"/>
+  <child link="link_3"/>
   <axis xyz="-0.0 0.0 1.0"/>
   <limit upper="0.0" lower="-0.2" effort="100" velocity="100"/>
+</joint>
+
+<link name="flange">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="0.001" iyy="0.001" izz="0.001" ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+<link name="tool0">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="0.001" iyy="0.001" izz="0.001" ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+<joint name="joint_4" type="continuous">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="link_3"/>
+  <child link="flange"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit lower="-6.98132" upper="6.98132" effort="0.0" velocity="0.0"/>
+</joint>
+
+<joint name="joint_tool0" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="flange"/>
+  <child link="tool0"/>
 </joint>
 
 </robot>
