@@ -60,3 +60,9 @@ The `scripts/view.py` script demonstrates how to:
 - Load multiple robot models in Isaac Sim
 - Position them in a scene
 - Set up basic simulation environment
+
+## URDF Validation
+
+```bash
+uv run tools/validate_urdf.py URDF_PATH
+```

@@ -21,7 +21,7 @@
   </collision>
 </link>
 
-<link name="LINK1">
+<link name="link_1">
   <inertial>
     <origin xyz="0.30364505280838955 -0.0018357799370513142 0.5157165485900264" rpy="0 0 0"/>
     <mass value="1785.9186850506833"/>
@@ -30,18 +30,18 @@
   <visual>
     <origin xyz="0.0 -0.0 -0.300337" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/LINK1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="0.0 -0.0 -0.300337" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/LINK1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="LINK2">
+<link name="link_2">
   <inertial>
     <origin xyz="0.1193738222891802 0.2222896100229376 0.7303852208694914" rpy="0 0 0"/>
     <mass value="1443.4541146557397"/>
@@ -50,18 +50,18 @@
   <visual>
     <origin xyz="-0.42 0.21 -1.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/LINK2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="-0.42 0.21 -1.0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/LINK2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="LINK3">
+<link name="link_3">
   <inertial>
     <origin xyz="-0.13074491407877226 0.4619189297387206 0.23397324999694247" rpy="0 0 0"/>
     <mass value="867.5203145831158"/>
@@ -70,18 +70,18 @@
   <visual>
     <origin xyz="-0.42 0.363 -2.58" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/LINK3.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="-0.42 0.363 -2.58" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/LINK3.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="LINK4">
+<link name="link_4">
   <inertial>
     <origin xyz="0.6024871706759326 -0.030081371080166425 2.0651999724119463e-05" rpy="0 0 0"/>
     <mass value="1084.7317720031733"/>
@@ -90,18 +90,18 @@
   <visual>
     <origin xyz="-0.764558 0.0 -2.89" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/LINK4.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="-0.764558 0.0 -2.89" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/LINK4.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="LINK5">
+<link name="link_5">
   <inertial>
     <origin xyz="0.08768857349934933 -0.15923059324200087 -0.0001545447063584504" rpy="0 0 0"/>
     <mass value="180.47343892140714"/>
@@ -110,18 +110,18 @@
   <visual>
     <origin xyz="-1.895 -0.150019 -2.890533" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/LINK5.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_5.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="-1.895 -0.150019 -2.890533" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/LINK5.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_5.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="LINK6">
+<link name="link_6">
   <inertial>
     <origin xyz="0.024033135358549007 -9.416771800048662e-07 -8.023741163132314e-05" rpy="0 0 0"/>
     <mass value="24.42929785915679"/>
@@ -130,84 +130,86 @@
   <visual>
     <origin xyz="-2.1555 -0.0 -2.89" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/LINK6.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/flange.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="-2.1555 -0.0 -2.89" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/LINK6.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/flange.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="LINKARM">
+<link name="flange">
   <inertial>
-    <origin xyz="-0.932100542523743 0.20883579238144037 0.04362889564275241" rpy="0 0 0"/>
-    <mass value="1651.2082436339517"/>
-    <inertia ixx="326.192089" iyy="160.156233" izz="441.081108" ixy="10.128143" iyz="-0.673814" ixz="9.121701"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="0.0001" iyy="0.0001" izz="0.0001" ixy="0" iyz="0" ixz="0"/>
   </inertial>
-  <visual>
-    <origin xyz="-0.42 0.215 -1.0" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="meshes/LINKARM.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </visual>
-  <collision>
-    <origin xyz="-0.42 0.215 -1.0" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="meshes/LINKARM.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
 </link>
 
-<joint name="j1" type="continuous">
+<link name="tool0">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.01"/>
+    <inertia ixx="0.00001" iyy="0.00001" izz="0.00001" ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+
+<joint name="joint_1" type="continuous">
   <origin xyz="0.0 0.0 0.300337" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="LINK1"/>
+  <child link="link_1"/>
   <axis xyz="0.0 -0.0 -1.0"/>
 </joint>
 
-<joint name="j2" type="continuous">
+<joint name="joint_2" type="continuous">
   <origin xyz="0.42 -0.21 0.699663" rpy="0 0 0"/>
-  <parent link="LINK1"/>
-  <child link="LINK2"/>
+  <parent link="link_1"/>
+  <child link="link_2"/>
   <axis xyz="0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="j3" type="continuous">
+<joint name="joint_3" type="continuous">
   <origin xyz="0.0 -0.153 1.58" rpy="0 0 0"/>
-  <parent link="LINK2"/>
-  <child link="LINK3"/>
+  <parent link="link_2"/>
+  <child link="link_3"/>
   <axis xyz="0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="j4" type="continuous">
+<joint name="joint_4" type="continuous">
   <origin xyz="0.344558 0.363 0.31" rpy="0 0 0"/>
-  <parent link="LINK3"/>
-  <child link="LINK4"/>
+  <parent link="link_3"/>
+  <child link="link_4"/>
   <axis xyz="-1.0 0.0 0.0"/>
 </joint>
 
-<joint name="j5" type="continuous">
+<joint name="joint_5" type="continuous">
   <origin xyz="1.130442 0.150019 0.000533" rpy="0 0 0"/>
-  <parent link="LINK4"/>
-  <child link="LINK5"/>
+  <parent link="link_4"/>
+  <child link="link_5"/>
   <axis xyz="0.0 -0.999391 0.034899"/>
 </joint>
 
-<joint name="j6" type="continuous">
+<joint name="joint_6" type="continuous">
   <origin xyz="0.2605 -0.150019 -0.000533" rpy="0 0 0"/>
-  <parent link="LINK5"/>
-  <child link="LINK6"/>
+  <parent link="link_5"/>
+  <child link="link_6"/>
   <axis xyz="1.0 0.0 -0.0"/>
 </joint>
 
-<joint name="tail" type="continuous">
-  <origin xyz="0.42 -0.215 0.699663" rpy="0 0 0"/>
-  <parent link="LINK1"/>
-  <child link="LINKARM"/>
-  <axis xyz="0.0 -1.0 0.0"/>
+<joint name="joint_flange" type="fixed">
+  <origin xyz="0 0 0" rpy="0 1.57 0"/>
+  <parent link="link_6"/>
+  <child link="flange"/>
+</joint>
+
+<joint name="joint_tool0" type="fixed">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="flange"/>
+  <child link="tool0"/>
 </joint>
 
 </robot>
