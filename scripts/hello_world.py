@@ -3,12 +3,12 @@ from pathlib import Path
 import numpy as np
 
 parser = argparse.ArgumentParser()
-parser.add_argument("urdf_path", type=Path)
+parser.add_argument("usd_path", type=Path)
 
 args = parser.parse_args()
 
-urdf_path: Path = args.urdf_path.resolve()
-assert urdf_path.exists()
+usd_path: Path = args.usd_path.resolve()
+assert usd_path.exists()
 
 from isaacsim import SimulationApp
 
@@ -20,9 +20,6 @@ from isaacsim.core.prims import SingleArticulation
 
 world = World()
 world.scene.add_default_ground_plane()  # type: ignore
-
-usd_path = urdf_path.parent / urdf_path.stem / f"{urdf_path.stem}.usd"
-assert usd_path.exists()
 
 robot_prim_path = "/World/robot"
 add_reference_to_stage(str(usd_path), robot_prim_path)
