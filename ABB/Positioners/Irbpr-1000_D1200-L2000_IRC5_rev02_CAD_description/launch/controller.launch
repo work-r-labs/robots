@@ -1,9 +1,0 @@
-<launch>
-
-<rosparam file="$(find Irbpr-1000_D1200-L2000_IRC5_rev02_CAD_description)/launch/controller.yaml" command="load"/>
-<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="Irbpr-1000_D1200-L2000_IRC5_rev02_CAD" args="j1_position_controller j2_position_controller j3_position_controller joint_state_controller "/>
-<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
-  <remap from="/joint_states" to="/Irbpr-1000_D1200-L2000_IRC5_rev02_CAD/joint_states"/>
-</node>
-
-</launch>

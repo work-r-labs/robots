@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<robot name="IRB930_12kg-1050-300-STD_Omnicore_rev00_Assembly">
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.030819417783150654 0.00015713182564654896 0.1350987209898039" rpy="0 0 0"/>
+    <mass value="95.86686997070862"/>
+    <inertia ixx="0.806742" iyy="1.10122" izz="0.797089" ixy="0.001161" iyz="-0.001241" ixz="-0.013201"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB930_12kg-1050-300-STD_Omnicore_rev00_Assembly_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB930_12kg-1050-300-STD_Omnicore_rev00_Assembly_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB930_12kg-1050-300-STD_Omnicore_rev00_LINK1_CAD_1">
+  <inertial>
+    <origin xyz="0.2327296030011868 1.4055626305918504e-05 0.06880622166244083" rpy="0 0 0"/>
+    <mass value="104.004672609044"/>
+    <inertia ixx="0.373789" iyy="4.510887" izz="4.687292" ixy="0.000122" iyz="0.000219" ixz="-0.141077"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 -0.0 -0.272" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB930_12kg-1050-300-STD_Omnicore_rev00_Assembly_description/meshes/IRB930_12kg-1050-300-STD_Omnicore_rev00_LINK1_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 -0.0 -0.272" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB930_12kg-1050-300-STD_Omnicore_rev00_Assembly_description/meshes/IRB930_12kg-1050-300-STD_Omnicore_rev00_LINK1_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB930_12kg-1050-300-STD_Omnicore_rev00_LINK2_CAD_1">
+  <inertial>
+    <origin xyz="0.19660142039319195 1.5190891070566326e-06 0.0902432804337342" rpy="0 0 0"/>
+    <mass value="199.4580874558294"/>
+    <inertia ixx="2.158171" iyy="7.467931" izz="6.160185" ixy="2.8e-05" iyz="4.2e-05" ixz="-0.021367"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.56 -0.0 -0.3955" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB930_12kg-1050-300-STD_Omnicore_rev00_Assembly_description/meshes/IRB930_12kg-1050-300-STD_Omnicore_rev00_LINK2_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.56 -0.0 -0.3955" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB930_12kg-1050-300-STD_Omnicore_rev00_Assembly_description/meshes/IRB930_12kg-1050-300-STD_Omnicore_rev00_LINK2_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB930_12kg-1050-300-STD_Omnicore_rev00_LINK3_CAD_1">
+  <inertial>
+    <origin xyz="0.00017131478414600387 8.969678527760666e-06 0.014896846408127051" rpy="0 0 0"/>
+    <mass value="1.6450553674720612"/>
+    <inertia ixx="0.066704" iyy="0.066703" izz="0.000352" ixy="0.0" iyz="1e-06" ixz="-8e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.05 -0.0 -0.5642" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB930_12kg-1050-300-STD_Omnicore_rev00_Assembly_description/meshes/IRB930_12kg-1050-300-STD_Omnicore_rev00_LINK3_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.05 -0.0 -0.5642" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB930_12kg-1050-300-STD_Omnicore_rev00_Assembly_description/meshes/IRB930_12kg-1050-300-STD_Omnicore_rev00_LINK3_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="continuous">
+  <origin xyz="0.0 0.0 0.272" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="IRB930_12kg-1050-300-STD_Omnicore_rev00_LINK1_CAD_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Revolute 2" type="continuous">
+  <origin xyz="0.56 0.0 0.1235" rpy="0 0 0"/>
+  <parent link="IRB930_12kg-1050-300-STD_Omnicore_rev00_LINK1_CAD_1"/>
+  <child link="IRB930_12kg-1050-300-STD_Omnicore_rev00_LINK2_CAD_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Slider 3" type="prismatic">
+  <origin xyz="0.49 0.0 0.1687" rpy="0 0 0"/>
+  <parent link="IRB930_12kg-1050-300-STD_Omnicore_rev00_LINK2_CAD_1"/>
+  <child link="IRB930_12kg-1050-300-STD_Omnicore_rev00_LINK3_CAD_1"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+  <limit upper="0.0" lower="-0.2" effort="100" velocity="100"/>
+</joint>
+
+</robot>

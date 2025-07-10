@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<robot name="Irbpr-1000_D1200-L2000_IRC5_rev02_CAD">
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.49942799226897755 -0.8001229419246555 0.2144161537636066" rpy="0 0 0"/>
+    <mass value="1310.529268653801"/>
+    <inertia ixx="51.101779" iyy="82.104536" izz="91.002172" ixy="-0.063502" iyz="-0.013077" ixz="-0.95022"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpr-1000_D1200-L2000_IRC5_rev02_CAD_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpr-1000_D1200-L2000_IRC5_rev02_CAD_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component8_1">
+  <inertial>
+    <origin xyz="-3.2894418474649356e-06 0.0003456912229030662 0.3065328913256987" rpy="0 0 0"/>
+    <mass value="3410.6199546478297"/>
+    <inertia ixx="3840.741736" iyy="722.367652" izz="4153.023051" ixy="307.90971" iyz="0.333615" ixz="0.00275"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.587404 0.8 -0.481" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpr-1000_D1200-L2000_IRC5_rev02_CAD_description/meshes/Component8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.587404 0.8 -0.481" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpr-1000_D1200-L2000_IRC5_rev02_CAD_description/meshes/Component8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component5_1">
+  <inertial>
+    <origin xyz="0.0005860580043299812 -0.018632134399173772 0.0009458256378480634" rpy="0 0 0"/>
+    <mass value="21.25030383337669"/>
+    <inertia ixx="0.230554" iyy="0.446816" izz="0.229292" ixy="0.000307" iyz="0.000495" ixz="-0.00127"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.227489 1.8 -1.034998" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpr-1000_D1200-L2000_IRC5_rev02_CAD_description/meshes/Component5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.227489 1.8 -1.034998" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpr-1000_D1200-L2000_IRC5_rev02_CAD_description/meshes/Component5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component6_1">
+  <inertial>
+    <origin xyz="-0.0005858114643134266 0.01863213439949385 0.0009458256381305041" rpy="0 0 0"/>
+    <mass value="21.250303833372293"/>
+    <inertia ixx="0.230554" iyy="0.446816" izz="0.229292" ixy="0.000307" iyz="-0.000495" ixz="0.00127"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.052681 -0.2 -1.034998" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpr-1000_D1200-L2000_IRC5_rev02_CAD_description/meshes/Component6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.052681 -0.2 -1.034998" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpr-1000_D1200-L2000_IRC5_rev02_CAD_description/meshes/Component6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.587404 -0.8 0.481" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Component8_1"/>
+  <axis xyz="-0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="0.640085 -1.0 0.553998" rpy="0 0 0"/>
+  <parent link="Component8_1"/>
+  <child link="Component5_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="j3" type="continuous">
+  <origin xyz="-0.640085 1.0 0.553998" rpy="0 0 0"/>
+  <parent link="Component8_1"/>
+  <child link="Component6_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+</robot>

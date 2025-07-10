@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<robot name="Irbpr-1000_D1200-L2000_IRC5_rev02_CAD" xmlns:xacro="http://www.ros.org/wiki/xacro" >
-
-<material name="silver">
-  <color rgba="0.700 0.700 0.700 1.000"/>
-</material>
-
-</robot>

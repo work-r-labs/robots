@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<robot name="IRB52_long_T00F81B51V41H61_rev1" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<material name="silver">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+
+</robot>

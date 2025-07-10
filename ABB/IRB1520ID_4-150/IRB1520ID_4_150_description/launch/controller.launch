@@ -1,9 +1,0 @@
-<launch>
-
-<rosparam file="$(find IRB1520ID_4_150_description)/launch/controller.yaml" command="load"/>
-<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="IRB1520ID_4_150" args="j1_position_controller j2_position_controller j3_position_controller j4_position_controller j5_position_controller j6_position_controller joint_state_controller "/>
-<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
-  <remap from="/joint_states" to="/IRB1520ID_4_150/joint_states"/>
-</node>
-
-</launch>
