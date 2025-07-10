@@ -12,8 +12,11 @@ Plug and play USD and URDF assets for ABB robots, ready for use in IsaacSim and 
 # clone the repo, including the submodule required for type hinting
 git clone --recurse-submodules https://github.com/work-r-labs/robots.git
 
-# load a cobot and move it backwards and forwards
-~/isaacsim/python.sh scripts/hello_world.py library/ABB/CRB15000_10kg_152_v1/CRB15000_10kg_152.urdf
+# load a cobot and have it move around
+~/isaacsim/python.sh scripts/hello_world.py library/ABB/CRB15000_10kg_152_v1/CRB15000_10kg_152/CRB15000_10kg_152.usd 
+
+# load an industrial robot and have it move around
+~/isaacsim/python.sh scripts/hello_world.py library/ABB/IRB1100_4kg_580_STD_v1/IRB1100_4kg_580_STD/IRB1100_4kg_580_STD.usd 
 ```
 
 ## Available Robot Models
@@ -54,15 +57,6 @@ git clone --recurse-submodules https://github.com/work-r-labs/robots.git
 **Total**: 30 ABB robot models available
 
 ## Demos
-
-### Hello World
-
-How to load a robot and instantiate a `SingleArticulation` to control it.
-
-```bash
-~/isaacsim/python.sh scripts/hello_world.py library/ABB/CRB15000_10kg_152_v1/CRB15000_10kg_152.urdf
-
-```
 
 ### Interactive Inverse Kinematics
 
