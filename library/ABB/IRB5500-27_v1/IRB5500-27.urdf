@@ -1,0 +1,241 @@
+<?xml version="1.0" ?>
+<robot name="IRB5500_27_rev00">
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.002483396105407028 -0.342647003764746 1.3243039524168518" rpy="0 0 0"/>
+    <mass value="967.1601750189261"/>
+    <inertia ixx="50.446618" iyy="56.81412" izz="83.832361" ixy="0.001468" iyz="2.394735" ixz="0.161943"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB5500_27_rev00_AXIS7_ELBOW_CAD_1">
+  <inertial>
+    <origin xyz="0.0003509592640977202 0.12743781394873108 -0.31158977032562873" rpy="0 0 0"/>
+    <mass value="702.2698415858004"/>
+    <inertia ixx="51.464422" iyy="39.588601" izz="31.478418" ixy="0.074758" iyz="17.836383" ixz="0.02652"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.193265 -1.160001" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB5500_27_rev00_AXIS7_ELBOW_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.193265 -1.160001" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB5500_27_rev00_AXIS7_ELBOW_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB5500_27_rev00_LINK1_CAD_1">
+  <inertial>
+    <origin xyz="0.025583014458332692 0.34431366936717306 9.204506282023406e-05" rpy="0 0 0"/>
+    <mass value="1176.3951689098158"/>
+    <inertia ixx="64.129491" iyy="51.509034" izz="50.070808" ixy="1.140649" iyz="0.036538" ixz="-0.021801"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 -0.204235 -0.531501" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB5500_27_rev00_LINK1_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0.0 -0.204235 -0.531501" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB5500_27_rev00_LINK1_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB5500_27_rev00_LINK2_CAD_1">
+  <inertial>
+    <origin xyz="-0.0864843863838072 0.6879461864387152 -0.00018906668010598704" rpy="0 0 0"/>
+    <mass value="723.6999417468928"/>
+    <inertia ixx="163.23224" iyy="8.46497" izz="160.035017" ixy="2.562785" iyz="0.028196" ixz="-0.014957"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.231 -0.640235 -0.531501" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB5500_27_rev00_LINK2_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0.231 -0.640235 -0.531501" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB5500_27_rev00_LINK2_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB5500_27_rev00_LINK3_CAD_1">
+  <inertial>
+    <origin xyz="0.14845834994718493 0.0005145714777818888 -0.3972525527369227" rpy="0 0 0"/>
+    <mass value="607.3432806136773"/>
+    <inertia ixx="118.657638" iyy="118.266163" izz="6.245279" ixy="-0.043898" iyz="-0.001657" ixz="3.559113"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.217 -1.940235 -0.531501" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB5500_27_rev00_LINK3_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0.217 -1.940235 -0.531501" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB5500_27_rev00_LINK3_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB5500_27_rev00_LINK4_CAD_1">
+  <inertial>
+    <origin xyz="0.012058863240822004 -0.009960582103303084 -0.04504410797678493" rpy="0 0 0"/>
+    <mass value="13.246564877496244"/>
+    <inertia ixx="0.033719" iyy="0.032273" izz="0.043539" ixy="-0.003758" iyz="-0.004059" ixz="0.004914"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.005 -1.940235 0.909499" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB5500_27_rev00_LINK4_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="-0.005 -1.940235 0.909499" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB5500_27_rev00_LINK4_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB5500_27_rev00_LINK5_CAD_1">
+  <inertial>
+    <origin xyz="-0.017548707689669776 0.014092028108875665 -0.05993422656961034" rpy="0 0 0"/>
+    <mass value="22.90378370207619"/>
+    <inertia ixx="0.08786" iyy="0.084554" izz="0.078073" ixy="-0.010367" iyz="1.9e-05" ixz="1.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.002347 -1.942426 0.983914" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB5500_27_rev00_LINK5_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="-0.002347 -1.942426 0.983914" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB5500_27_rev00_LINK5_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB5500_27_rev00_LINK5B_CAD_1">
+  <inertial>
+    <origin xyz="0.014048995269269985 -0.008687870182828128 -0.02647013689771649" rpy="0 0 0"/>
+    <mass value="11.0274888011437"/>
+    <inertia ixx="0.025137" iyy="0.025856" izz="0.031479" ixy="-0.00211" iyz="0.004105" ixz="-0.004603"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.001486 -1.941401 1.103779" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB5500_27_rev00_LINK5B_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="-0.001486 -1.941401 1.103779" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB5500_27_rev00_LINK5B_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB5500_27_rev00_LINK6_CAD_1">
+  <inertial>
+    <origin xyz="0.0020646454262464864 0.0009589695181408953 -0.0037290808347418825" rpy="0 0 0"/>
+    <mass value="0.3574993425525092"/>
+    <inertia ixx="0.000656" iyy="0.000566" izz="0.000922" ixy="4.5e-05" iyz="-0.000104" ixz="-0.000217"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.038076 -1.954942 1.170157" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB5500_27_rev00_LINK6_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="-0.038076 -1.954942 1.170157" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IRB5500_27_rev00_LINK6_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="j7" type="continuous">
+  <origin xyz="0.0 -0.193265 1.160001" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="IRB5500_27_rev00_AXIS7_ELBOW_CAD_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.0 0.3975 -0.6285" rpy="0 0 0"/>
+  <parent link="IRB5500_27_rev00_AXIS7_ELBOW_CAD_1"/>
+  <child link="IRB5500_27_rev00_LINK1_CAD_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="-0.231 0.436 0.0" rpy="0 0 0"/>
+  <parent link="IRB5500_27_rev00_LINK1_CAD_1"/>
+  <child link="IRB5500_27_rev00_LINK2_CAD_1"/>
+  <axis xyz="-1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="j3" type="continuous">
+  <origin xyz="0.014 1.3 0.0" rpy="0 0 0"/>
+  <parent link="IRB5500_27_rev00_LINK2_CAD_1"/>
+  <child link="IRB5500_27_rev00_LINK3_CAD_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="j4" type="continuous">
+  <origin xyz="0.222 0.0 -1.441" rpy="0 0 0"/>
+  <parent link="IRB5500_27_rev00_LINK3_CAD_1"/>
+  <child link="IRB5500_27_rev00_LINK4_CAD_1"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="j5" type="continuous">
+  <origin xyz="-0.002653 0.002191 -0.074415" rpy="0 0 0"/>
+  <parent link="IRB5500_27_rev00_LINK4_CAD_1"/>
+  <child link="IRB5500_27_rev00_LINK5_CAD_1"/>
+  <axis xyz="-0.442229 0.365272 -0.819152"/>
+</joint>
+
+<joint name="j6" type="continuous">
+  <origin xyz="-0.000861 -0.001025 -0.119865" rpy="0 0 0"/>
+  <parent link="IRB5500_27_rev00_LINK5_CAD_1"/>
+  <child link="IRB5500_27_rev00_LINK5B_CAD_1"/>
+  <axis xyz="0.430464 -0.379286 -0.81905"/>
+</joint>
+
+<joint name="eoat" type="revolute">
+  <origin xyz="0.03659 0.013541 -0.066378" rpy="0 0 0"/>
+  <parent link="IRB5500_27_rev00_LINK5B_CAD_1"/>
+  <child link="IRB5500_27_rev00_LINK6_CAD_1"/>
+  <axis xyz="-0.4723 -0.219672 0.853626"/>
+  <limit upper="0.0" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+</robot>

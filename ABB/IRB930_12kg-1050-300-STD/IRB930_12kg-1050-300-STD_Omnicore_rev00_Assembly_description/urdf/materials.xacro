@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<robot name="IRB930_12kg-1050-300-STD_Omnicore_rev00_Assembly" xmlns:xacro="http://www.ros.org/wiki/xacro" >
-
-<material name="silver">
-  <color rgba="0.700 0.700 0.700 1.000"/>
-</material>
-
-</robot>

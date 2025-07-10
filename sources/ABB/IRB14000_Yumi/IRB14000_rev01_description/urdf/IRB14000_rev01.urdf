@@ -1,0 +1,417 @@
+<?xml version="1.0" ?>
+<robot name="IRB14000_rev01">
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.1806083300371626 -3.533146342719389e-05 0.16501432096968796" rpy="0 0 0"/>
+    <mass value="355.07112469493865"/>
+    <inertia ixx="13.237211" iyy="14.852513" izz="6.557715" ixy="-0.00171" iyz="-0.012269" ixz="-0.102455"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB14000_rev01_Link1_L_v1_1">
+  <inertial>
+    <origin xyz="0.04073333496198922 0.040935345541061985 0.015261260614221506" rpy="0 0 0"/>
+    <mass value="7.563188104200824"/>
+    <inertia ixx="0.019728" iyy="0.015934" izz="0.025359" ixy="-0.007851" iyz="-0.004141" ixz="-0.002338"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.051106 -0.071479 -0.413506" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link1_L_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.051106 -0.071479 -0.413506" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link1_L_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB14000_rev01_Link2_L_v1_1">
+  <inertial>
+    <origin xyz="0.0596729752148423 -0.007882861134115904 0.03919033075530104" rpy="0 0 0"/>
+    <mass value="11.070799725042463"/>
+    <inertia ixx="0.020709" iyy="0.051591" izz="0.055916" ixy="-0.013939" iyz="-0.002565" ixz="-0.007311"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.119234 -0.133836 -0.46976" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link2_L_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.119234 -0.133836 -0.46976" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link2_L_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB14000_rev01_Link3_L_v1_1">
+  <inertial>
+    <origin xyz="0.05564804075747504 0.023708363033178914 -0.0061156014923368085" rpy="0 0 0"/>
+    <mass value="5.579966748579002"/>
+    <inertia ixx="0.006105" iyy="0.013925" izz="0.014722" ixy="-0.002356" iyz="-0.000158" ixz="0.001632"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.275739 -0.165887 -0.543198" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link3_L_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.275739 -0.165887 -0.543198" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link3_L_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB14000_rev01_Link4_L_v1_1">
+  <inertial>
+    <origin xyz="0.04754075136522001 -0.04572861064128683 -0.0007970276750837169" rpy="0 0 0"/>
+    <mass value="9.26921603729842"/>
+    <inertia ixx="0.022095" iyy="0.039944" izz="0.03382" ixy="0.008099" iyz="-0.005273" ixz="0.013896"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.364071 -0.175484 -0.550654" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link4_L_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.364071 -0.175484 -0.550654" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link4_L_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB14000_rev01_Link5_L_v1_1">
+  <inertial>
+    <origin xyz="0.023112773812127285 -0.011245840587332231 -0.04761625259631325" rpy="0 0 0"/>
+    <mass value="2.695952167724137"/>
+    <inertia ixx="0.005888" iyy="0.006149" izz="0.002687" ixy="0.000386" iyz="-0.001411" ixz="0.001593"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.489888 -0.079615 -0.488717" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link5_L_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.489888 -0.079615 -0.488717" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link5_L_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB14000_rev01_Link6_L_v1_1">
+  <inertial>
+    <origin xyz="-0.004491641394148149 -0.031703355476269665 0.05361645129751996" rpy="0 0 0"/>
+    <mass value="3.922596322846886"/>
+    <inertia ixx="0.004497" iyy="0.003956" izz="0.004715" ixy="-0.000211" iyz="6.9e-05" ixz="6e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.53039 -0.042127 -0.388389" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link6_L_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.53039 -0.042127 -0.388389" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link6_L_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB14000_rev01_Link7_L_v1_1">
+  <inertial>
+    <origin xyz="0.000296172055413102 -0.00016299707911343673 -0.00037255473372488357" rpy="0 0 0"/>
+    <mass value="0.2428975269458689"/>
+    <inertia ixx="6.2e-05" iyy="6.2e-05" izz="6.1e-05" ixy="-4e-06" iyz="4e-06" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.561519 -0.001956 -0.421181" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link7_L_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.561519 -0.001956 -0.421181" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link7_L_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB14000_rev01_Link1_R_v1_1">
+  <inertial>
+    <origin xyz="0.03590191959142361 -0.008981490316361349 0.04687920510382226" rpy="0 0 0"/>
+    <mass value="7.562885252614281"/>
+    <inertia ixx="0.021585" iyy="0.02592" izz="0.01351" ixy="0.000943" iyz="0.003096" ixz="-0.00752"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.051106 0.071479 -0.413506" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link1_R_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.051106 0.071479 -0.413506" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link1_R_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB14000_rev01_Link2_R_v1_1">
+  <inertial>
+    <origin xyz="0.06524866774564085 -0.029020496675266974 0.0026699058149302624" rpy="0 0 0"/>
+    <mass value="11.070765671821388"/>
+    <inertia ixx="0.024291" iyy="0.057295" izz="0.046631" ixy="0.001655" iyz="0.000696" ixz="-0.018332"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.116778 0.117581 -0.485846" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link2_R_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.116778 0.117581 -0.485846" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link2_R_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB14000_rev01_Link3_R_v1_1">
+  <inertial>
+    <origin xyz="0.04932288762147974 0.014265009766034759 0.031259105192174896" rpy="0 0 0"/>
+    <mass value="5.642166932410237"/>
+    <inertia ixx="0.007831" iyy="0.014639" izz="0.013502" ixy="-0.002779" iyz="-0.000627" ixz="-0.003572"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.275393 0.165741 -0.542998" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link3_R_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.275393 0.165741 -0.542998" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link3_R_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB14000_rev01_Link4_R_v1_1">
+  <inertial>
+    <origin xyz="0.053239045077053626 0.008013758257861936 -0.0381220463896732" rpy="0 0 0"/>
+    <mass value="9.26921058726044"/>
+    <inertia ixx="0.024669" iyy="0.029392" izz="0.041799" ixy="-0.015818" iyz="0.004083" ixz="0.004859"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.361722 0.159937 -0.566041" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link4_R_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.361722 0.159937 -0.566041" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link4_R_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB14000_rev01_Link5_R_v1_1">
+  <inertial>
+    <origin xyz="0.017171119832822934 0.050571865014873506 -0.008697816332257802" rpy="0 0 0"/>
+    <mass value="2.6959496517667163"/>
+    <inertia ixx="0.006237" iyy="0.002281" izz="0.006205" ixy="-0.00125" iyz="0.001275" ixz="0.000181"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.489888 0.079615 -0.488717" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link5_R_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.489888 0.079615 -0.488717" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link5_R_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB14000_rev01_Link6_R_v1_1">
+  <inertial>
+    <origin xyz="0.006161361129946474 -0.03880483959457281 -0.01616135981646699" rpy="0 0 0"/>
+    <mass value="3.922618516662671"/>
+    <inertia ixx="0.004551" iyy="0.004709" izz="0.003908" ixy="-2.4e-05" iyz="-0.000104" ixz="-0.000109"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.522382 -0.010877 -0.440844" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link6_R_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.522382 -0.010877 -0.440844" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link6_R_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB14000_rev01_Link7_R_v1_1">
+  <inertial>
+    <origin xyz="-0.0003231019871375862 -0.0002513424439419265 0.00039272650313054713" rpy="0 0 0"/>
+    <mass value="0.3271520076893722"/>
+    <inertia ixx="8.2e-05" iyy="8.2e-05" izz="8.1e-05" ixy="8e-06" iyz="-8e-06" ixz="-7e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.561519 0.001956 -0.421181" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link7_R_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.561519 0.001956 -0.421181" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB14000_rev01_description/meshes/IRB14000_rev01_Link7_R_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="j1_left" type="continuous">
+  <origin xyz="0.051106 0.071479 0.413506" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="IRB14000_rev01_Link1_L_v1_1"/>
+  <axis xyz="0.813798 0.34202 0.469846"/>
+</joint>
+
+<joint name="j2_left" type="continuous">
+  <origin xyz="0.068128 0.062357 0.056254" rpy="0 0 0"/>
+  <parent link="IRB14000_rev01_Link1_L_v1_1"/>
+  <child link="IRB14000_rev01_Link2_L_v1_1"/>
+  <axis xyz="0.106778 0.706717 -0.699392"/>
+</joint>
+
+<joint name="j3_left" type="continuous">
+  <origin xyz="0.156505 0.032051 0.073438" rpy="0 0 0"/>
+  <parent link="IRB14000_rev01_Link2_L_v1_1"/>
+  <child link="IRB14000_rev01_Link3_L_v1_1"/>
+  <axis xyz="0.813798 0.34202 0.469846"/>
+</joint>
+
+<joint name="j4_left" type="continuous">
+  <origin xyz="0.088332 0.009597 0.007456" rpy="0 0 0"/>
+  <parent link="IRB14000_rev01_Link3_L_v1_1"/>
+  <child link="IRB14000_rev01_Link4_L_v1_1"/>
+  <axis xyz="-0.106778 -0.706717 0.699392"/>
+</joint>
+
+<joint name="j5_left" type="continuous">
+  <origin xyz="0.125817 -0.095869 -0.061937" rpy="0 0 0"/>
+  <parent link="IRB14000_rev01_Link4_L_v1_1"/>
+  <child link="IRB14000_rev01_Link5_L_v1_1"/>
+  <axis xyz="-0.571255 0.619333 0.538605"/>
+</joint>
+
+<joint name="j6_left" type="continuous">
+  <origin xyz="0.040502 -0.037488 -0.100328" rpy="0 0 0"/>
+  <parent link="IRB14000_rev01_Link5_L_v1_1"/>
+  <child link="IRB14000_rev01_Link6_L_v1_1"/>
+  <axis xyz="0.106778 0.706717 -0.699392"/>
+</joint>
+
+<joint name="j7_left" type="continuous">
+  <origin xyz="0.031129 -0.040171 0.032792" rpy="0 0 0"/>
+  <parent link="IRB14000_rev01_Link6_L_v1_1"/>
+  <child link="IRB14000_rev01_Link7_L_v1_1"/>
+  <axis xyz="-0.571255 0.619333 0.538605"/>
+</joint>
+
+<joint name="j1_right" type="continuous">
+  <origin xyz="0.051106 -0.071479 0.413506" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="IRB14000_rev01_Link1_R_v1_1"/>
+  <axis xyz="0.813798 -0.34202 0.469846"/>
+</joint>
+
+<joint name="j2_right" type="continuous">
+  <origin xyz="0.065672 -0.046102 0.07234" rpy="0 0 0"/>
+  <parent link="IRB14000_rev01_Link1_R_v1_1"/>
+  <child link="IRB14000_rev01_Link2_R_v1_1"/>
+  <axis xyz="0.106778 -0.706717 -0.699392"/>
+</joint>
+
+<joint name="j3_right" type="continuous">
+  <origin xyz="0.158615 -0.04816 0.057152" rpy="0 0 0"/>
+  <parent link="IRB14000_rev01_Link2_R_v1_1"/>
+  <child link="IRB14000_rev01_Link3_R_v1_1"/>
+  <axis xyz="-0.813798 0.34202 -0.469846"/>
+</joint>
+
+<joint name="j4_right" type="continuous">
+  <origin xyz="0.086329 0.005804 0.023043" rpy="0 0 0"/>
+  <parent link="IRB14000_rev01_Link3_R_v1_1"/>
+  <child link="IRB14000_rev01_Link4_R_v1_1"/>
+  <axis xyz="0.106778 -0.706717 -0.699392"/>
+</joint>
+
+<joint name="j5_right" type="continuous">
+  <origin xyz="0.128166 0.080322 -0.077324" rpy="0 0 0"/>
+  <parent link="IRB14000_rev01_Link4_R_v1_1"/>
+  <child link="IRB14000_rev01_Link5_R_v1_1"/>
+  <axis xyz="-0.571255 -0.619333 0.538605"/>
+</joint>
+
+<joint name="j6_right" type="continuous">
+  <origin xyz="0.032494 0.090492 -0.047873" rpy="0 0 0"/>
+  <parent link="IRB14000_rev01_Link5_R_v1_1"/>
+  <child link="IRB14000_rev01_Link6_R_v1_1"/>
+  <axis xyz="-0.106778 0.706717 0.699392"/>
+</joint>
+
+<joint name="j7_right" type="continuous">
+  <origin xyz="0.039137 -0.012833 -0.019663" rpy="0 0 0"/>
+  <parent link="IRB14000_rev01_Link6_R_v1_1"/>
+  <child link="IRB14000_rev01_Link7_R_v1_1"/>
+  <axis xyz="-0.571255 -0.619333 0.538605"/>
+</joint>
+
+</robot>

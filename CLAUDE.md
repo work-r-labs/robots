@@ -4,65 +4,106 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This repository contains a collection of ABB industrial robot models in URDF format for use with ROS and Isaac Sim. The main structure includes:
+This is a repository of ABB robot models providing plug-and-play USD and URDF assets for use in IsaacSim and other robotics applications. The repository contains 32+ ABB robot models including cobots, industrial robots, SCARA robots, palletizing robots, paint robots, and positioners.
 
-- `ABB/` - Contains URDF robot descriptions for various ABB robot models
-- `generated/` - Contains converted USD format files for Isaac Sim
-- `scripts/` - Contains utility scripts for viewing and working with robot models
+## Key Directory Structure
 
-## Robot Model Structure
+- `library/` - Reeady to use robot assets (URDF, USD, meshes, limits.xml)
+- `sources/` - Source ROS packages with original robot descriptions
+- `scripts/` - Demo scripts for IsaacSim integration
+- `tools/` - Validation and utility scripts
+- `isaacsim_typings/` - Type stubs for IsaacSim (git submodule)
+- `dev_utils/` - Development utilities for scene generation
 
-Each robot model follows the ROS package structure:
-- `<robot_name>_description/` - ROS package containing the robot description
-  - `urdf/` - URDF files (.urdf, .xacro, .gazebo, .trans)
-  - `meshes/` - STL mesh files for visual and collision geometry
-  - `launch/` - Launch files for controllers, display, and simulation
-  - `package.xml` - ROS package manifest
-  - `CMakeLists.txt` - Build configuration
+## Common Development Commands
 
-## Common Commands
-
-### Viewing robots in Isaac Sim
+### Environment Setup
 ```bash
-# Run the visualization script
-python scripts/view.py
+# Clone with submodules (required for IsaacSim typings)
+git clone --recurse-submodules https://github.com/work-r-labs/robots.git
+
+# Create Python environment
+uv venv
+uv pip install -r requirements.txt
 ```
 
-## Key Files
-
-- `scripts/view.py` - Isaac Sim visualization script that loads multiple robot models
-- `README.md` - Contains link to ABB robot models spreadsheet
-- `README.md` - Contains table of supported robots and links to their URDF and USD files inside the repo
-
-## Working with Robot Models
-
-When working with robot models in this repository:
-
-1. **URDF Files**: The main robot descriptions are in URDF/XACRO format located in each robot's `urdf/` directory
-2. **Mesh Files**: All visual and collision meshes are STL files in the `meshes/` directory
-3. **Generated USD**: Isaac Sim compatible USD files are generated in the `generated/` directory
-4. **Material Definitions**: Each robot has a `materials.xacro` file defining visual materials
-
-## Converting Process
-
-The conversion process uses Claude Code to process URDF files with the `/prepare-for-isaacsim $INPUT_FILE` prompt which prepares
-the input XACRO/URDF file for importing into IsaacSim. This makes sure expansions/naming/filepaths are all correct.
-The processed URDF file is then manually imported into IsaacSim where a USD file is created.
-
-### Process a robot's input URDF/XACRO file
+### URDF Validation
 ```bash
-bash process.sh INPUT_FILE
+# Validate a single URDF
+uv run tools/validate_urdf.py path/to/robot.urdf
+
+# Validate with verbose output
+uv run tools/validate_urdf.py -v path/to/robot.urdf
+
+# Validate all URDFs in repository
+bash tools/validate_all_urdfs.sh
 ```
 
-## Isaac Sim Integration
-
-The `scripts/view.py` script demonstrates how to:
-- Load multiple robot models in Isaac Sim
-- Position them in a scene
-- Set up basic simulation environment
-
-## URDF Validation
-
+### Code Formatting
 ```bash
-uv run tools/validate_urdf.py URDF_PATH
+# Format Python code
+ruff format
 ```
+
+### Running IsaacSim Demos
+```bash
+# Basic hello world demo
+~/isaacsim/python.sh scripts/hello_world.py library/ABB/CRB15000_10kg_152_v1/CRB15000_10kg_152.urdf
+
+# Interactive inverse kinematics demo (requires PyRoKi)
+~/isaacsim/python.sh -m pip install git+https://github.com/chungmin99/pyroki
+~/isaacsim/python.sh scripts/ikdemo.py library/ABB/CRB15000_10kg_152_v1/CRB15000_10kg_152.urdf
+```
+
+## Architecture
+
+### Robot Asset Structure
+Each robot model follows this structure:
+```
+library/ABB/RobotName_v1/
+├── RobotName.urdf           # URDF file
+├── RobotName/               # USD directory
+│   └── RobotName.usd        # USD file
+├── meshes/                  # STL mesh files
+│   ├── base_link.stl
+│   └── link_*.stl
+└── limits.xml               # Joint limits (if available)
+```
+
+### IsaacSim Integration
+- Robot models are designed for IsaacSim with proper USD conversion
+- Scripts use `SingleArticulation` for robot control
+- Inverse kinematics integration through PyRoKi library
+- Spatial transformation utilities in `spatial_utils.py`
+
+### Source to Generated Workflow
+- `sources/` contains original ROS packages from ABB
+- `library/` contains processed assets ready for use
+- Use git status to see deleted files from `sources/` that were processed
+
+## Development Notes
+
+### Working with Robot Models
+- Always test new robot models with the validation script
+- URDF files should be paired with corresponding USD files
+- Mesh files must be in `meshes/` subdirectory relative to URDF
+- Joint limits should be properly defined for articulated robots
+
+### IsaacSim Scripts
+- Use `~/isaacsim/python.sh` to run scripts with IsaacSim Python
+- Import IsaacSim modules after creating SimulationApp
+- Use `SingleArticulation` for robot control
+- Always call `world.reset()` and `articulation.initialize()` before simulation
+
+### Type Checking
+- IsaacSim type stubs are available in `isaacsim_typings/` submodule
+- Use `typings` symlink for IDE support
+- Python environment requires `yourdfpy` and `ruff` packages
+
+## Important Files
+
+- `tools/validate_all_urdfs.sh` - Validates all URDF files in repository
+- `tools/validate_urdf.py` - URDF validation tool with detailed checks
+- `scripts/_ik_demo_utils.py` - IK solving utilities using PyRoKi
+- `ruff.toml` - Code formatting configuration
+- `.claude/commands/update-info-table.md` - Command to update README robot table
