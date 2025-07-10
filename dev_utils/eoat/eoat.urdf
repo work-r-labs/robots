@@ -1,0 +1,218 @@
+<?xml version="1.0" ?>
+<robot name="eoat_long_fingers">
+
+  <link name="gripper_base_link">
+    <inertial>
+      <origin xyz="-0.012996211999304508 -0.0024019764547994742 0.04076982152867182" rpy="0 0 0"/>
+      <mass value="1.0605000550809303"/>
+      <inertia ixx="0.004249" iyy="0.003671" izz="0.006383" ixy="-9.1e-05" iyz="6.4e-05" ixz="5.7e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="eoat_meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="eoat_meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    </link>
+
+  <link name="dh_robotics_body_1">
+    <inertial>
+      <origin xyz="-0.02681051277084723 -0.04467270928249986 0.03854641882498553" rpy="0 0 0"/>
+      <mass value="3.18213722421451"/>
+      <inertia ixx="0.003866" iyy="0.002335" izz="0.003358" ixy="-0.0" iyz="1.4e-05" ixz="-1e-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.027086 -0.04375 -0.0024" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="eoat_meshes/dh_robotics_body_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.027086 -0.04375 -0.0024" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="eoat_meshes/dh_robotics_body_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    </link>
+
+  <link name="eoat_small_mount_1">
+    <inertial>
+      <origin xyz="0.01578890613988798 0.032881734772587795 -0.012002171986736913" rpy="0 0 0"/>
+      <mass value="0.5078346893462174"/>
+      <inertia ixx="0.00063" iyy="0.000902" izz="0.001469" ixy="4e-05" iyz="8e-06" ixz="-1.3e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.030514 0.0275 -0.0643" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="eoat_meshes/eoat_small_mount_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="0.030514 0.0275 -0.0643" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="eoat_meshes/eoat_small_mount_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    </link>
+
+  <link name="framos_d435e_1">
+    <inertial>
+      <origin xyz="-0.018694079306878303 0.02193359710023336 0.018961754588262228" rpy="0 0 0"/>
+      <mass value="1.3969119500858993"/>
+      <inertia ixx="0.00134" iyy="0.000416" izz="0.001426" ixy="4e-06" iyz="-1e-06" ixz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.040064 0.0067 -0.0493" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="eoat_meshes/framos_d435e_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="0.040064 0.0067 -0.0493" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="eoat_meshes/framos_d435e_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    </link>
+
+  <link name="dh_robotics_finger_2_1">
+    <inertial>
+      <origin xyz="-0.016972233255735367 -0.06037809562342396 0.004552489278633928" rpy="0 0 0"/>
+      <mass value="0.4627919710419897"/>
+      <inertia ixx="0.000413" iyy="0.000291" izz="0.000225" ixy="-5.7e-05" iyz="0.000111" ixz="7.1e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.026522 -0.057026 -0.101575" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="eoat_meshes/dh_robotics_finger_2_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.026522 -0.057026 -0.101575" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="eoat_meshes/dh_robotics_finger_2_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    </link>
+
+  <link name="dh_robotics_finger_1_1">
+    <inertial>
+      <origin xyz="0.009600781936190792 -0.017373904376575773 0.0035524892786333723" rpy="0 0 0"/>
+      <mass value="0.46279197104200676"/>
+      <inertia ixx="0.000413" iyy="0.000291" izz="0.000225" ixy="-5.7e-05" iyz="-0.000111" ixz="-7.1e-05"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.018478 -0.020726 -0.101575" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="eoat_meshes/dh_robotics_finger_1_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="0.018478 -0.020726 -0.101575" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="eoat_meshes/dh_robotics_finger_1_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    </link>
+
+  <link name="long_finger_2_1">
+    <inertial>
+      <origin xyz="2.7434026480963264e-07 -0.0014362914745991232 -0.0014740147176616203" rpy="0 0 0"/>
+      <mass value="0.23293638337878628"/>
+      <inertia ixx="0.000293" iyy="0.000292" izz="3.2e-05" ixy="-0.0" iyz="-2.5e-05" ixz="-0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.000336 0.01275 -0.1594" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="eoat_meshes/long_finger_2_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.000336 0.01275 -0.1594" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="eoat_meshes/long_finger_2_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    </link>
+
+  <link name="long_finger_1_1">
+    <inertial>
+      <origin xyz="2.7434019061323275e-07 0.0014362914745988473 -0.001474014717661648" rpy="0 0 0"/>
+      <mass value="0.23293638337878628"/>
+      <inertia ixx="0.000293" iyy="0.000292" izz="3.2e-05" ixy="-0.0" iyz="2.5e-05" ixz="0.0"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.000336 -0.01275 -0.1584" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="eoat_meshes/long_finger_1_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.000336 -0.01275 -0.1584" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="eoat_meshes/long_finger_1_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    </link>
+
+  <joint name="Rigid 2" type="fixed">
+    <origin xyz="0.027086 0.04375 0.0024" rpy="0 0 0"/>
+    <parent link="gripper_base_link"/>
+    <child link="dh_robotics_body_1"/>
+    </joint>
+
+  <joint name="Rigid 7" type="fixed">
+    <origin xyz="-0.0576 -0.07125 0.0619" rpy="0 0 0"/>
+    <parent link="dh_robotics_body_1"/>
+    <child link="eoat_small_mount_1"/>
+    </joint>
+
+  <joint name="Rigid 8" type="fixed">
+    <origin xyz="-0.00955 0.0208 -0.015" rpy="0 0 0"/>
+    <parent link="eoat_small_mount_1"/>
+    <child link="framos_d435e_1"/>
+    </joint>
+
+  <joint name="Slider 10" type="prismatic">
+    <origin xyz="-0.000564 0.013276 0.099175" rpy="0 0 0"/>
+    <parent link="dh_robotics_body_1"/>
+    <child link="dh_robotics_finger_2_1"/>
+    <axis xyz="0.0 1.0 -0.0"/>
+    <limit upper="0.0" lower="-0.04" effort="100" velocity="100"/>
+    </joint>
+
+  <joint name="Slider 11" type="prismatic">
+    <origin xyz="-0.045564 -0.023024 0.099175" rpy="0 0 0"/>
+    <parent link="dh_robotics_body_1"/>
+    <child link="dh_robotics_finger_1_1"/>
+    <axis xyz="0.0 1.0 -0.0"/>
+    <limit upper="0.04" lower="0.0" effort="100" velocity="100"/>
+    </joint>
+
+  <joint name="Rigid 15" type="fixed">
+    <origin xyz="-0.026186 -0.069776 0.057825" rpy="0 0 0"/>
+    <parent link="dh_robotics_finger_2_1"/>
+    <child link="long_finger_2_1"/>
+    </joint>
+
+  <joint name="Rigid 16" type="fixed">
+    <origin xyz="0.018814 -0.007976 0.056825" rpy="0 0 0"/>
+    <parent link="dh_robotics_finger_1_1"/>
+    <child link="long_finger_1_1"/>
+    </joint>
+
+</robot>
