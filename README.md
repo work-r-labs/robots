@@ -19,6 +19,11 @@ git clone --recurse-submodules https://github.com/work-r-labs/robots.git
 ~/isaacsim/python.sh scripts/hello_world.py library/ABB/IRB1100_4kg_580_STD_v1/IRB1100_4kg_580_STD/IRB1100_4kg_580_STD.usd 
 ```
 
+Video Tutorial: https://youtu.be/07S_P-3OKPc
+
+[![Usage Video Thumbnail](https://img.youtube.com/vi/07S_P-3OKPc/0.jpg)](https://youtu.be/07S_P-3OKPc)
+
+
 ## Available Robot Models
 
 | Brand | Name | Type | URDF | USD |
