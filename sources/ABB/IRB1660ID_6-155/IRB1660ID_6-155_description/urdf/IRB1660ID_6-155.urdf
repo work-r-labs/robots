@@ -1,0 +1,193 @@
+<?xml version="1.0" ?>
+<robot name="IRB1660ID_6-155">
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.1003738362293975 0.0003904996391944617 0.06162281571001135" rpy="0 0 0"/>
+    <mass value="226.66046001458722"/>
+    <inertia ixx="3.834286" iyy="6.602098" izz="9.835858" ixy="0.010367" iyz="-0.007082" ixz="0.316535"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB1660ID_6-155_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB1660ID_6-155_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB1660ID_6-155_IRC5_rev0_LINK1_1">
+  <inertial>
+    <origin xyz="0.0520000507018685 -0.012049415312310909 0.2193439539811779" rpy="0 0 0"/>
+    <mass value="317.69684202291194"/>
+    <inertia ixx="6.737689" iyy="11.071043" izz="7.812967" ixy="0.545417" iyz="0.759305" ixz="-2.197749"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 -0.0 -0.1245" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB1660ID_6-155_description/meshes/IRB1660ID_6-155_IRC5_rev0_LINK1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 -0.0 -0.1245" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB1660ID_6-155_description/meshes/IRB1660ID_6-155_IRC5_rev0_LINK1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB1660ID_6-155_IRC5_rev0_LINK2_1">
+  <inertial>
+    <origin xyz="1.7889398772646947e-05 -0.043199379730273546 0.3049481444767939" rpy="0 0 0"/>
+    <mass value="82.17295843094206"/>
+    <inertia ixx="5.141635" iyy="5.197401" izz="0.205841" ixy="8.6e-05" iyz="-0.271806" ixz="-0.001416"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.15 0.1395 -0.4865" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB1660ID_6-155_description/meshes/IRB1660ID_6-155_IRC5_rev0_LINK2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.15 0.1395 -0.4865" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB1660ID_6-155_description/meshes/IRB1660ID_6-155_IRC5_rev0_LINK2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB1660ID_6-155_IRC5_rev0_LINK3_1">
+  <inertial>
+    <origin xyz="-0.00975322497432718 0.1326697323100055 -0.014796926202451877" rpy="0 0 0"/>
+    <mass value="88.1501965248953"/>
+    <inertia ixx="0.927005" iyy="0.954605" izz="0.767549" ixy="0.025051" iyz="0.069611" ixz="-0.232066"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.15 0.115 -1.1865" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB1660ID_6-155_description/meshes/IRB1660ID_6-155_IRC5_rev0_LINK3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.15 0.115 -1.1865" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB1660ID_6-155_description/meshes/IRB1660ID_6-155_IRC5_rev0_LINK3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB1660ID_6-155_IRC5_rev0_LINK4_1">
+  <inertial>
+    <origin xyz="0.24707815482400108 0.08462048543487383 -0.0011177552455250428" rpy="0 0 0"/>
+    <mass value="66.8940707299574"/>
+    <inertia ixx="0.266282" iyy="2.056301" izz="2.154479" ixy="-0.281281" iyz="0.002242" ixz="-0.007326"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.281 -0.0 -1.2965" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB1660ID_6-155_description/meshes/IRB1660ID_6-155_IRC5_rev0_LINK4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.281 -0.0 -1.2965" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB1660ID_6-155_description/meshes/IRB1660ID_6-155_IRC5_rev0_LINK4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB1660ID_6-155_IRC5_rev0_LINK5_1">
+  <inertial>
+    <origin xyz="0.05423388364822512 -0.047267442804997686 0.0005318844187989225" rpy="0 0 0"/>
+    <mass value="6.74288235299308"/>
+    <inertia ixx="0.013982" iyy="0.018282" izz="0.020307" ixy="0.005325" iyz="-4.8e-05" ixz="7.9e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.828 -0.07 -1.2965" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB1660ID_6-155_description/meshes/IRB1660ID_6-155_IRC5_rev0_LINK5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.828 -0.07 -1.2965" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB1660ID_6-155_description/meshes/IRB1660ID_6-155_IRC5_rev0_LINK5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB1660ID_6-155_IRC5_rev0_LINK6_1">
+  <inertial>
+    <origin xyz="0.0018152042894696852 -0.00019807212694429702 -0.0003109044193350119" rpy="0 0 0"/>
+    <mass value="0.6642023421401526"/>
+    <inertia ixx="0.001053" iyy="0.000544" izz="0.000547" ixy="0.0" iyz="2e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.9525 -0.0 -1.2965" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB1660ID_6-155_description/meshes/IRB1660ID_6-155_IRC5_rev0_LINK6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.9525 -0.0 -1.2965" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB1660ID_6-155_description/meshes/IRB1660ID_6-155_IRC5_rev0_LINK6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.0 0.0 0.1245" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="IRB1660ID_6-155_IRC5_rev0_LINK1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="0.15 -0.1395 0.362" rpy="0 0 0"/>
+  <parent link="IRB1660ID_6-155_IRC5_rev0_LINK1_1"/>
+  <child link="IRB1660ID_6-155_IRC5_rev0_LINK2_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="j3" type="continuous">
+  <origin xyz="0.0 0.0245 0.7" rpy="0 0 0"/>
+  <parent link="IRB1660ID_6-155_IRC5_rev0_LINK2_1"/>
+  <child link="IRB1660ID_6-155_IRC5_rev0_LINK3_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="j4" type="continuous">
+  <origin xyz="0.131 0.115 0.11" rpy="0 0 0"/>
+  <parent link="IRB1660ID_6-155_IRC5_rev0_LINK3_1"/>
+  <child link="IRB1660ID_6-155_IRC5_rev0_LINK4_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="j5" type="continuous">
+  <origin xyz="0.547 0.07 0.0" rpy="0 0 0"/>
+  <parent link="IRB1660ID_6-155_IRC5_rev0_LINK4_1"/>
+  <child link="IRB1660ID_6-155_IRC5_rev0_LINK5_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="j6" type="continuous">
+  <origin xyz="0.1245 -0.07 0.0" rpy="0 0 0"/>
+  <parent link="IRB1660ID_6-155_IRC5_rev0_LINK5_1"/>
+  <child link="IRB1660ID_6-155_IRC5_rev0_LINK6_1"/>
+  <axis xyz="-1.0 -0.0 -0.0"/>
+</joint>
+
+</robot>
