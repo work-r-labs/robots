@@ -1,0 +1,6 @@
+<limit lower="-2.967" upper="2.967" velocity="2.2689" effort="250"/>
+<limit lower="-1.571" upper="2.618" velocity="2.4435" effort="200"/>
+<limit lower="-1.745" upper="1.396" velocity="2.4435" effort="180"/>
+<limit lower="-2.705" upper="2.705" velocity="5.5851" effort="100"/>
+<limit lower="-2.356" upper="2.356" velocity="6.6323" effort="80"/>
+<limit lower="-3.491" upper="3.491" velocity="8.0285" effort="50"/>
