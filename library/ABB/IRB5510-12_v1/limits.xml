@@ -1,0 +1,6 @@
+<limit lower="-6.283" upper="6.283" effort="0" velocity="1.745" />  <!-- Axis 1 -->
+<limit lower="-6.283" upper="6.283" effort="0" velocity="1.745" />  <!-- Axis 2 -->
+<limit lower="-6.283" upper="6.283" effort="0" velocity="1.745" />  <!-- Axis 3 -->
+<limit lower="-1.309" upper="1.309" effort="0" velocity="8.116" />  <!-- Axis 4 rotation (+/-270°) -->
+<limit lower="-1.309" upper="1.309" effort="0" velocity="6.109" />  <!-- Axis 5 bend (+/-270°) -->
+<limit lower="-8.029" upper="8.029" effort="0" velocity="9.337" />  <!-- Axis 6 turn (+/-460°) -->

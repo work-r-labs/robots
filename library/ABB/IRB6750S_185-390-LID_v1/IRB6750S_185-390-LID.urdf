@@ -21,7 +21,7 @@
   </collision>
 </link>
 
-<link name="IRB6750S_All_OC_00_LINK01_CAD_v1_1">
+<link name="link_1">
   <inertial>
     <origin xyz="0.30056558171836834 0.021248402558967868 0.1547641012631446" rpy="0 0 0"/>
     <mass value="855.1080095158879"/>
@@ -30,18 +30,18 @@
   <visual>
     <origin xyz="-0.0 -0.0 -0.342" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB6750S_All_OC_00_LINK01_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="-0.0 -0.0 -0.342" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB6750S_All_OC_00_LINK01_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="IRB6750S_All_OC_00_LINK02_CAD_v1_1">
+<link name="link_2">
   <inertial>
     <origin xyz="0.04918203899572493 -0.12406941666076196 0.5996272377119412" rpy="0 0 0"/>
     <mass value="745.7860274622177"/>
@@ -50,18 +50,18 @@
   <visual>
     <origin xyz="-0.69 0.1535 -0.53" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB6750S_All_OC_00_LINK02_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="-0.69 0.1535 -0.53" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB6750S_All_OC_00_LINK02_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="IRB6750S_All_OC_00_LINK03_CAD_v1_1">
+<link name="link_3">
   <inertial>
     <origin xyz="-0.06362244557400576 0.2677319074005557 0.12348214168445226" rpy="0 0 0"/>
     <mass value="497.1042094540328"/>
@@ -70,18 +70,18 @@
   <visual>
     <origin xyz="-0.69 0.265 -1.81" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB6750S_All_OC_00_LINK03_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="-0.69 0.265 -1.81" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB6750S_All_OC_00_LINK03_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="IRB6750S_All_390_OC_00_LINK04_CAD_v1_1">
+<link name="link_4">
   <inertial>
     <origin xyz="0.85814389619885 -0.00902975190144566 -8.577655973951437e-06" rpy="0 0 0"/>
     <mass value="593.0820849974"/>
@@ -90,18 +90,18 @@
   <visual>
     <origin xyz="-0.977 -0.0 -2.01" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB6750S_All_390_OC_00_LINK04_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="-0.977 -0.0 -2.01" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB6750S_All_390_OC_00_LINK04_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="IRB6750S_All_390_OC_00_LINK05_CAD_v1_1">
+<link name="link_5">
   <inertial>
     <origin xyz="0.029405294014649197 -0.09016204252523362 -0.00228749066184486" rpy="0 0 0"/>
     <mass value="45.71412672440309"/>
@@ -110,18 +110,18 @@
   <visual>
     <origin xyz="-2.6125 -0.095 -2.01" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB6750S_All_390_OC_00_LINK05_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_5.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="-2.6125 -0.095 -2.01" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB6750S_All_390_OC_00_LINK05_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_5.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="IRB6750S_LID_185kg_390_OC_00_LINK06_CABLE_v1_1">
+<link name="link_6">
   <inertial>
     <origin xyz="0.09180442966014457 -0.0173386239495099 -0.002426976727571084" rpy="0 0 0"/>
     <mass value="29.063646140411308"/>
@@ -130,18 +130,18 @@
   <visual>
     <origin xyz="-2.7775 -0.0 -2.01" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB6750S_LID_185kg_390_OC_00_LINK06_CABLE_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_6.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="-2.7775 -0.0 -2.01" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB6750S_LID_185kg_390_OC_00_LINK06_CABLE_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_6.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="IRB6750S_All_OC_00_CYL_CAD_v1_1">
+<link name="counter_cylinder">
   <inertial>
     <origin xyz="-0.020954995916233676 -0.19600000010635882 0.0068812405974623125" rpy="0 0 0"/>
     <mass value="891.4689007968218"/>
@@ -150,65 +150,83 @@
   <visual>
     <origin xyz="0.242035 0.0355 -0.832837" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB6750S_All_OC_00_CYL_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/counter_cylinder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="0.242035 0.0355 -0.832837" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/IRB6750S_All_OC_00_CYL_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/counter_cylinder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<joint name="j1" type="continuous">
+<link name="flange">
+</link>
+
+<link name="tool0">
+</link>
+
+<joint name="joint_1" type="continuous">
   <origin xyz="0.0 0.0 0.342" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="IRB6750S_All_OC_00_LINK01_CAD_v1_1"/>
+  <child link="link_1"/>
   <axis xyz="0.0 0.0 1.0"/>
 </joint>
 
-<joint name="j2" type="continuous">
+<joint name="joint_2" type="continuous">
   <origin xyz="0.69 -0.1535 0.188" rpy="0 0 0"/>
-  <parent link="IRB6750S_All_OC_00_LINK01_CAD_v1_1"/>
-  <child link="IRB6750S_All_OC_00_LINK02_CAD_v1_1"/>
+  <parent link="link_1"/>
+  <child link="link_2"/>
   <axis xyz="0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="j3" type="continuous">
+<joint name="joint_3" type="continuous">
   <origin xyz="0.0 -0.1115 1.28" rpy="0 0 0"/>
-  <parent link="IRB6750S_All_OC_00_LINK02_CAD_v1_1"/>
-  <child link="IRB6750S_All_OC_00_LINK03_CAD_v1_1"/>
+  <parent link="link_2"/>
+  <child link="link_3"/>
   <axis xyz="0.0 1.0 0.0"/>
 </joint>
 
-<joint name="j4" type="continuous">
+<joint name="joint_4" type="continuous">
   <origin xyz="0.287 0.265 0.2" rpy="0 0 0"/>
-  <parent link="IRB6750S_All_OC_00_LINK03_CAD_v1_1"/>
-  <child link="IRB6750S_All_390_OC_00_LINK04_CAD_v1_1"/>
+  <parent link="link_3"/>
+  <child link="link_4"/>
   <axis xyz="1.0 0.0 0.0"/>
 </joint>
 
-<joint name="j5" type="continuous">
+<joint name="joint_5" type="continuous">
   <origin xyz="1.6355 0.095 0.0" rpy="0 0 0"/>
-  <parent link="IRB6750S_All_390_OC_00_LINK04_CAD_v1_1"/>
-  <child link="IRB6750S_All_390_OC_00_LINK05_CAD_v1_1"/>
+  <parent link="link_4"/>
+  <child link="link_5"/>
   <axis xyz="-0.0 -1.0 -0.0"/>
 </joint>
 
-<joint name="j6" type="continuous">
+<joint name="joint_6" type="continuous">
   <origin xyz="0.165 -0.095 0.0" rpy="0 0 0"/>
-  <parent link="IRB6750S_All_390_OC_00_LINK05_CAD_v1_1"/>
-  <child link="IRB6750S_LID_185kg_390_OC_00_LINK06_CABLE_v1_1"/>
+  <parent link="link_5"/>
+  <child link="link_6"/>
   <axis xyz="1.0 0.0 0.0"/>
 </joint>
 
 <joint name="counter_cylinder" type="revolute">
   <origin xyz="-0.242035 -0.0355 0.490837" rpy="0 0 0"/>
-  <parent link="IRB6750S_All_OC_00_LINK01_CAD_v1_1"/>
-  <child link="IRB6750S_All_OC_00_CYL_CAD_v1_1"/>
+  <parent link="link_1"/>
+  <child link="counter_cylinder"/>
   <axis xyz="0.0 -1.0 0.0"/>
   <limit upper="0.0" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="link_6_to_flange" type="fixed">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="link_6"/>
+  <child link="flange"/>
+</joint>
+
+<joint name="flange_to_tool0" type="fixed">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="flange"/>
+  <child link="tool0"/>
 </joint>
 
 </robot>

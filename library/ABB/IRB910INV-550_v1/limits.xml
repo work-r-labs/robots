@@ -1,0 +1,4 @@
+<limit lower="-3.927" upper="3.927" effort="75" velocity="7.33"/>
+<limit lower="-3.927" upper="3.927" effort="65" velocity="13.61"/>
+<limit lower="-0.190" upper="0.0" effort="200" velocity="1.1"/>
+<limit lower="-12.566" upper="12.566" effort="20" velocity="52.36"/>

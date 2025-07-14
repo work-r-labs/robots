@@ -141,7 +141,7 @@
   </collision>
 </link>
 
-<link name="link6">
+<link name="flange">
   <inertial>
     <origin xyz="-0.005525322762831575 -7.898034053255287e-07 -1.423777321374331e-06" rpy="0 0 0"/>
     <mass value="0.3574993425525093"/>
@@ -150,65 +150,80 @@
   <visual>
     <origin xyz="-1.5001 0.0 -2.02" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/link6.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/flange.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="-1.5001 0.0 -2.02" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/link6.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/flange.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<joint name="joint1" type="continuous">
+<joint name="joint_1" type="revolute">
   <origin xyz="0.0 0.0 0.484" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="link1"/>
   <axis xyz="0.0 0.0 -1.0"/>
+  <limit lower="-6.283" upper="6.283" effort="0" velocity="1.745"/>
 </joint>
 
-<joint name="joint2" type="continuous">
+<joint name="joint_2" type="revolute">
   <origin xyz="-0.0 -0.231 0.436" rpy="0 0 0"/>
   <parent link="link1"/>
   <child link="link2"/>
   <axis xyz="0.0 1.0 0.0"/>
+  <limit lower="-6.283" upper="6.283" effort="0" velocity="1.745"/>
 </joint>
 
-<joint name="joint3" type="continuous">
+<joint name="joint_3" type="revolute">
   <origin xyz="0.0 0.014 1.1" rpy="0 0 0"/>
   <parent link="link2"/>
   <child link="link3"/>
   <axis xyz="0.0 1.0 0.0"/>
+  <limit lower="-6.283" upper="6.283" effort="0" velocity="1.745"/>
 </joint>
 
-<joint name="joint4" type="continuous">
+<joint name="joint_4" type="revolute">
   <origin xyz="1.219 0.217 0.0" rpy="0 0 0"/>
   <parent link="link3"/>
   <child link="link4"/>
   <axis xyz="1.0 0.0 0.0"/>
+  <limit lower="-1.309" upper="1.309" effort="0" velocity="8.116"/>
 </joint>
 
-<joint name="joint5" type="continuous">
+<joint name="joint_5" type="revolute">
   <origin xyz="0.074415 -0.003441 0.0" rpy="0 0 0"/>
   <parent link="link4"/>
   <child link="link5"/>
   <axis xyz="0.819152 -0.573576 0.0"/>
+  <limit lower="-1.309" upper="1.309" effort="0" velocity="6.109"/>
 </joint>
 
-<joint name="joint6" type="continuous">
+<joint name="joint_6" type="revolute">
   <origin xyz="0.119872 0.0 0.0" rpy="0 0 0"/>
   <parent link="link5"/>
   <child link="link5b"/>
   <axis xyz="0.819152 0.573576 0.0"/>
+  <limit lower="-8.029" upper="8.029" effort="0" velocity="9.337"/>
 </joint>
 
-<joint name="joint6b" type="revolute">
+<joint name="joint_6b" type="revolute">
   <origin xyz="0.086813 0.003441 0.0" rpy="0 0 0"/>
   <parent link="link5b"/>
-  <child link="link6"/>
+  <child link="flange"/>
   <axis xyz="-1.0 0.0 -0.0"/>
   <limit upper="0.0" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<link name="tool0">
+</link>
+
+<joint name="flange-tool0" type="fixed">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="flange"/>
+  <child link="tool0"/>
 </joint>
 
 </robot>

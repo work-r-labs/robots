@@ -5,9 +5,9 @@ This document tracks which ABB robot models follow proper conventions and have c
 ## Summary Statistics
 
 - **Total Robots**: 30
-- **Fully Compliant**: 14 (47%)
+- **Fully Compliant**: 21 (70%)
 - **URDF Validation**: 30/30 passed ✅
-- **Missing Limits**: 16 robots need `limits.xml` files
+- **Missing Limits**: 9 robots need `limits.xml` files
 
 ## Compliance Criteria
 
@@ -25,7 +25,7 @@ For a robot to be considered "fully compliant", it must have:
 | CRB15000_10kg_152_v1 | ✅ | ✅ | ✅ (7) | ✅ | ✅ | **COMPLIANT** | ✅ |
 | CRB15000_12kg_127_v1 | ✅ | ✅ | ✅ (7) | ✅ | ✅ | **COMPLIANT** | ✅ |
 | CRB15000_5kg_950_v1 | ✅ | ✅ | ✅ (7) | ✅ | ✅ | **COMPLIANT** | ✅ |
-| IRB1010_1_5kg_370_v1 | ✅ | ✅ | ✅ (7) | ❌ | ✅ | Missing limits | 🔴 |
+| IRB1010_1_5kg_370_v1 | ✅ | ✅ | ✅ (7) | ✅ | ✅ | **COMPLIANT** | ✅ |
 | IRB1100_4kg_475_STD_v1 | ✅ | ✅ | ✅ (7) | ✅ | ✅ | **COMPLIANT** | ✅ |
 | IRB1100_4kg_580_STD_v1 | ✅ | ✅ | ✅ (7) | ✅ | ✅ | **COMPLIANT** | ✅ |
 | IRB1200H_5_90_STD_v1 | ✅ | ✅ | ✅ (7) | ✅ | ✅ | **COMPLIANT** | ✅ |
@@ -33,20 +33,20 @@ For a robot to be considered "fully compliant", it must have:
 | IRB1200_5_90_STD_v1 | ✅ | ✅ | ✅ (7) | ✅ | ✅ | **COMPLIANT** | ✅ |
 | IRB14000_Yumi_v1 | ✅ | ✅ | ✅ (15) | ❌ | ✅ | Missing limits | 🔴 |
 | IRB14050_SAYuMi_v1 | ✅ | ✅ | ✅ (8) | ❌ | ✅ | Missing limits | 🔴 |
-| IRB1520ID_4_150_v1 | ✅ | ✅ | ✅ (7) | ❌ | ✅ | Missing limits | 🔴 |
-| IRB1600_X-120_v1 | ✅ | ✅ | ✅ (7) | ❌ | ✅ | Missing limits | 🔴 |
+| IRB1520ID_4_150_v1 | ✅ | ✅ | ✅ (7) | ✅ | ✅ | **COMPLIANT** | ✅ |
+| IRB1600_X-120_v1 | ✅ | ✅ | ✅ (7) | ✅ | ✅ | **COMPLIANT** | ✅ |
 | IRB52_7-1_2-Short_v1 | ✅ | ✅ | ✅ (7) | ✅ | ✅ | **COMPLIANT** | ✅ |
 | IRB52_7-1_45-Long_v1 | ✅ | ✅ | ✅ (7) | ❌ | ✅ | Missing limits | 🔴 |
-| IRB5500-22_v1 | ✅ | ✅ | ✅ (8) | ❌ | ✅ | Missing limits | 🔴 |
+| IRB5500-22_v1 | ✅ | ✅ | ✅ (8) | ✅ | ✅ | **COMPLIANT** | ✅ |
 | IRB5500-27_v1 | ✅ | ✅ | ✅ (9) | ❌ | ✅ | Missing limits | 🔴 |
-| IRB5510-12_v1 | ✅ | ✅ | ✅ (8) | ❌ | ✅ | Missing limits | 🔴 |
-| IRB6750S_185-390-LID_v1 | ✅ | ✅ | ✅ (8) | ❌ | ✅ | Missing limits | 🔴 |
+| IRB5510-12_v1 | ✅ | ✅ | ✅ (8) | ✅ | ✅ | **COMPLIANT** | ✅ |
+| IRB6750S_185-390-LID_v1 | ✅ | ✅ | ✅ (8) | ✅ | ✅ | **COMPLIANT** | ✅ |
 | IRB8700_550-420-SW6_v1 | ✅ | ✅ | ✅ (7) | ✅ | ✅ | **COMPLIANT** | ✅ |
 | IRB8700_800_350_v1 | ✅ | ✅ | ✅ (8) | ✅ | ✅ | **COMPLIANT** | ✅ |
 | IRB910INV-350_v1 | ✅ | ✅ | ✅ (4) | ❌ | ✅ | Missing limits | 🔴 |
 | IRB910INV-550_v1 | ✅ | ✅ | ✅ (5) | ❌ | ✅ | Missing limits | 🔴 |
 | IRB920T_6kg_450_180_STD_v1 | ✅ | ✅ | ✅ (4) | ✅ | ✅ | **COMPLIANT** | ✅ |
-| IRB920_6kg-550-180-STD_v1 | ⚠️ | ❌ | ✅ (4) | ✅ | ❌ | **MAJOR ISSUES** | 🔴 |
+| IRB920_6kg-550-180-STD_v1 | ⚠️ | ✅ | ✅ (4) | ✅ | ✅ | **NAMING ISSUE** | 🟡 |
 | IRB920_6kg_650_180_STD_v1 | ✅ | ✅ | ✅ (4) | ✅ | ✅ | **COMPLIANT** | ✅ |
 | IRB930_12kg_1050_300_STD_v1 | ✅ | ✅ | ✅ (4) | ✅ | ✅ | **COMPLIANT** | ✅ |
 | Irbpa_250_D1000_IRC5_rev02_CAD_v1 | ✅ | ✅ | ✅ (3) | ❌ | ✅ | Missing limits | 🔴 |
@@ -62,27 +62,20 @@ For a robot to be considered "fully compliant", it must have:
 
 ## Priority Tasks
 
-### 🔴 High Priority (Critical Issues)
+### 🟡 Medium Priority (Naming Issues)
 
-1. **IRB920_6kg-550-180-STD_v1** - Major issues:
+1. **IRB920_6kg-550-180-STD_v1** - Naming inconsistency:
    - URDF file has wrong name: `IRB920_6kg_550_180_STD.urdf` (should match directory name)
-   - Missing USD directory structure
-   - Missing configuration files
    - Directory name inconsistency (dash vs underscore)
+   - All other assets are present and correct
 
-### 🟡 Medium Priority (Missing Limits)
+### 🟡 Low Priority (Missing Limits)
 
-Create `limits.xml` files for the following 15 robots:
-- IRB1010_1_5kg_370_v1
+Create `limits.xml` files for the following 9 robots:
 - IRB14000_Yumi_v1
 - IRB14050_SAYuMi_v1
-- IRB1520ID_4_150_v1
-- IRB1600_X-120_v1
 - IRB52_7-1_45-Long_v1
-- IRB5500-22_v1
 - IRB5500-27_v1
-- IRB5510-12_v1
-- IRB6750S_185-390-LID_v1
 - IRB910INV-350_v1
 - IRB910INV-550_v1
 - Irbpa_250_D1000_IRC5_rev02_CAD_v1
@@ -91,8 +84,8 @@ Create `limits.xml` files for the following 15 robots:
 
 ## Next Steps
 
-1. **Fix critical naming issue** in IRB920_6kg-550-180-STD_v1
-2. **Generate missing limits.xml files** by extracting joint limits from URDF files
+1. **Fix naming inconsistency** in IRB920_6kg-550-180-STD_v1 (rename URDF file or directory)
+2. **Generate missing limits.xml files** for remaining 9 robots
 3. **Validate all changes** using the validation scripts
 4. **Update this document** as fixes are implemented
 
@@ -110,5 +103,5 @@ python check_robot_compliance.py
 ```
 
 ---
-*Last updated: 2025-07-11*
+*Last updated: 2025-07-13*
 *Generated by Claude Code*
