@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<robot name="Irbpc-500_IRC5_rev02_CAD" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find Irbpc-500_IRC5_rev02_CAD_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find Irbpc-500_IRC5_rev02_CAD_description)/urdf/Irbpc-500_IRC5_rev02_CAD.trans" />
+<xacro:include filename="$(find Irbpc-500_IRC5_rev02_CAD_description)/urdf/Irbpc-500_IRC5_rev02_CAD.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.8110503260514997 -0.0004266987797697023 0.19724245166328738" rpy="0 0 0"/>
+    <mass value="614.1963825537839"/>
+    <inertia ixx="13.487507" iyy="26.109456" izz="25.519483" ixy="-0.0812" iyz="-0.009251" ixz="-0.682489"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpc-500_IRC5_rev02_CAD_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpc-500_IRC5_rev02_CAD_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Irbpc-500_IRC5_rev02_Arm500C_CAD_1">
+  <inertial>
+    <origin xyz="-1.49132954874176e-08 0.004791821847841117 0.2910400510482473" rpy="0 0 0"/>
+    <mass value="1265.786054417684"/>
+    <inertia ixx="186.907427" iyy="307.58885" izz="326.952744" ixy="0.000779" iyz="1.273282" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.8725 -0.0 -0.414" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpc-500_IRC5_rev02_CAD_description/meshes/Irbpc-500_IRC5_rev02_Arm500C_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.8725 -0.0 -0.414" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpc-500_IRC5_rev02_CAD_description/meshes/Irbpc-500_IRC5_rev02_Arm500C_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.8725 0.0 0.414" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Irbpc-500_IRC5_rev02_Arm500C_CAD_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+</robot>
