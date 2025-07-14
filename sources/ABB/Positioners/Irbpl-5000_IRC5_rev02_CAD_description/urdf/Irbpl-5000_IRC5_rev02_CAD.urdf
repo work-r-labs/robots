@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<robot name="Irbpl-5000_IRC5_rev02_CAD">
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0005829778485577822 -1.2036208599013447 0.6626388627610642" rpy="0 0 0"/>
+    <mass value="5166.929784478039"/>
+    <inertia ixx="13841.161857" iyy="1110.892651" izz="12966.097307" ixy="-4.062372" iyz="-421.700705" ixz="-0.857961"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpl-5000_IRC5_rev02_CAD_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpl-5000_IRC5_rev02_CAD_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component3_1">
+  <inertial>
+    <origin xyz="4.517241260918661e-14 -0.06442413982761847 0.0016023645647960105" rpy="0 0 0"/>
+    <mass value="122.79910584772315"/>
+    <inertia ixx="4.004183" iyy="7.771467" izz="3.958058" ixy="0.0" iyz="-0.007626" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.3298 -1.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpl-5000_IRC5_rev02_CAD_description/meshes/Component3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.3298 -1.2" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpl-5000_IRC5_rev02_CAD_description/meshes/Component3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="continuous">
+  <origin xyz="0.0 -0.3298 1.2" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Component3_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+</robot>
