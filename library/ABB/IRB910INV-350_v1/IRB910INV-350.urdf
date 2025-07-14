@@ -21,7 +21,7 @@
   </collision>
 </link>
 
-<link name="Link1_C350_IP54CR_1">
+<link name="link_1">
   <inertial>
     <origin xyz="0.11275513176109886 1.7513838112814044e-05 -0.0951509538380555" rpy="0 0 0"/>
     <mass value="33.86232074637399"/>
@@ -30,18 +30,18 @@
   <visual>
     <origin xyz="-0.0 -4e-06 0.0225" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/Link1_C350_IP54CR_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="-0.0 -4e-06 0.0225" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/Link1_C350_IP54CR_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="Link2_C350_IP54CR_1">
+<link name="link_2">
   <inertial>
     <origin xyz="-0.07748210763311644 2.4149022072988045e-05 -0.08074925775211947" rpy="0 0 0"/>
     <mass value="36.19533232147432"/>
@@ -50,18 +50,18 @@
   <visual>
     <origin xyz="-0.174731 0.0 0.228" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/Link2_C350_IP54CR_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="-0.174731 0.0 0.228" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/Link2_C350_IP54CR_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="Link4_C350_IP54CR_1">
+<link name="link_3">
   <inertial>
     <origin xyz="2.217347784446274e-06 -6.636237422544021e-06 -0.13387670086396194" rpy="0 0 0"/>
     <mass value="0.7548467951787753"/>
@@ -70,70 +70,102 @@
   <visual>
     <origin xyz="0.0 -7e-06 0.158" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/Link4_C350_IP54CR_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
     <origin xyz="0.0 -7e-06 0.158" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="meshes/Link4_C350_IP54CR_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/link_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<joint name="j1" type="continuous">
+<joint name="joint_1" type="revolute">
   <origin xyz="0.0 4e-06 -0.0225" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="Link1_C350_IP54CR_1"/>
+  <child link="link_1"/>
   <axis xyz="0.0 0.0 -1.0"/>
+  <limit lower="-2.61799" upper="2.61799" effort="0.0" velocity="0.0"/>
 </joint>
 
-<joint name="j2" type="continuous">
+<joint name="joint_2" type="revolute">
   <origin xyz="0.174731 -4e-06 -0.2055" rpy="0 0 0"/>
-  <parent link="Link1_C350_IP54CR_1"/>
-  <child link="Link2_C350_IP54CR_1"/>
+  <parent link="link_1"/>
+  <child link="link_2"/>
   <axis xyz="0.0 0.0 -1.0"/>
+  <limit lower="-2.53073" upper="2.53073" effort="0.0" velocity="0.0"/>
 </joint>
 
-<joint name="j3" type="prismatic">
+<joint name="joint_3" type="prismatic">
   <origin xyz="-0.174731 7e-06 0.07" rpy="0 0 0"/>
-  <parent link="Link2_C350_IP54CR_1"/>
-  <child link="Link4_C350_IP54CR_1"/>
+  <parent link="link_2"/>
+  <child link="link_3"/>
   <axis xyz="0.0 0.0 1.0"/>
-  <limit upper="0.0" lower="0.0" effort="100" velocity="100"/>
+  <limit upper="0.145" lower="0.0" effort="100" velocity="100"/>
 </joint>
 
-<transmission name="j1_tran">
+<transmission name="joint_1_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="j1">
+  <joint name="joint_1">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="j1_actr">
+  <actuator name="joint_1_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="j2_tran">
+<transmission name="joint_2_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="j2">
+  <joint name="joint_2">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="j2_actr">
+  <actuator name="joint_2_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="j3_tran">
+<transmission name="joint_3_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="j3">
+  <joint name="joint_3">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="j3_actr">
+  <actuator name="joint_3_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
+
+<joint name="joint_4" type="revolute">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="link_3"/>
+  <child link="flange"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit lower="-6.98132" upper="6.98132" effort="0.0" velocity="0.0"/>
+</joint>
+
+<link name="flange">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="0.0001" iyy="0.0001" izz="0.0001" ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+<link name="tool0">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.01"/>
+    <inertia ixx="0.00001" iyy="0.00001" izz="0.00001" ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+<joint name="joint_tool0" type="fixed">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="flange"/>
+  <child link="tool0"/>
+</joint>
 
 </robot>

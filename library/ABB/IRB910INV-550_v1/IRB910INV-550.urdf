@@ -81,18 +81,20 @@
   </collision>
 </link>
 
-<joint name="j1" type="continuous">
+<joint name="j1" type="revolute">
   <origin xyz="0.0 4e-06 -0.0225" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Link1_C550_IP54CR_1"/>
   <axis xyz="0.0 0.0 -1.0"/>
+  <limit lower="-2.61799" upper="2.61799" effort="0.0" velocity="0.0"/>
 </joint>
 
-<joint name="j2" type="continuous">
+<joint name="j2" type="revolute">
   <origin xyz="0.275 0.0 -0.2585" rpy="0 0 0"/>
   <parent link="Link1_C550_IP54CR_1"/>
   <child link="Link2_C550_IP54CR_1"/>
   <axis xyz="0.0 0.0 -1.0"/>
+  <limit lower="-2.53073" upper="2.53073" effort="0.0" velocity="0.0"/>
 </joint>
 
 <joint name="Slider_3" type="prismatic">
@@ -101,6 +103,36 @@
   <child link="Link4_C550_IP54CR_1"/>
   <axis xyz="0.0 0.0 1.0"/>
   <limit upper="0.0" lower="-0.1" effort="100" velocity="100"/>
+</joint>
+
+<joint name="joint_4" type="revolute">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="Link4_C550_IP54CR_1"/>
+  <child link="flange"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit lower="-6.98132" upper="6.98132" effort="0.0" velocity="0.0"/>
+</joint>
+
+<link name="flange">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="0.0001" iyy="0.0001" izz="0.0001" ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+<link name="tool0">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.01"/>
+    <inertia ixx="0.00001" iyy="0.00001" izz="0.00001" ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+<joint name="joint_tool0" type="fixed">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="flange"/>
+  <child link="tool0"/>
 </joint>
 
 </robot>
