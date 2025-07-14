@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<robot name="Irbpa-750_D1000-H700_IRC5_rev02_CAD" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find Irbpa-750_D1000-H700_IRC5_rev02_CAD_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find Irbpa-750_D1000-H700_IRC5_rev02_CAD_description)/urdf/Irbpa-750_D1000-H700_IRC5_rev02_CAD.trans" />
+<xacro:include filename="$(find Irbpa-750_D1000-H700_IRC5_rev02_CAD_description)/urdf/Irbpa-750_D1000-H700_IRC5_rev02_CAD.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.8178227923700941 0.046728801444920844 0.8721145690357031" rpy="0 0 0"/>
+    <mass value="0.006752990496073456"/>
+    <inertia ixx="0.000507" iyy="0.000462" izz="0.000256" ixy="-1.9e-05" iyz="0.000124" ixz="6.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpa-750_D1000-H700_IRC5_rev02_CAD_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpa-750_D1000-H700_IRC5_rev02_CAD_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Irbpa-750_D1000-H700_IRC5_rev02_base750A_CAD_1">
+  <inertial>
+    <origin xyz="0.1111376986085143 0.15965330927087412 -0.2811561945472616" rpy="0 0 0"/>
+    <mass value="931.5476234514706"/>
+    <inertia ixx="45.054451" iyy="55.446775" izz="56.062973" ixy="0.106209" iyz="0.034228" ixz="-7.833296"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.776 0.16 -0.498" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpa-750_D1000-H700_IRC5_rev02_CAD_description/meshes/Irbpa-750_D1000-H700_IRC5_rev02_base750A_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.776 0.16 -0.498" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpa-750_D1000-H700_IRC5_rev02_CAD_description/meshes/Irbpa-750_D1000-H700_IRC5_rev02_base750A_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Irbpa-750_D1000-H700_IRC5_rev02_MTD750_CAD_1">
+  <inertial>
+    <origin xyz="-0.5359023182928626 -0.0033357651582613694 -0.3630446970410325" rpy="0 0 0"/>
+    <mass value="511.1252334711674"/>
+    <inertia ixx="22.821939" iyy="53.57062" izz="41.278051" ixy="0.038996" iyz="-0.339125" ixz="-19.039643"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.722 0.0 -0.9" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpa-750_D1000-H700_IRC5_rev02_CAD_description/meshes/Irbpa-750_D1000-H700_IRC5_rev02_MTD750_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.722 0.0 -0.9" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpa-750_D1000-H700_IRC5_rev02_CAD_description/meshes/Irbpa-750_D1000-H700_IRC5_rev02_MTD750_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Irbpa-750_D1000-H700_IRC5_rev02_platter_d450_CAD_1">
+  <inertial>
+    <origin xyz="-0.0011124864300729666 -5.688668147784807e-15 0.04336786560053996" rpy="0 0 0"/>
+    <mass value="21.25030383337227"/>
+    <inertia ixx="0.228504" iyy="0.231342" izz="0.446816" ixy="0.0" iyz="-0.0" ixz="-0.000583"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.0 -0.638" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpa-750_D1000-H700_IRC5_rev02_CAD_description/meshes/Irbpa-750_D1000-H700_IRC5_rev02_platter_d450_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.0 -0.638" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpa-750_D1000-H700_IRC5_rev02_CAD_description/meshes/Irbpa-750_D1000-H700_IRC5_rev02_platter_d450_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid 4" type="fixed">
+  <origin xyz="0.776 -0.16 0.498" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Irbpa-750_D1000-H700_IRC5_rev02_base750A_CAD_1"/>
+</joint>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.722 0.0 0.9" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Irbpa-750_D1000-H700_IRC5_rev02_MTD750_CAD_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="-0.722 0.0 -0.262" rpy="0 0 0"/>
+  <parent link="Irbpa-750_D1000-H700_IRC5_rev02_MTD750_CAD_1"/>
+  <child link="Irbpa-750_D1000-H700_IRC5_rev02_platter_d450_CAD_1"/>
+  <axis xyz="-0.0 0.0 -1.0"/>
+</joint>
+
+</robot>
