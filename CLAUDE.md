@@ -14,6 +14,7 @@ This is a repository of ABB robot models providing plug-and-play USD and URDF as
 - `tools/` - Validation and utility scripts
 - `isaacsim_typings/` - Type stubs for IsaacSim (git submodule)
 - `dev_utils/` - Development utilities for scene generation
+- `docs/` - various docs about the project and robot information from the manufacturer
 
 ## Common Development Commands
 

@@ -6,7 +6,7 @@ When working with xacro and urdf files, do not use external tools. Rely on your 
 
 The final output folder should be placed into a folder called `generated` in the project root directory with the following structure
 
-root -> generated -> my_robot_vX -> my_robot.urdf & meshes/
+root -> library -> brand -> my_robot_vX -> my_robot.urdf & meshes/
 
 Where vX is a version number chosen depending on how many other versions of that same robot are already there. Start at v1.
 
