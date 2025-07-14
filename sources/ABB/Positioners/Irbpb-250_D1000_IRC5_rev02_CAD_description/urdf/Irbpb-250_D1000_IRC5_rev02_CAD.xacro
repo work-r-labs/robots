@@ -1,0 +1,168 @@
+<?xml version="1.0" ?>
+<robot name="Irbpb-250_D1000_IRC5_rev02_CAD" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find Irbpb-250_D1000_IRC5_rev02_CAD_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find Irbpb-250_D1000_IRC5_rev02_CAD_description)/urdf/Irbpb-250_D1000_IRC5_rev02_CAD.trans" />
+<xacro:include filename="$(find Irbpb-250_D1000_IRC5_rev02_CAD_description)/urdf/Irbpb-250_D1000_IRC5_rev02_CAD.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.8315503227851083 0.2575732995087535 0.1972424486060194" rpy="0 0 0"/>
+    <mass value="614.1963724056948"/>
+    <inertia ixx="13.487506" iyy="26.109455" izz="25.519482" ixy="-0.0812" iyz="-0.009251" ixz="-0.682488"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpb-250_D1000_IRC5_rev02_CAD_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpb-250_D1000_IRC5_rev02_CAD_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Irbpb-250_D1000_IRC5_rev02_Turntable250B_CAD_1">
+  <inertial>
+    <origin xyz="-0.00028336445741461436 0.00042225240939958164 0.582389138564045" rpy="0 0 0"/>
+    <mass value="1229.2246324184493"/>
+    <inertia ixx="466.81699" iyy="142.824146" izz="345.588743" ixy="-6.826558" iyz="0.260796" ixz="-0.151659"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.893 -0.258 -0.414" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpb-250_D1000_IRC5_rev02_CAD_description/meshes/Irbpb-250_D1000_IRC5_rev02_Turntable250B_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.893 -0.258 -0.414" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpb-250_D1000_IRC5_rev02_CAD_description/meshes/Irbpb-250_D1000_IRC5_rev02_Turntable250B_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Irbpb-250_D1000_IRC5_rev02_Arm250AB_CAD_2">
+  <inertial>
+    <origin xyz="0.48801217356594817 0.002958455484130651 -0.23703597879900595" rpy="0 0 0"/>
+    <mass value="217.73324755813744"/>
+    <inertia ixx="5.185201" iyy="17.402613" izz="14.43321" ixy="-0.024249" iyz="0.115794" ixz="5.506633"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.1035 -0.516 -1.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpb-250_D1000_IRC5_rev02_CAD_description/meshes/Irbpb-250_D1000_IRC5_rev02_Arm250AB_CAD_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.1035 -0.516 -1.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpb-250_D1000_IRC5_rev02_CAD_description/meshes/Irbpb-250_D1000_IRC5_rev02_Arm250AB_CAD_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Irbpb-250_D1000_IRC5_rev02_platter_d350_CAD_2">
+  <inertial>
+    <origin xyz="0.00040519612738121324 -1.0394556770876306e-08 0.027964589027180575" rpy="0 0 0"/>
+    <mass value="9.835889620455225"/>
+    <inertia ixx="0.066765" iyy="0.067076" izz="0.131981" ixy="-0.0" iyz="-0.0" ixz="9.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.786 -0.516 -0.86163" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpb-250_D1000_IRC5_rev02_CAD_description/meshes/Irbpb-250_D1000_IRC5_rev02_platter_d350_CAD_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.786 -0.516 -0.86163" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpb-250_D1000_IRC5_rev02_CAD_description/meshes/Irbpb-250_D1000_IRC5_rev02_platter_d350_CAD_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Irbpb-250_D1000_IRC5_rev02_Arm250AB_CAD_1">
+  <inertial>
+    <origin xyz="-0.4865121735659528 -0.0029584554840968095 -0.23703597879900562" rpy="0 0 0"/>
+    <mass value="217.73324755813744"/>
+    <inertia ixx="5.185201" iyy="17.402613" izz="14.43321" ixy="-0.024249" iyz="-0.115794" ixz="-5.506633"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.681 -0.0 -1.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpb-250_D1000_IRC5_rev02_CAD_description/meshes/Irbpb-250_D1000_IRC5_rev02_Arm250AB_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.681 -0.0 -1.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpb-250_D1000_IRC5_rev02_CAD_description/meshes/Irbpb-250_D1000_IRC5_rev02_Arm250AB_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Irbpb-250_D1000_IRC5_rev02_platter_d350_CAD_1">
+  <inertial>
+    <origin xyz="-0.0004051961273962387 1.0394624897565086e-08 0.02829458902718074" rpy="0 0 0"/>
+    <mass value="9.835889620455225"/>
+    <inertia ixx="0.066765" iyy="0.067076" izz="0.131981" ixy="-0.0" iyz="0.0" ixz="-9.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.0 -0.8613" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpb-250_D1000_IRC5_rev02_CAD_description/meshes/Irbpb-250_D1000_IRC5_rev02_platter_d350_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.0 -0.8613" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Irbpb-250_D1000_IRC5_rev02_CAD_description/meshes/Irbpb-250_D1000_IRC5_rev02_platter_d350_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.893 0.258 0.414" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Irbpb-250_D1000_IRC5_rev02_Turntable250B_CAD_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="0.2105 0.258 0.606" rpy="0 0 0"/>
+  <parent link="Irbpb-250_D1000_IRC5_rev02_Turntable250B_CAD_1"/>
+  <child link="Irbpb-250_D1000_IRC5_rev02_Arm250AB_CAD_2"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="j3" type="continuous">
+  <origin xyz="0.6825 0.0 -0.15837" rpy="0 0 0"/>
+  <parent link="Irbpb-250_D1000_IRC5_rev02_Arm250AB_CAD_2"/>
+  <child link="Irbpb-250_D1000_IRC5_rev02_platter_d350_CAD_2"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="j4" type="continuous">
+  <origin xyz="-0.212 -0.258 0.606" rpy="0 0 0"/>
+  <parent link="Irbpb-250_D1000_IRC5_rev02_Turntable250B_CAD_1"/>
+  <child link="Irbpb-250_D1000_IRC5_rev02_Arm250AB_CAD_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="j5" type="continuous">
+  <origin xyz="-0.681 -0.0 -0.1587" rpy="0 0 0"/>
+  <parent link="Irbpb-250_D1000_IRC5_rev02_Arm250AB_CAD_1"/>
+  <child link="Irbpb-250_D1000_IRC5_rev02_platter_d350_CAD_1"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+</joint>
+
+</robot>
