@@ -210,7 +210,7 @@
 </joint>
 
 <joint name="joint_6b" type="revolute">
-  <origin xyz="0.086813 0.003441 0.0" rpy="0 0 0"/>
+  <origin xyz="0.086813 0.003441 0.0" rpy="0 1.57 0"/>
   <parent link="link5b"/>
   <child link="flange"/>
   <axis xyz="-1.0 0.0 -0.0"/>
