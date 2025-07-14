@@ -6,4 +6,6 @@ If editing mesh paths, make sure to rename the corresponding meshes in the file 
 
 base_link, flange and tool0 are required.
 
+Look in @library/ABB/CRB15000_5kg_950_v1/CRB15000_5kg_950.urdf or @docs/urdf-6axis-conventions.md for more examples.
+
 Always run `uv run tools/validate_urdf.py URDF_PATH` to make sure your changes are correct.

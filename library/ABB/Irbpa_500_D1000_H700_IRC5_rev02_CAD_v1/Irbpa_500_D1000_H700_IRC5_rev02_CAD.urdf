@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<robot name="Irbpa_500_D1000_H700_IRC5_rev02_CAD">
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.913511790946396 0.001453535026860657 0.4791474717826567" rpy="0 0 0"/>
+    <mass value="1620.403998949394"/>
+    <inertia ixx="221.809462" iyy="236.859274" izz="78.452145" ixy="-0.323189" iyz="-0.357894" ixz="-25.463331"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Irbpa_500_D1000_H700_IRC5_rev02_arm500A_CAD_1">
+  <inertial>
+    <origin xyz="-0.5359022486015766 -0.0033357651582393262 -0.36304474957646027" rpy="0 0 0"/>
+    <mass value="511.1252334711299"/>
+    <inertia ixx="22.821954" iyy="53.570647" izz="41.278063" ixy="0.038996" iyz="-0.339125" ixz="-19.039629"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.722 0.0 -0.9" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Irbpa_500_D1000_H700_IRC5_rev02_arm500A_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="-0.722 0.0 -0.9" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Irbpa_500_D1000_H700_IRC5_rev02_arm500A_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Irbpa_500_D1000_H700_IRC5_rev02_platter_d450_CAD_1">
+  <inertial>
+    <origin xyz="-0.0011124864300729666 -5.688668147784807e-15 0.04336786560053996" rpy="0 0 0"/>
+    <mass value="21.25030383337227"/>
+    <inertia ixx="0.228504" iyy="0.231342" izz="0.446816" ixy="0.0" iyz="-0.0" ixz="-0.000583"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.0 -0.638" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Irbpa_500_D1000_H700_IRC5_rev02_platter_d450_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.0 -0.638" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Irbpa_500_D1000_H700_IRC5_rev02_platter_d450_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.722 0.0 0.9" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Irbpa_500_D1000_H700_IRC5_rev02_arm500A_CAD_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="-0.722 0.0 -0.262" rpy="0 0 0"/>
+  <parent link="Irbpa_500_D1000_H700_IRC5_rev02_arm500A_CAD_1"/>
+  <child link="Irbpa_500_D1000_H700_IRC5_rev02_platter_d450_CAD_1"/>
+  <axis xyz="-0.0 0.0 -1.0"/>
+</joint>
+
+</robot>
