@@ -21,40 +21,55 @@ world = World()
 
 project_root = Path(__file__).parent.parent
 
-usd_paths = [
-    # "generated/abb_irb920_v1/abb_irb920/abb_irb920.usd",
-    "generated/IRB920_6kg_650_180_STD_v1/IRB920_6kg_650_180_STD/IRB920_6kg_650_180_STD.usd",
-    "generated/IRB920T_6kg_450_180_STD_v1/IRB920T_6kg_450_180_STD/IRB920T_6kg_450_180_STD.usd",
-    "generated/IRB930_12kg_1050_300_STD_v1/IRB930_12kg_1050_300_STD/IRB930_12kg_1050_300_STD.usd",
-    "generated/CRB15000_10kg_152_v1/CRB15000_10kg_152/CRB15000_10kg_152.usd",
-    "generated/CRB15000_12kg_127_v1/CRB15000_12kg_127/CRB15000_12kg_127.usd",
-    "generated/CRB15000_5kg_950_v1/CRB15000_5kg_950/CRB15000_5kg_950.usd",
-    "generated/IRB1010_1_5kg_370_v1/IRB1010_1_5kg_370/IRB1010_1_5kg_370.usd",
-    "generated/IRB1100_4kg_475_STD_v1/IRB1100_4kg_475_STD/IRB1100_4kg_475_STD.usd",
-    "generated/IRB1100_4kg_580_STD_v1/IRB1100_4kg_580_STD/IRB1100_4kg_580_STD.usd",
-    "generated/IRB1200_5_90_STD_v1/IRB1200_5_90_STD/IRB1200_5_90_STD.usd",
-    "generated/IRB1200H_5_90_STD_v1/IRB1200H_5_90_STD/IRB1200H_5_90_STD.usd",
-    "generated/IRB1200H_7_70_STD_v1/IRB1200H_7_70_STD/IRB1200H_7_70_STD.usd",
-    "generated/IRB14000_Yumi_v1/IRB14000_Yumi/IRB14000_Yumi.usd",
-    "generated/IRB14050_SAYuMi_v1/IRB14050_SAYuMi/IRB14050_SAYuMi.usd",
-    "generated/IRB1520ID_4_150_v1/IRB1520ID_4_150/IRB1520ID_4_150.usd",
-    "generated/IRB1600_X-120_v1/IRB1600_X-120/IRB1600_X-120.usd",
-    "generated/Irbpa_250_D1000_IRC5_rev02_CAD_v1/Irbpa_250_D1000_IRC5_rev02_CAD/Irbpa_250_D1000_IRC5_rev02_CAD.usd",
-    "generated/Irbpk_600_D1200_L1600_IRC5_rev02_CAD_v1/Irbpk_600_D1200_L1600_IRC5_rev02_CAD/Irbpk_600_D1200_L1600_IRC5_rev02_CAD.usd",
-    "generated/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD_v1/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD.usd",
-    # "generated/IRB460_110-240_v1/IRB460_110-240/IRB460_110-240.usd",
-    "generated/IRB52_7-1_2-Short_v1/IRB52_7-1_2-Short/IRB52_7-1_2-Short.usd",
-    "generated/IRB52_7-1_45-Long_v1/IRB52_7-1_45-Long/IRB52_7-1_45-Long.usd",
-    "generated/IRB5500-22_v1/IRB5500-22/IRB5500-22.usd",
-    # "generated/IRB5500-27_v1/IRB5500-27/IRB5500-27.usd",
-    "generated/IRB5510-12_v1/IRB5510-12/IRB5510-12.usd",
-    "generated/IRB6750S_185-390-LID_v1/IRB6750S_185-390-LID/IRB6750S_185-390-LID.usd",
-    "generated/IRB8700_550-420-SW6_v1/IRB8700_550-420-SW6/IRB8700_550-420-SW6.usd",
-    "generated/IRB8700_800_350_v1/IRB8700_800_350/IRB8700_800_350.usd",
-    # "generated/IRB910INV-350_v1/IRB910INV-350/IRB910INV-350.usd",
-    # "generated/IRB910INV-550_v1/IRB910INV-550/IRB910INV-550.usd",
-    # "generated/IRB920_6kg_550_180_STD_v1/IRB920_6kg_550_180_STD/IRB920_6kg_550_180_STD.usd",
+robot_paths = [
+    "library/ABB/IRB920_6kg_650_180_STD_v1/IRB920_6kg_650_180_STD/IRB920_6kg_650_180_STD.usd",
+    "library/ABB/IRB920T_6kg_450_180_STD_v1/IRB920T_6kg_450_180_STD/IRB920T_6kg_450_180_STD.usd",
+    "library/ABB/IRB930_12kg_1050_300_STD_v1/IRB930_12kg_1050_300_STD/IRB930_12kg_1050_300_STD.usd",
+    "library/ABB/CRB15000_10kg_152_v1/CRB15000_10kg_152/CRB15000_10kg_152.usd",
+    "library/ABB/CRB15000_12kg_127_v1/CRB15000_12kg_127/CRB15000_12kg_127.usd",
+    "library/ABB/CRB15000_5kg_950_v1/CRB15000_5kg_950/CRB15000_5kg_950.usd",
+    "library/ABB/IRB1010_1_5kg_370_v1/IRB1010_1_5kg_370/IRB1010_1_5kg_370.usd",
+    "library/ABB/IRB1100_4kg_475_STD_v1/IRB1100_4kg_475_STD/IRB1100_4kg_475_STD.usd",
+    "library/ABB/IRB1100_4kg_580_STD_v1/IRB1100_4kg_580_STD/IRB1100_4kg_580_STD.usd",
+    "library/ABB/IRB1200_5_90_STD_v1/IRB1200_5_90_STD/IRB1200_5_90_STD.usd",
+    "library/ABB/IRB1200H_5_90_STD_v1/IRB1200H_5_90_STD/IRB1200H_5_90_STD.usd",
+    "library/ABB/IRB1200H_7_70_STD_v1/IRB1200H_7_70_STD/IRB1200H_7_70_STD.usd",
+    "library/ABB/IRB14000_Yumi_v1/IRB14000_Yumi/IRB14000_Yumi.usd",
+    "library/ABB/IRB14050_SAYuMi_v1/IRB14050_SAYuMi/IRB14050_SAYuMi.usd",
+    "library/ABB/IRB1520ID_4_150_v1/IRB1520ID_4_150/IRB1520ID_4_150.usd",
+    "library/ABB/IRB1600_X-120_v1/IRB1600_X-120/IRB1600_X-120.usd",
+    "library/ABB/IRB52_7-1_2-Short_v1/IRB52_7-1_2-Short/IRB52_7-1_2-Short.usd",
+    "library/ABB/IRB52_7-1_45-Long_v1/IRB52_7-1_45-Long/IRB52_7-1_45-Long.usd",
+    "library/ABB/IRB5500-22_v1/IRB5500-22/IRB5500-22.usd",
+    "library/ABB/IRB5510-12_v1/IRB5510-12/IRB5510-12.usd",
+    "library/ABB/IRB6750S_185-390-LID_v1/IRB6750S_185-390-LID/IRB6750S_185-390-LID.usd",
+    "library/ABB/IRB8700_550-420-SW6_v1/IRB8700_550-420-SW6/IRB8700_550-420-SW6.usd",
+    "library/ABB/IRB8700_800_350_v1/IRB8700_800_350/IRB8700_800_350.usd",
 ]
+
+positioner_paths = [
+    "library/ABB/Irbpa_250_D1000_IRC5_rev02_CAD_v1/Irbpa_250_D1000_IRC5_rev02_CAD/Irbpa_250_D1000_IRC5_rev02_CAD.usd",
+    "library/ABB/Irbpk_600_D1200_L1600_IRC5_rev02_CAD_v1/Irbpk_600_D1200_L1600_IRC5_rev02_CAD/Irbpk_600_D1200_L1600_IRC5_rev02_CAD.usd",
+    "library/ABB/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD_v1/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD.usd",
+    "library/ABB/Irbpa_500_D1000_H700_IRC5_rev02_CAD_v1/Irbpa_500_D1000_H700_IRC5_rev02_CAD/Irbpa_500_D1000_H700_IRC5_rev02_CAD.usd",
+    "library/ABB/Irbpb_250_D1000_IRC5_rev02_CAD_v1/Irbpb_250_D1000_IRC5_rev02_CAD/Irbpb_250_D1000_IRC5_rev02_CAD.usd",
+    "library/ABB/Irbpb_500_D1450_v1/Irbpb_500_D1450/Irbpb_500_D1450.usd",
+    "library/ABB/Irbpc_1000_v1/Irbpc_1000/Irbpc_1000.usd",
+    "library/ABB/Irbpc_500_IRC5_rev02_CAD_v1/Irbpc_500_IRC5_rev02_CAD/Irbpc_500_IRC5_rev02_CAD.usd",
+    "library/ABB/Irbpd_600_D1000_L1600_IRC5_rev02_CAD_v1/Irbpd_600_D1000_L1600_IRC5_rev02_CAD/Irbpd_600_D1000_L1600_IRC5_rev02_CAD.usd",
+    "library/ABB/Irbpl_1000_L1250_v1/Irbpl_1000_L1250/Irbpl_1000_L1250.usd",
+    "library/ABB/Irbpl_5000_v1/Irbpl_5000/Irbpl_5000.usd",
+    "library/ABB/Irbpr_300_D1000_L1250_v1/Irbpr_300_D1000_L1250/Irbpr_300_D1000_L1250.usd",
+]
+
+# Alternate between robots and positioners
+usd_paths = []
+max_len = max(len(robot_paths), len(positioner_paths))
+for i in range(max_len):
+    # if i < len(robot_paths):
+    #     usd_paths.append(robot_paths[i])
+    if i < len(positioner_paths):
+        usd_paths.append(positioner_paths[i])
 usd_paths = [project_root / p for p in usd_paths]
 
 
@@ -66,7 +81,7 @@ camera = Camera(
     "/World/cam",
     name="cam",
     resolution=(1920, 1080),
-    position=[7, 0, 0.8],
+    position=[8, 0, 0.9],
     orientation=camera_orientation_wxyz,
 )
 
@@ -92,7 +107,7 @@ def set_xform(prim_path, x, y, z, rot=None):
     )
 
 
-spacing = 3  # m  – centre-to-centre distance between robots
+spacing = 4  # m  – centre-to-centre distance between robots
 robots: dict[str, SingleArticulation] = {}
 for i, usd_path in enumerate(usd_paths):
     print(f"Loading {usd_path}")
@@ -163,8 +178,8 @@ while True:
     camera.set_world_pose(
         position=[
             i / speed_div,
-            11 + (i / speed_div / 140) * 4,
-            0.6 + (i / speed_div / 140) * 1.5,
+            12 + (i / speed_div / 140) * 4,
+            0.8 + (i / speed_div / 140) * 1.5,
         ]
     )
     rgba = camera.get_current_frame()["rgba"][..., :-1][..., ::-1]
