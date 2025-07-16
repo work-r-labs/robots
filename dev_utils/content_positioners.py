@@ -61,6 +61,7 @@ one_to_two = np.linspace(trolley_waypoints[0], trolley_waypoints[1], 20)
 two_to_three = np.linspace(trolley_waypoints[1], trolley_waypoints[2], 20)
 three_to_one = np.linspace(trolley_waypoints[2], trolley_waypoints[0], 15)
 
+
 def spin(art: SingleArticulation, start, stop, step=14, rev=False):
     if rev:
         start, stop = stop, start
@@ -68,7 +69,10 @@ def spin(art: SingleArticulation, start, stop, step=14, rev=False):
         art.set_joint_positions(np.deg2rad(np.array([[i]])), joint_indices=[0])
         update()
 
+
 i = 0
+
+
 def update():
     global i
     world.step(render=True)
@@ -76,27 +80,30 @@ def update():
         rgba = camera.get_current_frame()["rgba"][..., :-1][..., ::-1]
         cv2.imwrite(f"ignore_render/{i}.png", rgba)
 
-        camera_xyz = camera.get_local_pose()[0] # type: ignore
-        camera.set_local_pose(translation=camera_xyz+np.array([-0.002, -0.001, 0.002])*8)
+        camera_xyz = camera.get_local_pose()[0]  # type: ignore
+        camera.set_local_pose(
+            translation=camera_xyz + np.array([-0.002, -0.001, 0.002]) * 8
+        )
     i += 1
 
+
 def bot_action():
-    traj = np.linspace(0, 1, 10)/3
+    traj = np.linspace(0, 1, 10) / 3
     for i in range(len(traj)):
         act = traj[i]
-        joints = np.array([act*2, act, act, np.abs(act), act, act, act])
+        joints = np.array([act * 2, act, act, np.abs(act), act, act, act])
         railbot.set_joint_positions(joints[None])
         update()
-    traj = np.linspace(1, -1, 15)/3
+    traj = np.linspace(1, -1, 15) / 3
     for i in range(len(traj)):
         act = traj[i]
-        joints = np.array([act*2, act, act, np.abs(act), act, act, act])
+        joints = np.array([act * 2, act, act, np.abs(act), act, act, act])
         railbot.set_joint_positions(joints[None])
         update()
-    traj = np.linspace(-1, 0, 10)/3
+    traj = np.linspace(-1, 0, 10) / 3
     for i in range(len(traj)):
         act = traj[i]
-        joints = np.array([act*2, act, act, np.abs(act), act, act, act])
+        joints = np.array([act * 2, act, act, np.abs(act), act, act, act])
         railbot.set_joint_positions(joints[None])
         update()
 

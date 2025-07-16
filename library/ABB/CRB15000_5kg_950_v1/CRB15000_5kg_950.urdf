@@ -28,13 +28,14 @@
       <inertia ixx="0.090397" iyy="0.050984" izz="0.085916" ixy="-0.0" iyz="-0.001544" ixz="-0.0"/>
     </inertial>
     <visual>
-      <origin xyz="-0.0 -0.0 -0.1885" rpy="0 0 0"/>
+      <!-- <origin xyz="-0.0 -0.0 -0.1885" rpy="0 0 0"/> -->
+      <origin xyz="-0.0 -0.0 -0.265" rpy="0 0 0"/>
       <geometry>
         <mesh filename="meshes/link_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
     <collision>
-      <origin xyz="-0.0 -0.0 -0.1885" rpy="0 0 0"/>
+      <origin xyz="-0.0 -0.0 -0.265" rpy="0 0 0"/>
       <geometry>
         <mesh filename="meshes/link_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -48,13 +49,13 @@
       <inertia ixx="1.024636" iyy="1.04625" izz="0.052503" ixy="0.0" iyz="-8e-06" ixz="-0.0"/>
     </inertial>
     <visual>
-      <origin xyz="0.0 0.085 -0.265" rpy="0 0 0"/>
+      <origin xyz="0.0 0.0 -0.265" rpy="0 0 0"/>
       <geometry>
         <mesh filename="meshes/link_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
     <collision>
-      <origin xyz="0.0 0.085 -0.265" rpy="0 0 0"/>
+      <origin xyz="0.0 0.0 -0.265" rpy="0 0 0"/>
       <geometry>
         <mesh filename="meshes/link_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -68,13 +69,13 @@
       <inertia ixx="0.137869" iyy="0.110083" izz="0.10421" ixy="0.002864" iyz="0.005532" ixz="-0.025016"/>
     </inertial>
     <visual>
-      <origin xyz="-0.0 0.086 -0.709" rpy="0 0 0"/>
+      <origin xyz="-0.0 0.0 -0.709" rpy="0 0 0"/>
       <geometry>
         <mesh filename="meshes/link_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
     <collision>
-      <origin xyz="-0.0 0.086 -0.709" rpy="0 0 0"/>
+      <origin xyz="-0.0 0.0 -0.709" rpy="0 0 0"/>
       <geometry>
         <mesh filename="meshes/link_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -88,7 +89,7 @@
       <inertia ixx="0.069214" iyy="0.267493" izz="0.305648" ixy="-0.084359" iyz="0.0" ixz="1e-06"/>
     </inertial>
     <visual>
-      <origin xyz="-0.096 0.0 -0.819" rpy="0 0 0"/>
+      <origin xyz="0.0 0.0 -0.819" rpy="0 0 0"/>
       <geometry>
         <mesh filename="meshes/link_4.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -108,13 +109,13 @@
       <inertia ixx="0.089956" iyy="0.106456" izz="0.08516" ixy="0.001414" iyz="-0.004124" ixz="0.012972"/>
     </inertial>
     <visual>
-      <origin xyz="-0.47 -0.0745 -0.819" rpy="0 0 0"/>
+      <origin xyz="-0.47 -0.0 -0.819" rpy="0 0 0"/>
       <geometry>
         <mesh filename="meshes/link_5.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </visual>
     <collision>
-      <origin xyz="-0.47 -0.0745 -0.819" rpy="0 0 0"/>
+      <origin xyz="-0.47 -0.0 -0.819" rpy="0 0 0"/>
       <geometry>
         <mesh filename="meshes/link_5.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -128,7 +129,7 @@
       <inertia ixx="0.001012" iyy="0.000597" izz="0.000601" ixy="-1e-06" iyz="-5e-06" ixz="1e-06"/>
     </inertial>
     <visual>
-      <origin xyz="-0.538 -0.0 -0.899" rpy="0 0 0"/>
+      <origin xyz="-0.571 -0.0 -0.899" rpy="0 0 0"/>
       <geometry>
         <mesh filename="meshes/link_6.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -158,51 +159,51 @@
   </link>
 
   <joint name="joint_1" type="revolute">
-    <origin xyz="0.0 0.0 0.1885" rpy="0 0 0"/>
+    <origin xyz="0.0 0.0 0.265" rpy="0 0 0"/>
     <parent link="base_link"/>
     <child link="link_1"/>
-    <axis xyz="0.0 0.0 -1.0"/>
-    <limit upper="-3.14159" lower="3.14159" effort="175.44" velocity="2.181"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit lower="-3.14159" upper="3.14159" effort="175.44" velocity="2.181"/>
     </joint>
 
   <joint name="joint_2" type="revolute">
-    <origin xyz="-0.0 -0.085 0.0765" rpy="0 0 0"/>
+    <origin xyz="-0.0 0.0 0.0" rpy="0 0 0"/>
     <parent link="link_1"/>
     <child link="link_2"/>
-    <axis xyz="0.0 -1.0 0.0"/>
-    <limit upper="-3.14159" lower="3.14159" effort="175.44" velocity="2.181"/>
+    <axis xyz="0.0 1.0 0.0"/>
+    <limit lower="-3.14159" upper="3.14159" effort="175.44" velocity="2.181"/>
     </joint>
 
   <joint name="joint_3" type="revolute">
-    <origin xyz="0.0 -0.001 0.444" rpy="0 0 0"/>
+    <origin xyz="0.0 0.0 0.444" rpy="0 0 0"/>
     <parent link="link_2"/>
     <child link="link_3"/>
-    <axis xyz="0.0 -1.0 0.0"/>
-    <limit upper="1.483" lower="-3.927" effort="90.6" velocity="2.444"/>
+    <axis xyz="0.0 1.0 0.0"/>
+    <limit lower="-3.92699" upper="0.95993" effort="90.6" velocity="2.444"/>
     </joint>
 
   <joint name="joint_4" type="revolute">
-    <origin xyz="0.096 0.086 0.11" rpy="0 0 0"/>
+    <origin xyz="0.0 0.0 0.11" rpy="0 0 0"/>
     <parent link="link_3"/>
     <child link="link_4"/>
     <axis xyz="1.0 0.0 0.0"/>
-    <limit upper="-3.14159" lower="3.14159" effort="18.72" velocity="3.491"/>
+    <limit lower="-3.14159" upper="3.14159" effort="18.72" velocity="3.491"/>
     </joint>
 
   <joint name="joint_5" type="revolute">
-    <origin xyz="0.374 0.0745 0.0" rpy="0 0 0"/>
+    <origin xyz="0.47 0.0 0.0" rpy="0 0 0"/>
     <parent link="link_4"/>
     <child link="link_5"/>
-    <axis xyz="0.0 -1.0 0.0"/>
-    <limit upper="-3.14159" lower="3.14159" effort="21.44" velocity="3.491"/>
+    <axis xyz="0.0 1.0 0.0"/>
+    <limit lower="-3.14159" upper="3.14159" effort="21.44" velocity="3.491"/>
     </joint>
 
   <joint name="joint_6" type="revolute">
-    <origin xyz="0.068 -0.0745 0.08" rpy="0 0 0"/>
+    <origin xyz="0.101 0.0 0.08" rpy="0 0 0"/>
     <parent link="link_5"/>
     <child link="link_6"/>
     <axis xyz="1.0 0.0 0.0"/>
-    <limit upper="4.712" lower="-4.712" effort="9.2" velocity="3.491"/>
+    <limit lower="-4.71239" upper="4.71239" effort="9.2" velocity="3.491"/>
     </joint>
 
   <joint name="joint_flange" type="fixed">
