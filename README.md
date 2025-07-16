@@ -122,6 +122,12 @@ bash tools/validate_all_urdfs.sh
 
 ### Formatting
 
+```bash
+uv run ruff format
 ```
-ruff format
+
+### Testing
+
+```bash
+uv run pytest
 ```

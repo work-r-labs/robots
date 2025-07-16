@@ -15,6 +15,7 @@ This is a repository of ABB robot models providing plug-and-play USD and URDF as
 - `isaacsim_typings/` - Type stubs for IsaacSim (git submodule)
 - `dev_utils/` - Development utilities for scene generation
 - `docs/` - various docs about the project and robot information from the manufacturer
+- `tests/` - test suite for ensuring FK matches manuals
 
 ## Common Development Commands
 
@@ -26,6 +27,12 @@ git clone --recurse-submodules https://github.com/work-r-labs/robots.git
 # Create Python environment
 uv venv
 uv pip install -r requirements.txt
+```
+
+### Unit Tests
+
+```bash
+uv run pytest
 ```
 
 ### URDF Validation
@@ -43,7 +50,7 @@ bash tools/validate_all_urdfs.sh
 ### Code Formatting
 ```bash
 # Format Python code
-ruff format
+uv run ruff format
 ```
 
 ### Running IsaacSim Demos

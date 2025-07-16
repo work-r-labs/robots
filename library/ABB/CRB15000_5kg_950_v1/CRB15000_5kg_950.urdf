@@ -35,7 +35,7 @@
       </geometry>
     </visual>
     <collision>
-      <origin xyz="-0.0 -0.0 -0.1885" rpy="0 0 0"/>
+      <origin xyz="-0.0 -0.0 -0.265" rpy="0 0 0"/>
       <geometry>
         <mesh filename="meshes/link_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -55,7 +55,7 @@
       </geometry>
     </visual>
     <collision>
-      <origin xyz="0.0 0.085 -0.265" rpy="0 0 0"/>
+      <origin xyz="0.0 0.0 -0.265" rpy="0 0 0"/>
       <geometry>
         <mesh filename="meshes/link_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -75,7 +75,7 @@
       </geometry>
     </visual>
     <collision>
-      <origin xyz="-0.0 0.086 -0.709" rpy="0 0 0"/>
+      <origin xyz="-0.0 0.0 -0.709" rpy="0 0 0"/>
       <geometry>
         <mesh filename="meshes/link_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -89,7 +89,7 @@
       <inertia ixx="0.069214" iyy="0.267493" izz="0.305648" ixy="-0.084359" iyz="0.0" ixz="1e-06"/>
     </inertial>
     <visual>
-      <origin xyz="-0.096 0.0 -0.819" rpy="0 0 0"/>
+      <origin xyz="0.0 0.0 -0.819" rpy="0 0 0"/>
       <geometry>
         <mesh filename="meshes/link_4.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -115,7 +115,7 @@
       </geometry>
     </visual>
     <collision>
-      <origin xyz="-0.47 -0.0745 -0.819" rpy="0 0 0"/>
+      <origin xyz="-0.47 -0.0 -0.819" rpy="0 0 0"/>
       <geometry>
         <mesh filename="meshes/link_5.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -129,7 +129,7 @@
       <inertia ixx="0.001012" iyy="0.000597" izz="0.000601" ixy="-1e-06" iyz="-5e-06" ixz="1e-06"/>
     </inertial>
     <visual>
-      <origin xyz="-0.538 -0.0 -0.899" rpy="0 0 0"/>
+      <origin xyz="-0.571 -0.0 -0.899" rpy="0 0 0"/>
       <geometry>
         <mesh filename="meshes/link_6.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -183,7 +183,7 @@
     </joint>
 
   <joint name="joint_4" type="revolute">
-    <origin xyz="0.095 0.0 0.11" rpy="0 0 0"/>
+    <origin xyz="0.0 0.0 0.11" rpy="0 0 0"/>
     <parent link="link_3"/>
     <child link="link_4"/>
     <axis xyz="1.0 0.0 0.0"/>
@@ -191,7 +191,7 @@
     </joint>
 
   <joint name="joint_5" type="revolute">
-    <origin xyz="0.375 0.0 0.0" rpy="0 0 0"/>
+    <origin xyz="0.47 0.0 0.0" rpy="0 0 0"/>
     <parent link="link_4"/>
     <child link="link_5"/>
     <axis xyz="0.0 1.0 0.0"/>
@@ -199,7 +199,7 @@
     </joint>
 
   <joint name="joint_6" type="revolute">
-    <origin xyz="0.067 0.0 0.08" rpy="0 0 0"/>
+    <origin xyz="0.101 0.0 0.08" rpy="0 0 0"/>
     <parent link="link_5"/>
     <child link="link_6"/>
     <axis xyz="1.0 0.0 0.0"/>
