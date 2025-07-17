@@ -150,7 +150,6 @@
 </joint>
 
 <joint name="joint_2" type="revolute">
-<!-- 0.15 is good, probably should be 0, needs to be up to 0.400 so OK -->
   <origin xyz="0.15 0.0 0.182" rpy="0 0 0"/>
   <parent link="link_1"/>
   <child link="link_2"/>
@@ -159,7 +158,6 @@
 </joint>
 
 <joint name="joint_3" type="revolute">
-  <!-- 0 good, should be 0, needs to be up to 1.107 -->
   <origin xyz="0.0 0.0 0.707" rpy="0 0 0"/>
   <parent link="link_2"/>
   <child link="link_3"/>
@@ -168,8 +166,6 @@
 </joint>
 
 <joint name="joint_4" type="revolute">
-  <!-- going to trust, should be 0, correct -->
-  <!-- <origin xyz="0.096 0.0 0.11" rpy="0 0 0"/> -->
   <origin xyz="0.0 0.0 0.110" rpy="0 0 0"/>
   <parent link="link_3"/>
   <child link="link_4"/>
@@ -178,8 +174,6 @@
 </joint>
 
 <joint name="joint_5" type="revolute">
-  <!-- <origin xyz="0.540883 0.0755 0.0" rpy="0 0 0"/> -->
-  <!-- 787-150, 0, 0 -->
   <origin xyz="0.637 0.0 0.0" rpy="0 0 0"/>
 
   <parent link="link_4"/>
@@ -189,8 +183,6 @@
 </joint>
 
 <joint name="joint_6" type="revolute">
-  <!-- <origin xyz="0.068117 -0.0755 0.08" rpy="0 0 0"/> -->
-  <!-- 888-787, 0, 1297-1217 -->
   <origin xyz="0.101 0.0 0.080" rpy="0 0 0"/>
   <parent link="link_5"/>
   <child link="link_6"/>
