@@ -37,7 +37,7 @@ def test_fk_pos1():
 
 
 def test_fk_pos2():
-    joint_angles_degrees = np.array([90, 0, -78.4, 0, 26.7, 0])
+    joint_angles_degrees = np.array([0, 90, -78.4, 0, 26.7, 0])
     expected_flange_xz = np.array([1.381, 0.338])
     urdf.update_cfg(np.deg2rad(joint_angles_degrees))
     result_flange_xz: np.ndarray = urdf.get_transform(
@@ -50,7 +50,7 @@ def test_fk_pos2():
 
 
 def test_fk_pos3():
-    joint_angles_degrees = np.array([180, 0, -78.4, 0, 26.7, 0])
+    joint_angles_degrees = np.array([0, 180, -78.4, 0, 26.7, 0])
     expected_flange_xz = np.array([0.0, -1.043])
     urdf.update_cfg(np.deg2rad(joint_angles_degrees))
     result_flange_xz: np.ndarray = urdf.get_transform(
@@ -63,7 +63,7 @@ def test_fk_pos3():
 
 
 def test_fk_pos4():
-    joint_angles_degrees = np.array([-90, 0, -78.4, 0, 26.7, 0])
+    joint_angles_degrees = np.array([0, -90, -78.4, 0, 26.7, 0])
     expected_flange_xz = np.array([-1.381, 0.338])
     urdf.update_cfg(np.deg2rad(joint_angles_degrees))
     result_flange_xz: np.ndarray = urdf.get_transform(
@@ -76,7 +76,7 @@ def test_fk_pos4():
 
 
 def test_fk_pos5():
-    joint_angles_degrees = np.array([180, 0, 11.6, 0, 26.7, 0])
+    joint_angles_degrees = np.array([0, 180, 11.6, 0, 26.7, 0])
     expected_flange_xz = np.array([-0.674, -0.369])
     urdf.update_cfg(np.deg2rad(joint_angles_degrees))
     result_flange_xz: np.ndarray = urdf.get_transform(
@@ -89,7 +89,7 @@ def test_fk_pos5():
 
 
 def test_fk_pos6():
-    joint_angles_degrees = np.array([180, 0, 85, 0, 26.7, 0])
+    joint_angles_degrees = np.array([0, 180, 85, 0, 26.7, 0])
     expected_flange_xz = np.array([-0.193, 0.2768])
     urdf.update_cfg(np.deg2rad(joint_angles_degrees))
     result_flange_xz: np.ndarray = urdf.get_transform(
@@ -102,7 +102,7 @@ def test_fk_pos6():
 
 
 def test_fk_pos7():
-    joint_angles_degrees = np.array([180, 0, -168.4, 0, 26.7, 0])
+    joint_angles_degrees = np.array([0, 180, -168.4, 0, 26.7, 0])
     expected_flange_xz = np.array([0.674, -0.369])
     urdf.update_cfg(np.deg2rad(joint_angles_degrees))
     result_flange_xz: np.ndarray = urdf.get_transform(
@@ -115,7 +115,7 @@ def test_fk_pos7():
 
 
 def test_fk_pos8():
-    joint_angles_degrees = np.array([180, 0, -225, 0, 26.7, 0])
+    joint_angles_degrees = np.array([0, 180, -225, 0, 26.7, 0])
     expected_flange_xz = np.array([0.3706, 0.194])
     urdf.update_cfg(np.deg2rad(joint_angles_degrees))
     result_flange_xz: np.ndarray = urdf.get_transform(
