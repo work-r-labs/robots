@@ -34,7 +34,7 @@
     </geometry>
   </visual>
   <collision>
-    <origin xyz="0.0 -0.0 -0.181677" rpy="0 0 0"/>
+    <origin xyz="0.0 -0.0 0.0" rpy="0 0 0"/>
     <geometry>
       <mesh filename="meshes/CRB15000_12kg_127_Omnicore_rev00_LINK01_CAD_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -48,14 +48,13 @@
     <inertia ixx="4.564663" iyy="4.624733" izz="0.149362" ixy="0.0" iyz="-0.067787" ixz="-2e-06"/>
   </inertial>
   <visual>
-    <!-- <origin xyz="-0.0 0.09615 -0.338" rpy="0 0 0"/> -->
     <origin xyz="-0.0 0.0 -0.338" rpy="0 0 0"/>
     <geometry>
       <mesh filename="meshes/CRB15000_12kg_127_Omnicore_rev00_LINK02_CAD_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </visual>
   <collision>
-    <origin xyz="-0.0 0.09615 -0.338" rpy="0 0 0"/>
+    <origin xyz="-0.0 0.0 -0.338" rpy="0 0 0"/>
     <geometry>
       <mesh filename="meshes/CRB15000_12kg_127_Omnicore_rev00_LINK02_CAD_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -75,7 +74,7 @@
     </geometry>
   </visual>
   <collision>
-    <origin xyz="-0.0 0.0863 -1.045" rpy="0 0 0"/>
+    <origin xyz="-0.0 0.0 -1.045" rpy="0 0 0"/>
     <geometry>
       <mesh filename="meshes/CRB15000_12kg_127_Omnicore_rev00_LINK03_CAD_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -95,7 +94,7 @@
     </geometry>
   </visual>
   <collision>
-    <origin xyz="-0.097 0.0 -1.155" rpy="0 0 0"/>
+    <origin xyz="0.0 0.0 -1.155" rpy="0 0 0"/>
     <geometry>
       <mesh filename="meshes/CRB15000_12kg_127_Omnicore_rev00_LINK04_CAD_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -115,7 +114,7 @@
     </geometry>
   </visual>
   <collision>
-    <origin xyz="-0.534 -0.0745 -1.155" rpy="0 0 0"/>
+    <origin xyz="-0.534 -0.0 -1.155" rpy="0 0 0"/>
     <geometry>
       <mesh filename="meshes/CRB15000_12kg_127_Omnicore_rev00_LINK05_CAD_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -135,7 +134,7 @@
     </geometry>
   </visual>
   <collision>
-    <origin xyz="-0.6025 0.0 -1.235" rpy="0 0 0"/>
+    <origin xyz="-0.635 0.0 -1.235" rpy="0 0 0"/>
     <geometry>
       <mesh filename="meshes/CRB15000_12kg_127_Omnicore_rev00_LINK06_CAD_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
