@@ -1,6 +1,7 @@
 import numpy as np
 from pathlib import Path
 import yourdfpy
+import pytest
 
 project_root = Path(__file__).parent.parent.parent.parent
 
@@ -10,118 +11,33 @@ urdf_path = project_root / "library/ABB/CRB15000_12kg_127_v1/CRB15000_12kg_127.u
 urdf = yourdfpy.URDF.load(urdf_path, mesh_dir=urdf_path.parent)
 
 
-def test_fk_pos0():
-    joint_angles_degrees = np.array([0, 0, 0, 0, 0, 0])
-    expected_flange_xz = np.array([0.635, 1.235])
+def _test_fk_configuration(joint_angles_degrees, expected_flange_xyz):
+    """Helper function to test forward kinematics for a given configuration."""
     urdf.update_cfg(np.deg2rad(joint_angles_degrees))
-    result_flange_xz: np.ndarray = urdf.get_transform(
+    result_flange_xyz: np.ndarray = urdf.get_transform(
         frame_to="flange", frame_from="base_link"
-    )[:3, 3][[0, 2]]
-    errors = expected_flange_xz - result_flange_xz
+    )[:3, 3]
+    errors = expected_flange_xyz - result_flange_xyz
     assert np.sum(np.abs(errors)) < 0.01, (
-        f"{expected_flange_xz}-{result_flange_xz}={errors}"
+        f"{expected_flange_xyz}-{result_flange_xyz}={errors}"
     )
 
 
-def test_fk_pos1():
-    joint_angles_degrees = np.array([0, 0, -78.4, 0, 26.7, 0])
-    expected_flange_xz = np.array([0.0, 1.719])
-    urdf.update_cfg(np.deg2rad(joint_angles_degrees))
-    result_flange_xz: np.ndarray = urdf.get_transform(
-        frame_to="flange", frame_from="base_link"
-    )[:3, 3][[0, 2]]
-    errors = expected_flange_xz - result_flange_xz
-    assert np.sum(np.abs(errors)) < 0.01, (
-        f"{expected_flange_xz}-{result_flange_xz}={errors}"
-    )
+# Test data: (joint_angles_degrees, expected_flange_xyz)
+fk_test_cases = [
+    (np.array([0, 0, 0, 0, 0, 0]), np.array([0.635, 0.0, 1.235])),
+    (np.array([0, 0, -78.4, 0, 26.7, 0]), np.array([0.0, 0.0, 1.719])),
+    (np.array([0, 90, -78.4, 0, 26.7, 0]), np.array([1.381, 0.0, 0.338])),
+    (np.array([0, 180, -78.4, 0, 26.7, 0]), np.array([0.0, 0.0, -1.043])),
+    (np.array([0, -90, -78.4, 0, 26.7, 0]), np.array([-1.381, 0.0, 0.338])),
+    (np.array([0, 180, 11.6, 0, 26.7, 0]), np.array([-0.674, 0.0, -0.369])),
+    (np.array([0, 180, 85, 0, 26.7, 0]), np.array([-0.193, 0.0, 0.2768])),
+    (np.array([0, 180, -168.4, 0, 26.7, 0]), np.array([0.674, 0.0, -0.369])),
+    (np.array([0, 180, -225, 0, 26.7, 0]), np.array([0.3706, 0.0, 0.194])),
+]
 
 
-def test_fk_pos2():
-    joint_angles_degrees = np.array([0, 90, -78.4, 0, 26.7, 0])
-    expected_flange_xz = np.array([1.381, 0.338])
-    urdf.update_cfg(np.deg2rad(joint_angles_degrees))
-    result_flange_xz: np.ndarray = urdf.get_transform(
-        frame_to="flange", frame_from="base_link"
-    )[:3, 3][[0, 2]]
-    errors = expected_flange_xz - result_flange_xz
-    assert np.sum(np.abs(errors)) < 0.01, (
-        f"{expected_flange_xz}-{result_flange_xz}={errors}"
-    )
-
-
-def test_fk_pos3():
-    joint_angles_degrees = np.array([0, 180, -78.4, 0, 26.7, 0])
-    expected_flange_xz = np.array([0.0, -1.043])
-    urdf.update_cfg(np.deg2rad(joint_angles_degrees))
-    result_flange_xz: np.ndarray = urdf.get_transform(
-        frame_to="flange", frame_from="base_link"
-    )[:3, 3][[0, 2]]
-    errors = expected_flange_xz - result_flange_xz
-    assert np.sum(np.abs(errors)) < 0.01, (
-        f"{expected_flange_xz}-{result_flange_xz}={errors}"
-    )
-
-
-def test_fk_pos4():
-    joint_angles_degrees = np.array([0, -90, -78.4, 0, 26.7, 0])
-    expected_flange_xz = np.array([-1.381, 0.338])
-    urdf.update_cfg(np.deg2rad(joint_angles_degrees))
-    result_flange_xz: np.ndarray = urdf.get_transform(
-        frame_to="flange", frame_from="base_link"
-    )[:3, 3][[0, 2]]
-    errors = expected_flange_xz - result_flange_xz
-    assert np.sum(np.abs(errors)) < 0.01, (
-        f"{expected_flange_xz}-{result_flange_xz}={errors}"
-    )
-
-
-def test_fk_pos5():
-    joint_angles_degrees = np.array([0, 180, 11.6, 0, 26.7, 0])
-    expected_flange_xz = np.array([-0.674, -0.369])
-    urdf.update_cfg(np.deg2rad(joint_angles_degrees))
-    result_flange_xz: np.ndarray = urdf.get_transform(
-        frame_to="flange", frame_from="base_link"
-    )[:3, 3][[0, 2]]
-    errors = expected_flange_xz - result_flange_xz
-    assert np.sum(np.abs(errors)) < 0.01, (
-        f"{expected_flange_xz}-{result_flange_xz}={errors}"
-    )
-
-
-def test_fk_pos6():
-    joint_angles_degrees = np.array([0, 180, 85, 0, 26.7, 0])
-    expected_flange_xz = np.array([-0.193, 0.2768])
-    urdf.update_cfg(np.deg2rad(joint_angles_degrees))
-    result_flange_xz: np.ndarray = urdf.get_transform(
-        frame_to="flange", frame_from="base_link"
-    )[:3, 3][[0, 2]]
-    errors = expected_flange_xz - result_flange_xz
-    assert np.sum(np.abs(errors)) < 0.01, (
-        f"{expected_flange_xz}-{result_flange_xz}={errors}"
-    )
-
-
-def test_fk_pos7():
-    joint_angles_degrees = np.array([0, 180, -168.4, 0, 26.7, 0])
-    expected_flange_xz = np.array([0.674, -0.369])
-    urdf.update_cfg(np.deg2rad(joint_angles_degrees))
-    result_flange_xz: np.ndarray = urdf.get_transform(
-        frame_to="flange", frame_from="base_link"
-    )[:3, 3][[0, 2]]
-    errors = expected_flange_xz - result_flange_xz
-    assert np.sum(np.abs(errors)) < 0.01, (
-        f"{expected_flange_xz}-{result_flange_xz}={errors}"
-    )
-
-
-def test_fk_pos8():
-    joint_angles_degrees = np.array([0, 180, -225, 0, 26.7, 0])
-    expected_flange_xz = np.array([0.3706, 0.194])
-    urdf.update_cfg(np.deg2rad(joint_angles_degrees))
-    result_flange_xz: np.ndarray = urdf.get_transform(
-        frame_to="flange", frame_from="base_link"
-    )[:3, 3][[0, 2]]
-    errors = expected_flange_xz - result_flange_xz
-    assert np.sum(np.abs(errors)) < 0.01, (
-        f"{expected_flange_xz}-{result_flange_xz}={errors}"
-    )
+@pytest.mark.parametrize("joint_angles_degrees,expected_flange_xyz", fk_test_cases)
+def test_fk_parametrized(joint_angles_degrees, expected_flange_xyz):
+    """Test forward kinematics for various robot configurations."""
+    _test_fk_configuration(joint_angles_degrees, expected_flange_xyz)
