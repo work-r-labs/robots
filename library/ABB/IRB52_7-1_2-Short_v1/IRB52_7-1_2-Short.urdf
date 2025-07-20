@@ -206,7 +206,7 @@
 </link>
 
 <joint name="joint_flange" type="fixed">
-  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <origin xyz="0 0 0" rpy="0 1.57 0"/>
   <parent link="link_6"/>
   <child link="flange"/>
 </joint>
