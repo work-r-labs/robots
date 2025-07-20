@@ -1,0 +1,196 @@
+<?xml version="1.0" ?>
+<robot name="BX100S-B001" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find BX100S-B001_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find BX100S-B001_description)/urdf/BX100S-B001.trans" />
+<xacro:include filename="$(find BX100S-B001_description)/urdf/BX100S-B001.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0006013282473359057 -0.09179562473200997 0.1037148811400284" rpy="0 0 0"/>
+    <mass value="410.12665918713395"/>
+    <inertia ixx="14.45881" iyy="8.024483" izz="19.324894" ixy="0.154643" iyz="-0.050113" ixz="-0.003966"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://BX100S-B001_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://BX100S-B001_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BX100S-B001_J1_1">
+  <inertial>
+    <origin xyz="-0.050291304927140956 0.07653856179942406 0.14123650401121476" rpy="0 0 0"/>
+    <mass value="240.60603850867076"/>
+    <inertia ixx="8.301509" iyy="5.478769" izz="8.046976" ixy="0.347037" iyz="-1.581913" ixz="0.844195"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.0 -0.2255" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://BX100S-B001_description/meshes/BX100S-B001_J1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.0 -0.2255" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://BX100S-B001_description/meshes/BX100S-B001_J1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BX100S-B001_J2_1">
+  <inertial>
+    <origin xyz="0.09127048583940214 1.1530913014978772e-05 0.23040635133104498" rpy="0 0 0"/>
+    <mass value="193.70110838308844"/>
+    <inertia ixx="15.675883" iyy="14.816893" izz="1.664147" ixy="0.002448" iyz="0.009517" ixz="-0.211675"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.023 -0.2 -0.465" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://BX100S-B001_description/meshes/BX100S-B001_J2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.023 -0.2 -0.465" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://BX100S-B001_description/meshes/BX100S-B001_J2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BX100S-B001_J3_1">
+  <inertial>
+    <origin xyz="-0.0730179325630056 -0.027462466221355952 0.1733138191458674" rpy="0 0 0"/>
+    <mass value="274.5212592242797"/>
+    <inertia ixx="10.381918" iyy="8.220087" izz="5.641283" ixy="-0.078524" iyz="0.235462" ixz="-1.052127"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0489 -0.2 -1.045" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://BX100S-B001_description/meshes/BX100S-B001_J3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0489 -0.2 -1.045" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://BX100S-B001_description/meshes/BX100S-B001_J3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BX100S-B001_J4_1">
+  <inertial>
+    <origin xyz="0.015810934926340694 0.30411951203911886 -0.0025912860163399554" rpy="0 0 0"/>
+    <mass value="135.93837484482773"/>
+    <inertia ixx="4.4639" iyy="2.488328" izz="5.477109" ixy="-0.051768" iyz="0.007989" ixz="0.455386"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.42 -1.345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://BX100S-B001_description/meshes/BX100S-B001_J4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.42 -1.345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://BX100S-B001_description/meshes/BX100S-B001_J4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BX100S-B001_J5_1">
+  <inertial>
+    <origin xyz="0.127144474912997 0.06940486428869197 2.5691142520267718e-05" rpy="0 0 0"/>
+    <mass value="60.94170797161789"/>
+    <inertia ixx="0.60048" iyy="0.437821" izz="0.67906" ixy="0.132469" iyz="-1.7e-05" ixz="-0.000389"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.098 -1.0 -1.345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://BX100S-B001_description/meshes/BX100S-B001_J5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.098 -1.0 -1.345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://BX100S-B001_description/meshes/BX100S-B001_J5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="BX100S-B001_J6_1">
+  <inertial>
+    <origin xyz="6.589615144263807e-05 0.017262603305771007 1.2883900573745777e-05" rpy="0 0 0"/>
+    <mass value="6.183018688350686"/>
+    <inertia ixx="0.015748" iyy="0.03034" izz="0.015743" ixy="-4e-06" iyz="-2e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 -1.191 -1.345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://BX100S-B001_description/meshes/BX100S-B001_J6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 -1.191 -1.345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://BX100S-B001_description/meshes/BX100S-B001_J6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.0 0.0 0.2255" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="BX100S-B001_J1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="0.023 0.2 0.2395" rpy="0 0 0"/>
+  <parent link="BX100S-B001_J1_1"/>
+  <child link="BX100S-B001_J2_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="j3" type="continuous">
+  <origin xyz="0.0259 0.0 0.58" rpy="0 0 0"/>
+  <parent link="BX100S-B001_J2_1"/>
+  <child link="BX100S-B001_J3_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="j4" type="continuous">
+  <origin xyz="-0.0489 0.22 0.3" rpy="0 0 0"/>
+  <parent link="BX100S-B001_J3_1"/>
+  <child link="BX100S-B001_J4_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+</joint>
+
+<joint name="j5" type="continuous">
+  <origin xyz="-0.098 0.58 0.0" rpy="0 0 0"/>
+  <parent link="BX100S-B001_J4_1"/>
+  <child link="BX100S-B001_J5_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="j6" type="continuous">
+  <origin xyz="0.098 0.191 0.0" rpy="0 0 0"/>
+  <parent link="BX100S-B001_J5_1"/>
+  <child link="BX100S-B001_J6_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+</robot>
