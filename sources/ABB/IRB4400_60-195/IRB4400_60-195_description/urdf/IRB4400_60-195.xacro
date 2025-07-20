@@ -1,0 +1,223 @@
+<?xml version="1.0" ?>
+<robot name="IRB4400_60-195" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find IRB4400_60-195_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find IRB4400_60-195_description)/urdf/IRB4400_60-195.trans" />
+<xacro:include filename="$(find IRB4400_60-195_description)/urdf/IRB4400_60-195.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.09268395778854831 -0.0004777190177441172 0.10250297697803466" rpy="0 0 0"/>
+    <mass value="597.7756251866958"/>
+    <inertia ixx="15.911666" iyy="31.893242" izz="44.55924" ixy="-0.11147" iyz="0.019282" ixz="-0.496372"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB4400_60-195_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB4400_60-195_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB4400_60-195_IRC5_rev02_BAL-A_CAD_v1_1">
+  <inertial>
+    <origin xyz="0.1703363045944018 0.09742241595423012 0.04224862298599952" rpy="0 0 0"/>
+    <mass value="91.9870651852346"/>
+    <inertia ixx="0.426445" iyy="2.481974" izz="2.392879" ixy="0.0" iyz="0.0" ixz="-0.437195"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.478047 0.05 -0.532603" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB4400_60-195_description/meshes/IRB4400_60-195_IRC5_rev02_BAL-A_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.478047 0.05 -0.532603" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB4400_60-195_description/meshes/IRB4400_60-195_IRC5_rev02_BAL-A_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB4400_60-195_IRC5_rev02_LINK01_CAD_v1_1">
+  <inertial>
+    <origin xyz="0.023043246288933266 0.024113975713802086 0.28329617156128895" rpy="0 0 0"/>
+    <mass value="829.1886011084512"/>
+    <inertia ixx="60.800516" iyy="51.173582" izz="67.682352" ixy="5.155335" iyz="1.757947" ixz="-14.148962"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.218" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB4400_60-195_description/meshes/IRB4400_60-195_IRC5_rev02_LINK01_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.218" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB4400_60-195_description/meshes/IRB4400_60-195_IRC5_rev02_LINK01_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB4400_60-195_IRC5_rev02_LINK02_CAD_v1_1">
+  <inertial>
+    <origin xyz="0.06311591495215652 0.1244997900799538 0.4039389971445292" rpy="0 0 0"/>
+    <mass value="241.9988431683736"/>
+    <inertia ixx="18.412685" iyy="18.302116" izz="2.264198" ixy="0.001923" iyz="0.256061" ixz="0.636442"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.2 0.12 -0.68" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB4400_60-195_description/meshes/IRB4400_60-195_IRC5_rev02_LINK02_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.2 0.12 -0.68" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB4400_60-195_description/meshes/IRB4400_60-195_IRC5_rev02_LINK02_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB4400_60-195_IRC5_rev02_LINK03_CAD_v1_1">
+  <inertial>
+    <origin xyz="-0.12589270737126418 0.06854496219733475 0.13837790703176256" rpy="0 0 0"/>
+    <mass value="246.90403931323954"/>
+    <inertia ixx="2.953753" iyy="9.877931" izz="10.118664" ixy="-0.112347" iyz="-0.144325" ixz="0.299226"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.2 0.089 -1.57" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB4400_60-195_description/meshes/IRB4400_60-195_IRC5_rev02_LINK03_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.2 0.089 -1.57" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB4400_60-195_description/meshes/IRB4400_60-195_IRC5_rev02_LINK03_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB4400_60-195_IRC5_rev02_LINK04_CAD_v1_1">
+  <inertial>
+    <origin xyz="0.41858427140241206 0.004059888501593197 -0.0011241252305527194" rpy="0 0 0"/>
+    <mass value="133.76456807299968"/>
+    <inertia ixx="0.734902" iyy="5.736544" izz="5.897455" ixy="-0.108314" iyz="-0.001203" ixz="-0.003863"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.4475 0.0 -1.72" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB4400_60-195_description/meshes/IRB4400_60-195_IRC5_rev02_LINK04_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.4475 0.0 -1.72" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB4400_60-195_description/meshes/IRB4400_60-195_IRC5_rev02_LINK04_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB4400_60-195_IRC5_rev02_LINK05_CAD_v1_1">
+  <inertial>
+    <origin xyz="-3.4349652990650625e-05 0.034376298524271987 4.53956872092931e-10" rpy="0 0 0"/>
+    <mass value="9.92806942295554"/>
+    <inertia ixx="0.019848" iyy="0.036787" izz="0.025725" ixy="5e-06" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.08 0.03325 -1.72" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB4400_60-195_description/meshes/IRB4400_60-195_IRC5_rev02_LINK05_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.08 0.03325 -1.72" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB4400_60-195_description/meshes/IRB4400_60-195_IRC5_rev02_LINK05_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB4400_60-195_IRC5_rev02_LINK06_CAD_v1_1">
+  <inertial>
+    <origin xyz="-0.031964944316127175 -1.954491704694665e-09 -4.9337250301206836e-05" rpy="0 0 0"/>
+    <mass value="3.5203075740485565"/>
+    <inertia ixx="0.003024" iyy="0.020109" izz="0.020118" ixy="0.0" iyz="-0.0" ixz="1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.17475 0.0 -1.72" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB4400_60-195_description/meshes/IRB4400_60-195_IRC5_rev02_LINK06_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.17475 0.0 -1.72" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB4400_60-195_description/meshes/IRB4400_60-195_IRC5_rev02_LINK06_CAD_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid 7" type="fixed">
+  <origin xyz="-0.478047 -0.05 0.314603" rpy="0 0 0"/>
+  <parent link="IRB4400_60-195_IRC5_rev02_LINK01_CAD_v1_1"/>
+  <child link="IRB4400_60-195_IRC5_rev02_BAL-A_CAD_v1_1"/>
+</joint>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.0 0.0 0.218" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="IRB4400_60-195_IRC5_rev02_LINK01_CAD_v1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="0.2 -0.12 0.462" rpy="0 0 0"/>
+  <parent link="IRB4400_60-195_IRC5_rev02_LINK01_CAD_v1_1"/>
+  <child link="IRB4400_60-195_IRC5_rev02_LINK02_CAD_v1_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="j3" type="continuous">
+  <origin xyz="0.0 0.031 0.89" rpy="0 0 0"/>
+  <parent link="IRB4400_60-195_IRC5_rev02_LINK02_CAD_v1_1"/>
+  <child link="IRB4400_60-195_IRC5_rev02_LINK03_CAD_v1_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="j4" type="continuous">
+  <origin xyz="0.2475 0.089 0.15" rpy="0 0 0"/>
+  <parent link="IRB4400_60-195_IRC5_rev02_LINK03_CAD_v1_1"/>
+  <child link="IRB4400_60-195_IRC5_rev02_LINK04_CAD_v1_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="j5" type="continuous">
+  <origin xyz="0.6325 -0.03325 0.0" rpy="0 0 0"/>
+  <parent link="IRB4400_60-195_IRC5_rev02_LINK04_CAD_v1_1"/>
+  <child link="IRB4400_60-195_IRC5_rev02_LINK05_CAD_v1_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="j6" type="continuous">
+  <origin xyz="0.09475 0.03325 0.0" rpy="0 0 0"/>
+  <parent link="IRB4400_60-195_IRC5_rev02_LINK05_CAD_v1_1"/>
+  <child link="IRB4400_60-195_IRC5_rev02_LINK06_CAD_v1_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+</robot>
