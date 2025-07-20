@@ -1,0 +1,196 @@
+<?xml version="1.0" ?>
+<robot name="IRB2600ID_8kg-200" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find IRB2600ID_8kg-200_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find IRB2600ID_8kg-200_description)/urdf/IRB2600ID_8kg-200.trans" />
+<xacro:include filename="$(find IRB2600ID_8kg-200_description)/urdf/IRB2600ID_8kg-200.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.09299244505879704 0.00040023906755372736 0.09590244830640034" rpy="0 0 0"/>
+    <mass value="250.4884403422575"/>
+    <inertia ixx="3.308396" iyy="6.826966" izz="8.611106" ixy="0.029678" iyz="0.002181" ixz="0.180461"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB2600ID_8kg-200_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB2600ID_8kg-200_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB2600ID_8kg-200_LINK1_CAD_rev02_v1_1">
+  <inertial>
+    <origin xyz="0.043083885652768904 0.007026630410738739 0.15972284536270456" rpy="0 0 0"/>
+    <mass value="187.86725665499122"/>
+    <inertia ixx="3.104491" iyy="4.749737" izz="4.49943" ixy="-0.075738" iyz="-0.046785" ixz="-0.326302"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.0 -0.23" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB2600ID_8kg-200_description/meshes/IRB2600ID_8kg-200_LINK1_CAD_rev02_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.0 -0.23" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB2600ID_8kg-200_description/meshes/IRB2600ID_8kg-200_LINK1_CAD_rev02_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB2600ID_8kg-200_LINK2_CAD_rev02_v1_1">
+  <inertial>
+    <origin xyz="6.157429664951919e-05 -0.032067744454000485 0.4139951965264645" rpy="0 0 0"/>
+    <mass value="123.67875317396543"/>
+    <inertia ixx="8.66843" iyy="8.820388" izz="0.379501" ixy="-2.3e-05" iyz="0.046036" ixz="0.002046"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.15 0.1404 -0.445" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB2600ID_8kg-200_description/meshes/IRB2600ID_8kg-200_LINK2_CAD_rev02_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.15 0.1404 -0.445" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB2600ID_8kg-200_description/meshes/IRB2600ID_8kg-200_LINK2_CAD_rev02_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB2600ID_8kg-200_LINK3_CAD_rev02_v1_1">
+  <inertial>
+    <origin xyz="0.0563703389625724 0.1798792055069683 0.05434613762841112" rpy="0 0 0"/>
+    <mass value="159.92543067334384"/>
+    <inertia ixx="2.142654" iyy="2.321458" izz="2.162664" ixy="0.065715" iyz="-0.055652" ixz="-0.484838"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.15 0.15 -1.345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB2600ID_8kg-200_description/meshes/IRB2600ID_8kg-200_LINK3_CAD_rev02_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.15 0.15 -1.345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB2600ID_8kg-200_description/meshes/IRB2600ID_8kg-200_LINK3_CAD_rev02_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB2600ID_8kg-200_LINK4_CAD_rev02_v1_1">
+  <inertial>
+    <origin xyz="0.3092109654666313 0.08708090137903807 -0.001894865158568182" rpy="0 0 0"/>
+    <mass value="83.28928176856161"/>
+    <inertia ixx="0.317421" iyy="4.121795" izz="4.226033" ixy="-0.42563" iyz="0.002767" ixz="-0.014204"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.393 -0.0 -1.495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB2600ID_8kg-200_description/meshes/IRB2600ID_8kg-200_LINK4_CAD_rev02_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.393 -0.0 -1.495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB2600ID_8kg-200_description/meshes/IRB2600ID_8kg-200_LINK4_CAD_rev02_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB2600ID_8kg-200_LINK5_CAD_rev02_v1_1">
+  <inertial>
+    <origin xyz="0.09270642562205889 -0.04232414034975593 0.000703895851397629" rpy="0 0 0"/>
+    <mass value="8.189449790942307"/>
+    <inertia ixx="0.016326" iyy="0.044748" izz="0.047358" ixy="0.011342" iyz="-5e-05" ixz="0.000335"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.088 -0.07 -1.495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB2600ID_8kg-200_description/meshes/IRB2600ID_8kg-200_LINK5_CAD_rev02_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.088 -0.07 -1.495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB2600ID_8kg-200_description/meshes/IRB2600ID_8kg-200_LINK5_CAD_rev02_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IRB2600ID_8kg-200_LINK6_CAD_rev02_v1_1">
+  <inertial>
+    <origin xyz="0.002576184535717063 -0.00020056489996861555 -0.00041806036419900217" rpy="0 0 0"/>
+    <mass value="0.602079987946937"/>
+    <inertia ixx="0.000998" iyy="0.000511" izz="0.000516" ixy="0.0" iyz="2e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.2775 -0.0 -1.495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB2600ID_8kg-200_description/meshes/IRB2600ID_8kg-200_LINK6_CAD_rev02_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.2775 -0.0 -1.495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://IRB2600ID_8kg-200_description/meshes/IRB2600ID_8kg-200_LINK6_CAD_rev02_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.0 0.0 0.23" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="IRB2600ID_8kg-200_LINK1_CAD_rev02_v1_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="0.15 -0.1404 0.215" rpy="0 0 0"/>
+  <parent link="IRB2600ID_8kg-200_LINK1_CAD_rev02_v1_1"/>
+  <child link="IRB2600ID_8kg-200_LINK2_CAD_rev02_v1_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="j3" type="continuous">
+  <origin xyz="0.0 -0.0096 0.9" rpy="0 0 0"/>
+  <parent link="IRB2600ID_8kg-200_LINK2_CAD_rev02_v1_1"/>
+  <child link="IRB2600ID_8kg-200_LINK3_CAD_rev02_v1_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="j4" type="continuous">
+  <origin xyz="0.243 0.15 0.15" rpy="0 0 0"/>
+  <parent link="IRB2600ID_8kg-200_LINK3_CAD_rev02_v1_1"/>
+  <child link="IRB2600ID_8kg-200_LINK4_CAD_rev02_v1_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="j5" type="continuous">
+  <origin xyz="0.695 0.07 0.0" rpy="0 0 0"/>
+  <parent link="IRB2600ID_8kg-200_LINK4_CAD_rev02_v1_1"/>
+  <child link="IRB2600ID_8kg-200_LINK5_CAD_rev02_v1_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="j6" type="continuous">
+  <origin xyz="0.1895 -0.07 0.0" rpy="0 0 0"/>
+  <parent link="IRB2600ID_8kg-200_LINK5_CAD_rev02_v1_1"/>
+  <child link="IRB2600ID_8kg-200_LINK6_CAD_rev02_v1_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+</robot>
