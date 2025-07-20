@@ -1,0 +1,193 @@
+<?xml version="1.0" ?>
+<robot name="RS005L-A001">
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="8.666676081872975e-05 -0.025007236970159382 0.07893879222068109" rpy="0 0 0"/>
+    <mass value="38.0253217240971"/>
+    <inertia ixx="0.218946" iyy="0.148079" izz="0.20628" ixy="0.000299" iyz="-0.014623" ixz="2.1e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS005L-A001_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS005L-A001_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS005L-A001_J1_1">
+  <inertial>
+    <origin xyz="-0.0009028908243719336 0.038498939793356286 0.07630025871148449" rpy="0 0 0"/>
+    <mass value="43.016701704037"/>
+    <inertia ixx="0.301036" iyy="0.372246" izz="0.462459" ixy="0.010144" iyz="-0.07984" ixz="0.005493"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -7e-06 -0.165" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS005L-A001_description/meshes/RS005L-A001_J1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -7e-06 -0.165" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS005L-A001_description/meshes/RS005L-A001_J1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS005L-A001_J2_1">
+  <inertial>
+    <origin xyz="0.06540311681138111 -0.002025364873319127 0.15214084310129417" rpy="0 0 0"/>
+    <mass value="56.20157888391649"/>
+    <inertia ixx="1.070175" iyy="1.281396" izz="0.340169" ixy="0.000495" iyz="0.032587" ixz="-0.022044"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0585 -0.105 -0.295" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS005L-A001_description/meshes/RS005L-A001_J2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0585 -0.105 -0.295" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS005L-A001_description/meshes/RS005L-A001_J2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS005L-A001_J3_1">
+  <inertial>
+    <origin xyz="0.07802937659424634 -0.0474489851582328 0.016513777659672102" rpy="0 0 0"/>
+    <mass value="42.88417286163072"/>
+    <inertia ixx="0.263904" iyy="0.214209" izz="0.208866" ixy="0.001953" iyz="0.037827" ixz="-0.000625"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.079 -0.105 -0.675" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS005L-A001_description/meshes/RS005L-A001_J3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.079 -0.105 -0.675" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS005L-A001_description/meshes/RS005L-A001_J3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS005L-A001_J4_1">
+  <inertial>
+    <origin xyz="0.0005484047959813781 7.065397986082134e-07 0.13528329571810815" rpy="0 0 0"/>
+    <mass value="12.927091362464212"/>
+    <inertia ixx="0.092386" iyy="0.09838" izz="0.018299" ixy="-0.0" iyz="-1e-06" ixz="-0.000863"/>
+  </inertial>
+  <visual>
+    <origin xyz="2.2e-05 -0.025 -0.825" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS005L-A001_description/meshes/RS005L-A001_J4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="2.2e-05 -0.025 -0.825" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS005L-A001_description/meshes/RS005L-A001_J4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS005L-A001_J5_1">
+  <inertial>
+    <origin xyz="0.029200088599076586 3.3943883990285306e-06 0.017190997260589702" rpy="0 0 0"/>
+    <mass value="2.72160915616873"/>
+    <inertia ixx="0.003211" iyy="0.003006" izz="0.001539" ixy="-0.0" iyz="0.0" ixz="1.5e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0295 -0.025 -1.085" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS005L-A001_description/meshes/RS005L-A001_J5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0295 -0.025 -1.085" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS005L-A001_description/meshes/RS005L-A001_J5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS005L-A001_J6_1">
+  <inertial>
+    <origin xyz="-8.733931024470385e-06 0.00021679224723900048 0.00023383015863642775" rpy="0 0 0"/>
+    <mass value="0.09497074251738848"/>
+    <inertia ixx="1.1e-05" iyy="1.1e-05" izz="2e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 -0.025 -1.157" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS005L-A001_description/meshes/RS005L-A001_J6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 -0.025 -1.157" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS005L-A001_description/meshes/RS005L-A001_J6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="continuous">
+  <origin xyz="0.0 7e-06 0.165" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="RS005L-A001_J1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Revolute 2" type="continuous">
+  <origin xyz="-0.0585 0.104993 0.13" rpy="0 0 0"/>
+  <parent link="RS005L-A001_J1_1"/>
+  <child link="RS005L-A001_J2_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Revolute 3" type="continuous">
+  <origin xyz="-0.0205 0.0 0.38" rpy="0 0 0"/>
+  <parent link="RS005L-A001_J2_1"/>
+  <child link="RS005L-A001_J3_1"/>
+  <axis xyz="-1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 4" type="continuous">
+  <origin xyz="0.078978 -0.08 0.15" rpy="0 0 0"/>
+  <parent link="RS005L-A001_J3_1"/>
+  <child link="RS005L-A001_J4_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Revolute 5" type="continuous">
+  <origin xyz="-0.029478 0.0 0.26" rpy="0 0 0"/>
+  <parent link="RS005L-A001_J4_1"/>
+  <child link="RS005L-A001_J5_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Revolute 6" type="continuous">
+  <origin xyz="0.0295 0.0 0.072" rpy="0 0 0"/>
+  <parent link="RS005L-A001_J5_1"/>
+  <child link="RS005L-A001_J6_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+</joint>
+
+</robot>
