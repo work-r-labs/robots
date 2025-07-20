@@ -1,0 +1,196 @@
+<?xml version="1.0" ?>
+<robot name="RS020N-A001" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find RS020N-A001_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find RS020N-A001_description)/urdf/RS020N-A001.trans" />
+<xacro:include filename="$(find RS020N-A001_description)/urdf/RS020N-A001.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.00034433406756378493 -0.07535773636763267 0.09071260906461814" rpy="0 0 0"/>
+    <mass value="141.38572098337764"/>
+    <inertia ixx="2.214354" iyy="1.290049" izz="2.692227" ixy="-0.009079" iyz="0.03144" ixz="0.001061"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS020N-A001_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS020N-A001_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS020N-A001_J1_1">
+  <inertial>
+    <origin xyz="0.001618691430813066 0.053863974742439556 0.15657939333170356" rpy="0 0 0"/>
+    <mass value="181.6362691193184"/>
+    <inertia ixx="3.213638" iyy="3.834927" izz="3.7919" ixy="-0.12013" iyz="-0.816933" ixz="0.213188"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.0 -0.199" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS020N-A001_description/meshes/RS020N-A001_J1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.0 -0.199" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS020N-A001_description/meshes/RS020N-A001_J1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS020N-A001_J2_1">
+  <inertial>
+    <origin xyz="0.09784175920111185 0.007102807605705919 0.36981974086916075" rpy="0 0 0"/>
+    <mass value="163.889002973526"/>
+    <inertia ixx="16.330533" iyy="16.157583" izz="0.789284" ixy="-0.001896" iyz="0.212541" ixz="-0.733673"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.06 -0.15 -0.465" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS020N-A001_description/meshes/RS020N-A001_J2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.06 -0.15 -0.465" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS020N-A001_description/meshes/RS020N-A001_J2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS020N-A001_J3_1">
+  <inertial>
+    <origin xyz="-0.11666549335218891 -0.00038582309058310393 0.03528037446239729" rpy="0 0 0"/>
+    <mass value="112.0588844871384"/>
+    <inertia ixx="1.114617" iyy="1.203713" izz="0.892713" ixy="0.002623" iyz="-0.000438" ixz="-0.013678"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.088 -0.15 -1.235" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS020N-A001_description/meshes/RS020N-A001_J3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.088 -0.15 -1.235" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS020N-A001_description/meshes/RS020N-A001_J3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS020N-A001_J4_1">
+  <inertial>
+    <origin xyz="-6.510947130990964e-05 -8.113604759010795e-05 0.3172254418324454" rpy="0 0 0"/>
+    <mass value="57.2635730535197"/>
+    <inertia ixx="1.683479" iyy="1.730916" izz="0.145106" ixy="2.3e-05" iyz="0.000154" ixz="-7e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 -0.15 -1.432" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS020N-A001_description/meshes/RS020N-A001_J4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 -0.15 -1.432" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS020N-A001_description/meshes/RS020N-A001_J4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS020N-A001_J5_1">
+  <inertial>
+    <origin xyz="0.042763358418630604 8.257444773279721e-05 0.019485809794608233" rpy="0 0 0"/>
+    <mass value="6.746554747014125"/>
+    <inertia ixx="0.012305" iyy="0.012813" izz="0.008426" ixy="0.0" iyz="-1.3e-05" ixz="0.0001"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0415 -0.15 -2.04" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS020N-A001_description/meshes/RS020N-A001_J5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0415 -0.15 -2.04" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS020N-A001_description/meshes/RS020N-A001_J5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS020N-A001_J6_1">
+  <inertial>
+    <origin xyz="-0.0002976268888444083 3.084991276247617e-05 0.006368900011073819" rpy="0 0 0"/>
+    <mass value="0.3970304122124492"/>
+    <inertia ixx="0.000155" iyy="0.000155" izz="0.000298" ixy="-1e-06" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.000501 -0.15 -2.121" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS020N-A001_description/meshes/RS020N-A001_J6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.000501 -0.15 -2.121" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS020N-A001_description/meshes/RS020N-A001_J6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.0 0.0 0.199" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="RS020N-A001_J1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="0.06 0.15 0.266" rpy="0 0 0"/>
+  <parent link="RS020N-A001_J1_1"/>
+  <child link="RS020N-A001_J2_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="j3" type="continuous">
+  <origin xyz="0.028 0.0 0.77" rpy="0 0 0"/>
+  <parent link="RS020N-A001_J2_1"/>
+  <child link="RS020N-A001_J3_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="j4" type="continuous">
+  <origin xyz="-0.088 0.0 0.197" rpy="0 0 0"/>
+  <parent link="RS020N-A001_J3_1"/>
+  <child link="RS020N-A001_J4_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="j5" type="continuous">
+  <origin xyz="-0.0415 0.0 0.608" rpy="0 0 0"/>
+  <parent link="RS020N-A001_J4_1"/>
+  <child link="RS020N-A001_J5_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="j6" type="continuous">
+  <origin xyz="0.042001 0.0 0.081" rpy="0 0 0"/>
+  <parent link="RS020N-A001_J5_1"/>
+  <child link="RS020N-A001_J6_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+</robot>

@@ -1,0 +1,193 @@
+<?xml version="1.0" ?>
+<robot name="RS080N-B001">
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.0005507903991547627 -0.07328922685188961 0.11097738213890825" rpy="0 0 0"/>
+    <mass value="296.38171188088154"/>
+    <inertia ixx="7.597144" iyy="4.224744" izz="9.154711" ixy="-0.042947" iyz="-0.075295" ixz="0.002879"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS080N-B001_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS080N-B001_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS080N-B001_J1_1">
+  <inertial>
+    <origin xyz="0.004897781800755517 0.025831479094747443 0.21471566484491245" rpy="0 0 0"/>
+    <mass value="462.1631225902342"/>
+    <inertia ixx="17.409777" iyy="18.041999" izz="15.11024" ixy="0.260915" iyz="-3.552309" ixz="1.845065"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.249" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS080N-B001_description/meshes/RS080N-B001_J1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.249" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS080N-B001_description/meshes/RS080N-B001_J1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS080N-B001_J2_1">
+  <inertial>
+    <origin xyz="0.14501803805790145 0.005884985243355678 0.373356336137885" rpy="0 0 0"/>
+    <mass value="357.19504838336593"/>
+    <inertia ixx="47.771858" iyy="47.049192" izz="3.166258" ixy="0.016143" iyz="0.410352" ixz="-3.510051"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.035 -0.15 -0.68" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS080N-B001_description/meshes/RS080N-B001_J2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.035 -0.15 -0.68" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS080N-B001_description/meshes/RS080N-B001_J2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS080N-B001_J3_1">
+  <inertial>
+    <origin xyz="-0.15976987811055984 0.021939343448552612 0.024993380627384765" rpy="0 0 0"/>
+    <mass value="238.65060564579403"/>
+    <inertia ixx="3.9551" iyy="4.411157" izz="3.518898" ixy="0.171938" iyz="0.167775" ixz="-0.308186"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.122 -0.15 -1.55" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS080N-B001_description/meshes/RS080N-B001_J3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.122 -0.15 -1.55" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS080N-B001_description/meshes/RS080N-B001_J3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS080N-B001_J4_1">
+  <inertial>
+    <origin xyz="0.0016949056729644507 -4.125183615036332e-05 0.43680511613700346" rpy="0 0 0"/>
+    <mass value="154.12824627446923"/>
+    <inertia ixx="8.279316" iyy="8.511423" izz="0.77094" ixy="-5.7e-05" iyz="-0.000369" ixz="-0.11032"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.15 -1.82" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS080N-B001_description/meshes/RS080N-B001_J4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.15 -1.82" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS080N-B001_description/meshes/RS080N-B001_J4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS080N-B001_J5_1">
+  <inertial>
+    <origin xyz="0.048865958792468016 0.00022985706249600835 0.0578909007349484" rpy="0 0 0"/>
+    <mass value="14.869318086193221"/>
+    <inertia ixx="0.066269" iyy="0.06386" izz="0.029676" ixy="-3e-05" iyz="2.6e-05" ixz="-0.006897"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0595 -0.15 -2.63" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS080N-B001_description/meshes/RS080N-B001_J5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0595 -0.15 -2.63" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS080N-B001_description/meshes/RS080N-B001_J5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS080N-B001_J6_1">
+  <inertial>
+    <origin xyz="8.637126254846793e-06 5.416105863356724e-05 0.0164098294655437" rpy="0 0 0"/>
+    <mass value="2.5308375706710504"/>
+    <inertia ixx="0.00219" iyy="0.002201" izz="0.003881" ixy="1e-06" iyz="-2e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.15 -2.7565" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS080N-B001_description/meshes/RS080N-B001_J6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.15 -2.7565" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RS080N-B001_description/meshes/RS080N-B001_J6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.0 0.0 0.249" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="RS080N-B001_J1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="0.035 0.15 0.431" rpy="0 0 0"/>
+  <parent link="RS080N-B001_J1_1"/>
+  <child link="RS080N-B001_J2_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="j3" type="continuous">
+  <origin xyz="0.087 0.0 0.87" rpy="0 0 0"/>
+  <parent link="RS080N-B001_J2_1"/>
+  <child link="RS080N-B001_J3_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="j4" type="continuous">
+  <origin xyz="-0.122 0.0 0.27" rpy="0 0 0"/>
+  <parent link="RS080N-B001_J3_1"/>
+  <child link="RS080N-B001_J4_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="j5" type="continuous">
+  <origin xyz="-0.0595 0.0 0.81" rpy="0 0 0"/>
+  <parent link="RS080N-B001_J4_1"/>
+  <child link="RS080N-B001_J5_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="j6" type="continuous">
+  <origin xyz="0.0595 0.0 0.1265" rpy="0 0 0"/>
+  <parent link="RS080N-B001_J5_1"/>
+  <child link="RS080N-B001_J6_1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+</robot>
