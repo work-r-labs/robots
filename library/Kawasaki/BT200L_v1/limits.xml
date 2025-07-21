@@ -1,0 +1,17 @@
+<!-- Joint 1 -->
+<limit lower="-2.7925" upper="2.7925" velocity="1.8326" effort="1334.0"/>
+
+<!-- Joint 2 -->
+<limit lower="-1.3963" upper="2.3562" velocity="1.4835" effort="1334.0"/>
+
+<!-- Joint 3 -->
+<limit lower="-1.3090" upper="1.5708" velocity="1.7453" effort="588.0"/>
+
+<!-- Joint 4 -->
+<limit lower="-3.6652" upper="3.6652" velocity="2.0944" effort="1334.0"/>
+
+<!-- Joint 5 -->
+<limit lower="-2.1817" upper="2.1817" velocity="2.0944" effort="1334.0"/>
+
+<!-- Joint 6 -->
+<limit lower="-3.6652" upper="3.6652" velocity="3.4907" effort="588.0"/>

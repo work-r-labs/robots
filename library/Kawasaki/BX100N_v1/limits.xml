@@ -1,0 +1,17 @@
+<!-- Joint 1 - Arm rotation -->
+<limit lower="-2.7925" upper="2.7925" effort="588.4" velocity="2.356" />
+
+<!-- Joint 2 - Arm out-in -->
+<limit lower="-2.094" upper="1.134" effort="588.4" velocity="1.920" />
+
+<!-- Joint 3 - Arm up-down -->
+<limit lower="-1.571" upper="1.344" effort="588.4" velocity="2.443" />
+
+<!-- Joint 4 - Wrist swivel -->
+<limit lower="-3.665" upper="3.665" effort="588.4" velocity="3.491" />
+
+<!-- Joint 5 - Wrist bend -->
+<limit lower="-2.182" upper="2.182" effort="294.2" velocity="3.491" />
+
+<!-- Joint 6 - Wrist twist -->
+<limit lower="-3.665" upper="3.665" effort="294.2" velocity="5.236" />
