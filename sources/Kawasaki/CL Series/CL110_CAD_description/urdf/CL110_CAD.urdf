@@ -1,0 +1,193 @@
+<?xml version="1.0" ?>
+<robot name="CL110_CAD">
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0020443369238353336 0.032031449819426544 -0.005484653052624675" rpy="0 0 0"/>
+    <mass value="6.948667147505599"/>
+    <inertia ixx="0.02378" iyy="0.022432" izz="0.042073" ixy="-5e-06" iyz="1e-06" ixz="0.000184"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL110_CAD_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL110_CAD_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_1">
+  <inertial>
+    <origin xyz="-2.539850796389549e-05 0.03174838191565383 0.11047110734888961" rpy="0 0 0"/>
+    <mass value="26.50192961091554"/>
+    <inertia ixx="0.295895" iyy="0.248198" izz="0.140838" ixy="-4.2e-05" iyz="-0.06183" ixz="2.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.000379 -0.032033 -0.045088" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL110_CAD_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.000379 -0.032033 -0.045088" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL110_CAD_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link2_1">
+  <inertial>
+    <origin xyz="-5.783070392282913e-06 0.015355704260563763 0.20971244422320956" rpy="0 0 0"/>
+    <mass value="16.195043980306405"/>
+    <inertia ixx="0.577816" iyy="0.587265" izz="0.039298" ixy="-5e-06" iyz="0.03112" ixz="7.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.000379 -0.166533 -0.227588" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL110_CAD_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.000379 -0.166533 -0.227588" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL110_CAD_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link3_1">
+  <inertial>
+    <origin xyz="3.69333761139417e-05 -0.08919811679725928 0.05666153234437854" rpy="0 0 0"/>
+    <mass value="13.483560625053732"/>
+    <inertia ixx="0.096515" iyy="0.078036" izz="0.048202" ixy="7e-06" iyz="0.018307" ixz="2.1e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.000379 -0.145033 -0.707588" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL110_CAD_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.000379 -0.145033 -0.707588" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL110_CAD_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link4_1">
+  <inertial>
+    <origin xyz="-6.199176866582496e-06 0.061690239106159096 0.12732079659625384" rpy="0 0 0"/>
+    <mass value="7.45163371296972"/>
+    <inertia ixx="0.13763" iyy="0.12511" izz="0.02704" ixy="-1e-06" iyz="-0.033956" ixz="-8e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.000379 -0.032033 -0.884588" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL110_CAD_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.000379 -0.032033 -0.884588" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL110_CAD_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link5_1">
+  <inertial>
+    <origin xyz="-9.959388625885356e-06 -0.069166005091335 0.042457639016239" rpy="0 0 0"/>
+    <mass value="6.013138327914528"/>
+    <inertia ixx="0.025811" iyy="0.019705" izz="0.012839" ixy="-5e-06" iyz="0.005428" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.000379 -0.122033 -1.227588" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL110_CAD_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.000379 -0.122033 -1.227588" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL110_CAD_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link6_1">
+  <inertial>
+    <origin xyz="2.0557915098286196e-05 0.0004825157373782793 0.006553942053700412" rpy="0 0 0"/>
+    <mass value="1.6111944965258764"/>
+    <inertia ixx="0.001051" iyy="0.001016" izz="0.00166" ixy="0.0" iyz="-1e-06" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.000379 -0.032033 -1.367588" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL110_CAD_description/meshes/link6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.000379 -0.032033 -1.367588" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL110_CAD_description/meshes/link6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="j1" type="continuous">
+  <origin xyz="-0.000379 0.032033 0.045088" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link1_1"/>
+  <axis xyz="-0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="0.0 0.1345 0.1825" rpy="0 0 0"/>
+  <parent link="link1_1"/>
+  <child link="link2_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+</joint>
+
+<joint name="j3" type="continuous">
+  <origin xyz="0.0 -0.0215 0.48" rpy="0 0 0"/>
+  <parent link="link2_1"/>
+  <child link="link3_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="j4" type="continuous">
+  <origin xyz="0.0 -0.113 0.177" rpy="0 0 0"/>
+  <parent link="link3_1"/>
+  <child link="link4_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="j5" type="continuous">
+  <origin xyz="0.0 0.09 0.343" rpy="0 0 0"/>
+  <parent link="link4_1"/>
+  <child link="link5_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+</joint>
+
+<joint name="j6" type="continuous">
+  <origin xyz="0.0 -0.09 0.14" rpy="0 0 0"/>
+  <parent link="link5_1"/>
+  <child link="link6_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+</robot>
