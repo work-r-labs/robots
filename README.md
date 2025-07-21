@@ -72,8 +72,14 @@ Video Tutorial: https://youtu.be/07S_P-3OKPc
 | ABB | Irbpl_5000 | Positioner | [URDF](library/ABB/Irbpl_5000_v1/Irbpl_5000.urdf) | [USD](library/ABB/Irbpl_5000_v1/Irbpl_5000/Irbpl_5000.usd) |
 | ABB | Irbpr_1000_D1200_L2000_IRC5_rev02_CAD | Positioner | [URDF](library/ABB/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD_v1/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD.urdf) | [USD](library/ABB/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD_v1/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD.usd) |
 | ABB | Irbpr_300_D1000_L1250 | Positioner | [URDF](library/ABB/Irbpr_300_D1000_L1250_v1/Irbpr_300_D1000_L1250.urdf) | [USD](library/ABB/Irbpr_300_D1000_L1250_v1/Irbpr_300_D1000_L1250/Irbpr_300_D1000_L1250.usd) |
+| Kawasaki | BT200L_B001 | Industrial Robot | [URDF](library/Kawasaki/BT200L_v1/BT200L_B001.urdf) | [USD](library/Kawasaki/BT200L_v1/BT200L_B001/BT200L_B001.usd) |
+| Kawasaki | BX100N | Industrial Robot | [URDF](library/Kawasaki/BX100N_v1/BX100N.urdf) | [USD](library/Kawasaki/BX100N_v1/BX100N/BX100N.usd) |
+| Kawasaki | BX100S | Industrial Robot | [URDF](library/Kawasaki/BX100S_v1/BX100S.urdf) | [USD](library/Kawasaki/BX100S_v1/BX100S/BX100S.usd) |
+| Kawasaki | BX130X | Industrial Robot | [URDF](library/Kawasaki/BX130X_v1/BX130X.urdf) | [USD](library/Kawasaki/BX130X_v1/BX130X/BX130X.usd) |
+| Kawasaki | BX200L_C001 | Industrial Robot | [URDF](library/Kawasaki/BX200L_v1/BX200L_C001.urdf) | [USD](library/Kawasaki/BX200L_v1/BX200L_C001/BX200L_C001.usd) |
+| Kawasaki | CL103_CAD |  Cobot | [URDF](library/Kawasaki/CL103_v1/CL103_CAD.urdf) | [USD](library/Kawasaki/CL103_v1/CL103_CAD/CL103_CAD.usd) |
 
-**Total**: 44 ABB robot models available
+**Total**: 46 robot models available (40 ABB + 6 Kawasaki)
 
 ## Demos
 
