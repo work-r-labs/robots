@@ -1,0 +1,196 @@
+<?xml version="1.0" ?>
+<robot name="CL108_CAD" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find CL108_CAD_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find CL108_CAD_description)/urdf/CL108_CAD.trans" />
+<xacro:include filename="$(find CL108_CAD_description)/urdf/CL108_CAD.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0024233181158877675 -1.8307567465498617e-06 0.02692760871560096" rpy="0 0 0"/>
+    <mass value="6.948667147505599"/>
+    <inertia ixx="0.02378" iyy="0.022432" izz="0.042073" ixy="-5e-06" iyz="1e-06" ixz="0.000184"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL108_CAD_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL108_CAD_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_1">
+  <inertial>
+    <origin xyz="-2.5417315911471666e-05 0.031748101339480875 0.14247136911711622" rpy="0 0 0"/>
+    <mass value="26.50192961091554"/>
+    <inertia ixx="0.295895" iyy="0.248198" izz="0.140838" ixy="-4.2e-05" iyz="-0.06183" ixz="2.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.0 -0.0455" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL108_CAD_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.0 -0.0455" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL108_CAD_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link2_1">
+  <inertial>
+    <origin xyz="-7.605926116856955e-06 0.013219513779420933 0.26342512214737657" rpy="0 0 0"/>
+    <mass value="21.56524853903648"/>
+    <inertia ixx="1.05526" iyy="1.067985" izz="0.051967" ixy="1.6e-05" iyz="0.048059" ixz="7.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.1345 -0.26" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL108_CAD_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.1345 -0.26" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL108_CAD_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link3_1">
+  <inertial>
+    <origin xyz="3.6914568282282755e-05 -0.08919839728680101 0.05666179411275085" rpy="0 0 0"/>
+    <mass value="13.483560625023348"/>
+    <inertia ixx="0.096515" iyy="0.078036" izz="0.048202" ixy="7e-06" iyz="0.018307" ixz="2.1e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.113 -0.86" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL108_CAD_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.113 -0.86" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL108_CAD_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link4_1">
+  <inertial>
+    <origin xyz="-1.154561178034997e-05 0.06978153638815322 0.22174992605589838" rpy="0 0 0"/>
+    <mass value="9.061028052036315"/>
+    <inertia ixx="0.358892" iyy="0.345192" izz="0.029869" ixy="1e-06" iyz="-0.06097" ixz="3.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.0 -1.0365" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL108_CAD_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.0 -1.0365" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL108_CAD_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link5_1">
+  <inertial>
+    <origin xyz="-9.978196573883561e-06 -0.05016628558099426 0.0424579013507973" rpy="0 0 0"/>
+    <mass value="6.01313832791453"/>
+    <inertia ixx="0.025811" iyy="0.019705" izz="0.012839" ixy="-5e-06" iyz="0.005428" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.071 -1.56" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL108_CAD_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.071 -1.56" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL108_CAD_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link6_1">
+  <inertial>
+    <origin xyz="2.0543066195292326e-05 0.0004822365165697954 0.0070542043882617644" rpy="0 0 0"/>
+    <mass value="1.6111944965258764"/>
+    <inertia ixx="0.001051" iyy="0.001016" izz="0.00166" ixy="0.0" iyz="-1e-06" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -1.6995" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL108_CAD_description/meshes/link6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -1.6995" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CL108_CAD_description/meshes/link6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.0 0.0 0.0455" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link1_1"/>
+  <axis xyz="-0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="0.0 0.1345 0.2145" rpy="0 0 0"/>
+  <parent link="link1_1"/>
+  <child link="link2_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="j3" type="continuous">
+  <origin xyz="0.0 -0.0215 0.6" rpy="0 0 0"/>
+  <parent link="link2_1"/>
+  <child link="link3_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="j4" type="continuous">
+  <origin xyz="0.0 -0.113 0.1765" rpy="0 0 0"/>
+  <parent link="link3_1"/>
+  <child link="link4_1"/>
+  <axis xyz="-0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="j5" type="continuous">
+  <origin xyz="0.0 0.071 0.5235" rpy="0 0 0"/>
+  <parent link="link4_1"/>
+  <child link="link5_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="j6" type="continuous">
+  <origin xyz="0.0 -0.071 0.1395" rpy="0 0 0"/>
+  <parent link="link5_1"/>
+  <child link="link6_1"/>
+  <axis xyz="-0.0 -0.0 -1.0"/>
+</joint>
+
+</robot>
