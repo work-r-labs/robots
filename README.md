@@ -1,6 +1,6 @@
-# ABB Robot Models Repository
+# Workr Robot Asset Library
 
-Plug and play USD and URDF assets for ABB robots, ready for use in IsaacSim and other robotics applications.
+Plug and play USD and URDF assets for robots, ready for use in IsaacSim and other robotics applications. Industrial and Cobots.
 
 ![Alt text](docs/release_video.png)
 
@@ -97,8 +97,6 @@ Drag a cube around the scene and watch a robot follow it.
 
 
 ## Resources
-
-* **ABB Robot Models Spreadsheet**: https://docs.google.com/spreadsheets/d/1CGoqaV-FV7UAYWtw-b55ihwH7Zm8Z7hNbWZzfseqUVU/edit?usp=sharing
 
 * **IsaacSim Typings**: https://github.com/work-r-labs/isaacsim_typings
 
