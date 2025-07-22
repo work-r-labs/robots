@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Script to validate all URDF files in the library directory
 # Uses the URDF validation tool at tools/validate_urdf.py
