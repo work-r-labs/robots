@@ -115,3 +115,23 @@ library/ABB/RobotName_v1/
 - `scripts/_ik_demo_utils.py` - IK solving utilities using PyRoKi
 - `ruff.toml` - Code formatting configuration
 - `.claude/commands/update-info-table.md` - Command to update README robot table
+
+## markitdown Usage
+
+**markitdown** is a command-line tool that converts various file formats to markdown.
+
+### Basic Usage
+- `markitdown <filename>` - Convert file to markdown (output to stdout)
+- `markitdown` - Read from stdin if no filename provided
+- `markitdown file.pdf -o output.md` - Save output to file
+- `markitdown file.pdf > output.md` - Redirect output to file
+
+### Key Options
+- `-o OUTPUT` - Specify output filename
+- `-x EXTENSION` - Hint file extension when reading from stdin
+- `-m MIME_TYPE` - Hint MIME type
+- `-c CHARSET` - Hint charset (e.g. UTF-8)
+- `-d` - Use Document Intelligence for extraction (requires endpoint)
+- `-p` - Use 3rd-party plugins
+- `--list-plugins` - Show available plugins
+- `--keep-data-uris` - Preserve base64 images in output
