@@ -10,6 +10,7 @@ np.set_printoptions(suppress=True)
 urdf_path = project_root / "library/ABB/IRB1600_X-120_v1/IRB1600_X-120.urdf"
 urdf = yourdfpy.URDF.load(urdf_path, mesh_dir=urdf_path.parent)
 
+
 def _test_fk_configuration(joint_angles_degrees, expected_flange_xyz):
     """Helper function to test forward kinematics for a given configuration."""
     urdf.update_cfg(np.deg2rad(joint_angles_degrees))

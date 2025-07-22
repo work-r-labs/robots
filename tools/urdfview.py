@@ -13,21 +13,25 @@ bp = rrb.Blueprint(
 
 
 def main(urdf_path: Path, mode: str = "spawn"):
-   rr.init(str(int(time.time())), default_blueprint=bp) 
-   
-   if mode == "spawn":
-       rr.spawn(default_blueprint=bp)
-   elif mode == "save":
-       rr.save(f"{urdf_path.parent}/{urdf_path.stem}.rrd", default_blueprint=bp)
-   
-   rr.log_file_from_path(urdf_path)
+    rr.init(str(int(time.time())), default_blueprint=bp)
+
+    if mode == "spawn":
+        rr.spawn(default_blueprint=bp)
+    elif mode == "save":
+        rr.save(f"{urdf_path.parent}/{urdf_path.stem}.rrd", default_blueprint=bp)
+
+    rr.log_file_from_path(urdf_path)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="URDF Viewer")
     parser.add_argument("urdf_path", type=Path)
-    parser.add_argument("--mode", choices=["spawn", "save"], default="spawn",
-                        help="Mode: 'spawn' to view interactively, 'save' to save .rrd file")
+    parser.add_argument(
+        "--mode",
+        choices=["spawn", "save"],
+        default="spawn",
+        help="Mode: 'spawn' to view interactively, 'save' to save .rrd file",
+    )
     args = parser.parse_args()
 
     urdf_path: Path = args.urdf_path
