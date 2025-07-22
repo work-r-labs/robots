@@ -1,16 +1,16 @@
 # Robot Compliance Status
 
-This document tracks which ABB robot models follow proper conventions and have complete asset files. This serves as a todo list for maintaining and improving robot model compliance.
+This document tracks which robot models follow proper conventions and have complete asset files. This serves as a todo list for maintaining and improving robot model compliance.
 
 ## Summary Statistics
 
-- **Total Robots**: 46 (40 ABB + 6 Kawasaki)
-- **Fully Compliant**: 25 (54%)
-- **URDF Validation**: 46/46 passed ✅
-- **Forward Kinematics Tests**: 6/46 robots have FK tests (13%)
-- **Missing Limits**: 23 robots need `limits.xml` files
-- **Missing USD Configuration**: All robots now have USD configuration directories ✅
-- **Directory Name Issues**: 1 robot has directory/file naming mismatch
+- **Total Robots**: 67 (44 ABB + 23 Kawasaki)
+- **Total URDF files**: 63 
+- **Total USD files**: 200 (many robots have multiple USD configurations)
+- **With limits.xml**: 30/67 (45%)
+- **Forward Kinematics Tests**: 7 test files available
+- **Missing USD**: 4 robots completely lack USD files
+- **Directory Issues**: Several robots have naming inconsistencies
 
 ## Compliance Criteria
 
@@ -20,6 +20,14 @@ For a robot to be considered "fully compliant", it must have:
 - ✅ Meshes directory with STL files
 - ✅ limits.xml file for joint limits
 - ✅ USD configuration files
+
+## Legend
+
+- ✅ = Present and correct
+- ❌ = Missing
+- ⚠️ = Present but problematic
+- ⚡ = Forward kinematics tests available
+- Numbers in parentheses = Count of mesh files
 
 **Test Coverage Types:**
 - ✅ All robots: URDF validation tests
@@ -52,7 +60,7 @@ For a robot to be considered "fully compliant", it must have:
 | IRB8700_800_350_v1 | ✅ | ✅ | ✅ (8) | ✅ | ✅ | ✅ | **COMPLIANT** | ✅ |
 | IRB910INV-350_v1 | ✅ | ✅ | ✅ (4) | ✅ | ✅ | ✅ | **COMPLIANT** | ✅ |
 | IRB910INV-550_v1 | ✅ | ✅ | ✅ (5) | ✅ | ✅ | ✅ | **COMPLIANT** | ✅ |
-| IRB920_6kg_550-180-STD_v1 | ✅ | ❌ | ✅ (4) | ✅ | ❌ | ✅ | Name mismatch | 🟡 |
+| IRB920_6kg_550-180-STD_v1 | ✅ | ⚠️ | ✅ (4) | ✅ | ⚠️ | ✅ | Name mismatch | 🟡 |
 | IRB920_6kg_650_180_STD_v1 | ✅ | ✅ | ✅ (4) | ✅ | ✅ | ✅ | **COMPLIANT** | ✅ |
 | IRB920T_6kg_450_180_STD_v1 | ✅ | ✅ | ✅ (4) | ✅ | ✅ | ✅ | **COMPLIANT** | ✅ |
 | IRB930_12kg_1050_300_STD_v1 | ✅ | ✅ | ✅ (4) | ✅ | ✅ | ✅ | **COMPLIANT** | ✅ |
@@ -73,58 +81,69 @@ For a robot to be considered "fully compliant", it must have:
 | Irbpl_5000_v1 | ✅ | ✅ | ✅ (2) | ❌ | ✅ | ✅ | Missing limits | 🔴 |
 | Irbpr_1000_D1200_L2000_IRC5_rev02_CAD_v1 | ✅ | ✅ | ✅ (4) | ❌ | ✅ | ✅ | Missing limits | 🔴 |
 | Irbpr_300_D1000_L1250_v1 | ✅ | ✅ | ✅ (4) | ❌ | ✅ | ✅ | Missing limits | 🔴 |
-| BT200L_B001_v1 | ✅ | ✅ | ✅ (7) | ✅ | ✅ | ✅ | **COMPLIANT** | ✅ |
+| BT200L_B001_v1 | ⚠️ | ✅ | ✅ (7) | ✅ | ✅ | ✅ | Name issue | 🟡 |
 | BX100N_v1 | ✅ | ✅ | ✅ (7) | ✅ | ✅ | ✅ | **COMPLIANT** | ✅ |
 | BX100S_v1 | ✅ | ✅ | ✅ (7) | ✅ | ✅ | ✅ | **COMPLIANT** | ✅ |
 | BX130X_v1 | ✅ | ✅ | ✅ (7) | ✅ | ✅ | ✅ | **COMPLIANT** | ✅ |
-| BX200L_C001_v1 | ✅ | ✅ | ✅ (7) | ✅ | ✅ | ✅ | **COMPLIANT** | ✅ |
-| CL103_CAD_v1 | ✅ | ✅ | ✅ (7) | ❌ | ✅ | ✅ | Missing limits | 🔴 |
-
-## Legend
-
-- ✅ = Present and correct
-- ❌ = Missing
-- ⚠️ = Present but incorrect naming
-- ⚡ = Forward kinematics tests available
-- Numbers in parentheses = Count of mesh files
+| BX200L_C001_v1 | ⚠️ | ✅ | ✅ (7) | ✅ | ✅ | ✅ | Name issue | 🟡 |
+| CL103_CAD_v1 | ⚠️ | ✅ | ✅ (7) | ❌ | ✅ | ✅ | Name + limits | 🔴 |
+| RS003N_A001_v1 | ❌ | ❌ | ✅ (0) | ❌ | ❌ | ✅ | Incomplete v1 | 🔴 |
+| RS003N_A001_v2 | ✅ | ❌ | ✅ (7) | ❌ | ❌ | ✅ | Missing USD | 🔴 |
+| RS005L_A001_v1 | ❌ | ❌ | ✅ (0) | ❌ | ❌ | ✅ | Incomplete v1 | 🔴 |
+| RS005L_A001_v2 | ✅ | ❌ | ✅ (3) | ❌ | ❌ | ✅ | Missing USD | 🔴 |
+| RS005N_A001_v1 | ❌ | ❌ | ❌ (0) | ❌ | ❌ | ✅ | Empty v1 | 🔴 |
+| RS005N_A001_v2 | ✅ | ❌ | ❌ (0) | ❌ | ❌ | ✅ | Missing USD+meshes | 🔴 |
+| RS006L_A001_v1 | ❌ | ❌ | ❌ (0) | ❌ | ❌ | ✅ | Empty v1 | 🔴 |
+| RS006L_A001_v2 | ✅ | ❌ | ❌ (0) | ❌ | ❌ | ✅ | Missing USD+meshes | 🔴 |
+| RS007L_BC01_v1 | ✅ | ❌ | ❌ (0) | ❌ | ❌ | ✅ | Missing USD+meshes | 🔴 |
+| RS007N_BC01_v1 | ✅ | ❌ | ❌ (0) | ❌ | ❌ | ✅ | Missing USD+meshes | 🔴 |
+| RS013N_AC01_v1 | ✅ | ❌ | ❌ (0) | ❌ | ❌ | ✅ | Missing USD+meshes | 🔴 |
+| RS015X_B001_v1 | ✅ | ❌ | ❌ (0) | ❌ | ❌ | ✅ | Missing USD+meshes | 🔴 |
+| RS020N_A001_v1 | ✅ | ❌ | ❌ (0) | ❌ | ❌ | ✅ | Missing USD+meshes | 🔴 |
+| RS025N_AC01_v1 | ✅ | ❌ | ❌ (0) | ❌ | ❌ | ✅ | Missing USD+meshes | 🔴 |
+| RS030N_B001_v1 | ✅ | ❌ | ❌ (0) | ❌ | ❌ | ✅ | Missing USD+meshes | 🔴 |
+| RS050N_B001_v1 | ✅ | ❌ | ❌ (0) | ❌ | ❌ | ✅ | Missing USD+meshes | 🔴 |
+| RS080N_B001_v1 | ✅ | ❌ | ❌ (0) | ❌ | ❌ | ✅ | Missing USD+meshes | 🔴 |
 
 ## Priority Tasks
 
-### 🟡 Medium Priority (Directory/File Naming Issues)
+### 🔴 High Priority (Critical Issues)
 
-Fix naming mismatch for 1 robot:
-- IRB920_6kg_550-180-STD_v1 (directory has hyphens, USD directory has underscores)
+**Missing USD Files (17 Kawasaki robots):**
+- RS003N_A001_v2, RS005L_A001_v2, RS005N_A001_v2, RS006L_A001_v2
+- RS007L_BC01_v1, RS007N_BC01_v1, RS013N_AC01_v1, RS015X_B001_v1
+- RS020N_A001_v1, RS025N_AC01_v1, RS030N_B001_v1, RS050N_B001_v1, RS080N_B001_v1
 
-### 🔴 High Priority (Missing Limits)
-
-Create `limits.xml` files for the following 23 robots:
-- IRB14000_Yumi_v1
-- IRB14050_SAYuMi_v1
-- Irbpa_250_D1000_IRC5_rev02_CAD_v1
-- Irbpa_500_D1000_H700_IRC5_rev02_CAD_v1
-- Irbpa_500_D1450_H900_IRC5_rev02_CAD_v1
-- Irbpa_750_D1000_H700_IRC5_rev02_CAD_v1
-- Irbpb_250_D1000_IRC5_rev02_CAD_v1
-- Irbpb_500_D1450_v1
-- Irbpb_750_D1450_v1
-- Irbpc_1000_v1
-- Irbpc_500_IRC5_rev02_CAD_v1
-- Irbpd_600_D1000_L1600_IRC5_rev02_CAD_v1
-- Irbpd_600_D1200_L2000_IRC5_rev02_CAD_v1
-- Irbpk_1000_D1400_L4000_v1
-- Irbpk_600_D1200_L1600_IRC5_rev02_CAD_v1
-- Irbpl_1000_L1250_v1
-- Irbpl_5000_v1
-- Irbpr_1000_D1200_L2000_IRC5_rev02_CAD_v1
-- Irbpr_300_D1000_L1250_v1
+**Missing limits.xml files (15 robots):**
+- IRB14000_Yumi_v1, IRB14050_SAYuMi_v1 (dual-arm robots)
+- All ABB positioner robots (Irbpa*, Irbpb*, Irbpc*, Irbpd*, Irbpk*, Irbpl*, Irbpr*)
 - CL103_CAD_v1 (Kawasaki)
+
+**Missing Meshes (13 Kawasaki robots):**
+- RS005N_A001_v2, RS006L_A001_v2, RS007L_BC01_v1, RS007N_BC01_v1
+- RS013N_AC01_v1, RS015X_B001_v1, RS020N_A001_v1, RS025N_AC01_v1
+- RS030N_B001_v1, RS050N_B001_v1, RS080N_B001_v1
+
+### 🟡 Medium Priority (Naming Issues)
+
+Fix naming mismatches for 4 robots:
+- IRB920_6kg_550-180-STD_v1 (directory has hyphens, USD directory has underscores)
+- BT200L_B001_v1 (directory vs URDF name mismatch)
+- BX200L_C001_v1 (directory vs URDF name mismatch)  
+- CL103_CAD_v1 (directory vs URDF name mismatch)
+
+### ✅ Low Priority (Compliant Robots)
+
+26 robots are fully compliant and require no immediate action.
 
 ## Next Steps
 
-1. **Fix directory naming mismatch** for IRB920_6kg_550-180-STD_v1
-2. **Generate missing limits.xml files** for remaining 17 robots
-3. **Validate all changes** using the validation scripts
-4. **Update this document** as fixes are implemented
+1. **Generate USD files** for 17 Kawasaki robots missing USD conversion
+2. **Generate mesh files** for 13 Kawasaki robots missing STL meshes
+3. **Create limits.xml files** for 15 robots missing joint limits
+4. **Fix naming inconsistencies** for 4 robots with directory/file mismatches
+5. **Expand FK test coverage** beyond current 6 robots
+6. **Clean up incomplete v1 directories** for Kawasaki robots with working v2 versions
 
 ## Validation Commands
 
@@ -137,6 +156,7 @@ uv run tools/validate_urdf.py library/ABB/RobotName_v1/RobotName.urdf
 ```
 
 ---
-*Last updated: 2025-07-21*
-*Updated to reflect: All 46 robots (40 ABB + 6 Kawasaki) now have complete USD directory structures and configuration files. Forward kinematics tests available for 6 robots (13%). Only remaining issues are 23 missing limits.xml files (positioners, dual-arm robots, and 1 Kawasaki) and 1 directory naming mismatch. Compliance rate: 54%.*
+*Last updated: 2025-07-22 by /update-compliance-table command*
+*Total robots scanned: 67 (44 ABB + 23 Kawasaki)*
+*Compliance rate: 39% (26/67 fully compliant)*
 *Generated by Claude Code*

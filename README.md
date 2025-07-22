@@ -31,7 +31,7 @@ Video Tutorial: https://youtu.be/07S_P-3OKPc
 | ABB | CRB15000_10kg_152 | Cobot | [URDF](library/ABB/CRB15000_10kg_152_v1/CRB15000_10kg_152.urdf) | [USD](library/ABB/CRB15000_10kg_152_v1/CRB15000_10kg_152/CRB15000_10kg_152.usd) |
 | ABB | CRB15000_12kg_127 | Cobot | [URDF](library/ABB/CRB15000_12kg_127_v1/CRB15000_12kg_127.urdf) | [USD](library/ABB/CRB15000_12kg_127_v1/CRB15000_12kg_127/CRB15000_12kg_127.usd) |
 | ABB | CRB15000_5kg_950 | Cobot | [URDF](library/ABB/CRB15000_5kg_950_v1/CRB15000_5kg_950.urdf) | [USD](library/ABB/CRB15000_5kg_950_v1/CRB15000_5kg_950/CRB15000_5kg_950.usd) |
-| ABB | IRB1010_1_5kg_370 | Industrial Robot | [URDF](library/ABB/IRB1010_1_5kg_370_v1/IRB1010_1_5kg_370.urdf) | [USD](library/ABB/IRB1010_1_5kg_370_v1/IRB1010_1_5kg_370/IRB1010_1_5kg_370.usd) |
+| ABB | IRB1010_1_5kg_370 | SCARA Robot | [URDF](library/ABB/IRB1010_1_5kg_370_v1/IRB1010_1_5kg_370.urdf) | [USD](library/ABB/IRB1010_1_5kg_370_v1/IRB1010_1_5kg_370/IRB1010_1_5kg_370.usd) |
 | ABB | IRB1100_4kg_475_STD | Industrial Robot | [URDF](library/ABB/IRB1100_4kg_475_STD_v1/IRB1100_4kg_475_STD.urdf) | [USD](library/ABB/IRB1100_4kg_475_STD_v1/IRB1100_4kg_475_STD/IRB1100_4kg_475_STD.usd) |
 | ABB | IRB1100_4kg_580_STD | Industrial Robot | [URDF](library/ABB/IRB1100_4kg_580_STD_v1/IRB1100_4kg_580_STD.urdf) | [USD](library/ABB/IRB1100_4kg_580_STD_v1/IRB1100_4kg_580_STD/IRB1100_4kg_580_STD.usd) |
 | ABB | IRB1200_5_90_STD | Industrial Robot | [URDF](library/ABB/IRB1200_5_90_STD_v1/IRB1200_5_90_STD.urdf) | [USD](library/ABB/IRB1200_5_90_STD_v1/IRB1200_5_90_STD/IRB1200_5_90_STD.usd) |
@@ -77,9 +77,9 @@ Video Tutorial: https://youtu.be/07S_P-3OKPc
 | Kawasaki | BX100S | Industrial Robot | [URDF](library/Kawasaki/BX100S_v1/BX100S.urdf) | [USD](library/Kawasaki/BX100S_v1/BX100S/BX100S.usd) |
 | Kawasaki | BX130X | Industrial Robot | [URDF](library/Kawasaki/BX130X_v1/BX130X.urdf) | [USD](library/Kawasaki/BX130X_v1/BX130X/BX130X.usd) |
 | Kawasaki | BX200L_C001 | Industrial Robot | [URDF](library/Kawasaki/BX200L_v1/BX200L_C001.urdf) | [USD](library/Kawasaki/BX200L_v1/BX200L_C001/BX200L_C001.usd) |
-| Kawasaki | CL103_CAD |  Cobot | [URDF](library/Kawasaki/CL103_v1/CL103_CAD.urdf) | [USD](library/Kawasaki/CL103_v1/CL103_CAD/CL103_CAD.usd) |
+| Kawasaki | CL103_CAD | Cobot | [URDF](library/Kawasaki/CL103_v1/CL103_CAD.urdf) | [USD](library/Kawasaki/CL103_v1/CL103_CAD/CL103_CAD.usd) |
 
-**Total**: 46 robot models available (40 ABB + 6 Kawasaki)
+**Total**: 50 robot models available (44 ABB + 6 Kawasaki)
 
 ## Demos
 
