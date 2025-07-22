@@ -1,0 +1,186 @@
+<?xml version="1.0" ?>
+<robot name="RS005N_A001">
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="8.666676081872975e-05 -0.025007236970159382 0.07893879222068109" rpy="0 0 0"/>
+    <mass value="38.0253217240971"/>
+    <inertia ixx="0.218946" iyy="0.148079" izz="0.20628" ixy="0.000299" iyz="-0.014623" ixz="2.1e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS005N_A001_J1_1">
+  <inertial>
+    <origin xyz="-0.0009028908243719332 0.038498939793356286 0.07630025871148449" rpy="0 0 0"/>
+    <mass value="43.016701704037"/>
+    <inertia ixx="0.301036" iyy="0.372246" izz="0.462459" ixy="0.010144" iyz="-0.07984" ixz="0.005493"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -7e-06 -0.165" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/RS005N_A001_J1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -7e-06 -0.165" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/RS005N_A001_J1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS005N_A001_J2_1">
+  <inertial>
+    <origin xyz="0.06526455063326013 8.102875578765156e-05 0.11133210984308606" rpy="0 0 0"/>
+    <mass value="39.75189074475072"/>
+    <inertia ixx="0.585877" iyy="0.737783" izz="0.252423" ixy="0.000482" iyz="0.014243" ixz="-0.003374"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0585 -0.105 -0.295" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/RS005N_A001_J2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0.0585 -0.105 -0.295" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/RS005N_A001_J2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS005N_A001_J3_1">
+  <inertial>
+    <origin xyz="0.07880127045518054 -0.04790646859289208 0.01668208917818681" rpy="0 0 0"/>
+    <mass value="42.49231008796781"/>
+    <inertia ixx="0.2626" iyy="0.211281" izz="0.205088" ixy="0.000384" iyz="0.037555" ixz="-8.1e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.079 -0.105 -0.575" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/RS005N_A001_J3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0.079 -0.105 -0.575" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/RS005N_A001_J3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS005N_A001_J4_1">
+  <inertial>
+    <origin xyz="0.0007778357999069431 1.1466283069277994e-06 0.08649113321998003" rpy="0 0 0"/>
+    <mass value="8.018755692417622"/>
+    <inertia ixx="0.029029" iyy="0.035011" izz="0.013422" ixy="-0.0" iyz="-1e-06" ixz="-0.000455"/>
+  </inertial>
+  <visual>
+    <origin xyz="2.2e-05 -0.025 -0.725" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/RS005N_A001_J4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="2.2e-05 -0.025 -0.725" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/RS005N_A001_J4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS005N_A001_J5_1">
+  <inertial>
+    <origin xyz="0.029480572119153385 3.345649548049112e-06 0.016662028488664493" rpy="0 0 0"/>
+    <mass value="2.7318577890089277"/>
+    <inertia ixx="0.003188" iyy="0.002994" izz="0.001563" ixy="-0.0" iyz="0.0" ixz="2.9e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0295 -0.025 -0.885" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/RS005N_A001_J5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0.0295 -0.025 -0.885" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/RS005N_A001_J5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RS005N_A001_J6_1">
+  <inertial>
+    <origin xyz="-7.292556279366663e-06 0.00018101469721303054 0.005770983514050254" rpy="0 0 0"/>
+    <mass value="0.11374170714458348"/>
+    <inertia ixx="1.3e-05" iyy="1.4e-05" izz="2.4e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 -0.025 -0.9505" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/RS005N_A001_J6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </visual>
+  <collision>
+    <origin xyz="0.0 -0.025 -0.9505" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/RS005N_A001_J6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.0 7e-06 0.165" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="RS005N_A001_J1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="-0.0585 0.104993 0.13" rpy="0 0 0"/>
+  <parent link="RS005N_A001_J1_1"/>
+  <child link="RS005N_A001_J2_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="j3" type="continuous">
+  <origin xyz="-0.0205 0.0 0.28" rpy="0 0 0"/>
+  <parent link="RS005N_A001_J2_1"/>
+  <child link="RS005N_A001_J3_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="j4" type="continuous">
+  <origin xyz="0.078978 -0.08 0.15" rpy="0 0 0"/>
+  <parent link="RS005N_A001_J3_1"/>
+  <child link="RS005N_A001_J4_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="j5" type="continuous">
+  <origin xyz="-0.029478 0.0 0.16" rpy="0 0 0"/>
+  <parent link="RS005N_A001_J4_1"/>
+  <child link="RS005N_A001_J5_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="j6" type="continuous">
+  <origin xyz="0.0295 0.0 0.0655" rpy="0 0 0"/>
+  <parent link="RS005N_A001_J5_1"/>
+  <child link="RS005N_A001_J6_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+</robot>
