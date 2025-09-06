@@ -1,0 +1,196 @@
+<?xml version="1.0" ?>
+<robot name="JAKA_Pro_12-V2_20231016" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find JAKA_Pro_12-V2_20231016_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find JAKA_Pro_12-V2_20231016_description)/urdf/JAKA_Pro_12-V2_20231016.trans" />
+<xacro:include filename="$(find JAKA_Pro_12-V2_20231016_description)/urdf/JAKA_Pro_12-V2_20231016.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.0016782900421394677 -2.1937483929127514e-05 0.020196224870148483" rpy="0 0 0"/>
+    <mass value="6.5019637631661835"/>
+    <inertia ixx="0.013047" iyy="0.015808" izz="0.027337" ixy="5e-06" iyz="-4e-06" ixz="-5.4e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://JAKA_Pro_12-V2_20231016_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://JAKA_Pro_12-V2_20231016_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Pro_12_01_1">
+  <inertial>
+    <origin xyz="-6.477800010082601e-08 -0.003972022097385985 0.09282168964672262" rpy="0 0 0"/>
+    <mass value="29.682926311111036"/>
+    <inertia ixx="0.137845" iyy="0.134623" izz="0.092604" ixy="-0.0" iyz="0.000286" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.0 -0.0465" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://JAKA_Pro_12-V2_20231016_description/meshes/Pro_12_01_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.0 -0.0465" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://JAKA_Pro_12-V2_20231016_description/meshes/Pro_12_01_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Pro_12_02_1">
+  <inertial>
+    <origin xyz="-0.29750007751176477 -0.09411766014986113 3.1060718219677597e-08" rpy="0 0 0"/>
+    <mass value="97.72709028893016"/>
+    <inertia ixx="0.340512" iyy="6.030985" izz="6.121663" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.0855 -0.14265" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://JAKA_Pro_12-V2_20231016_description/meshes/Pro_12_02_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.0855 -0.14265" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://JAKA_Pro_12-V2_20231016_description/meshes/Pro_12_02_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Pro_12_03_1">
+  <inertial>
+    <origin xyz="-0.27266022608420704 0.06288222212348828 -1.271154199178337e-06" rpy="0 0 0"/>
+    <mass value="39.7604169195696"/>
+    <inertia ixx="0.056604" iyy="1.727868" izz="1.730838" ixy="0.052998" iyz="-1e-06" ixz="1.2e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.595 0.0855 -0.14265" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://JAKA_Pro_12-V2_20231016_description/meshes/Pro_12_03_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.595 0.0855 -0.14265" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://JAKA_Pro_12-V2_20231016_description/meshes/Pro_12_03_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Pro_12_04_1">
+  <inertial>
+    <origin xyz="9.04183643513079e-08 -0.047237123578206155 -0.0033884323691834584" rpy="0 0 0"/>
+    <mass value="6.9377230117633975"/>
+    <inertia ixx="0.012275" iyy="0.011814" izz="0.008265" ixy="0.0" iyz="-7.1e-05" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="1.1665 0.081 -0.14265" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://JAKA_Pro_12-V2_20231016_description/meshes/Pro_12_04_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="1.1665 0.081 -0.14265" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://JAKA_Pro_12-V2_20231016_description/meshes/Pro_12_04_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Pro_12_05_1">
+  <inertial>
+    <origin xyz="-1.1753062190145158e-07 -0.005528709808314325 -0.050671540670844145" rpy="0 0 0"/>
+    <mass value="8.003292102460861"/>
+    <inertia ixx="0.01745" iyy="0.009337" izz="0.016979" ixy="-0.0" iyz="-0.000131" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="1.1665 0.1315 -0.08115" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://JAKA_Pro_12-V2_20231016_description/meshes/Pro_12_05_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="1.1665 0.1315 -0.08115" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://JAKA_Pro_12-V2_20231016_description/meshes/Pro_12_05_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Pro_12_06_1">
+  <inertial>
+    <origin xyz="-2.4494897551630146e-05 0.0174889102850369 -0.00014650417233688998" rpy="0 0 0"/>
+    <mass value="1.7364131798673292"/>
+    <inertia ixx="0.00103" iyy="0.001725" izz="0.001064" ixy="1e-06" iyz="0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="1.1665 0.067 -0.02765" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://JAKA_Pro_12-V2_20231016_description/meshes/Pro_12_06_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="1.1665 0.067 -0.02765" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://JAKA_Pro_12-V2_20231016_description/meshes/Pro_12_06_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.0 0.0 0.0465" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Pro_12_01_1"/>
+  <axis xyz="-0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="0.0 -0.0855 0.09615" rpy="0 0 0"/>
+  <parent link="Pro_12_01_1"/>
+  <child link="Pro_12_02_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="j3" type="continuous">
+  <origin xyz="-0.595 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Pro_12_02_1"/>
+  <child link="Pro_12_03_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="j4" type="continuous">
+  <origin xyz="-0.5715 0.0045 0.0" rpy="0 0 0"/>
+  <parent link="Pro_12_03_1"/>
+  <child link="Pro_12_04_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="j5" type="continuous">
+  <origin xyz="0.0 -0.0505 -0.0615" rpy="0 0 0"/>
+  <parent link="Pro_12_04_1"/>
+  <child link="Pro_12_05_1"/>
+  <axis xyz="-0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="j6" type="continuous">
+  <origin xyz="0.0 0.0645 -0.0535" rpy="0 0 0"/>
+  <parent link="Pro_12_05_1"/>
+  <child link="Pro_12_06_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+</robot>
