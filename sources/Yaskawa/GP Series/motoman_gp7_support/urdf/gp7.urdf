@@ -1,0 +1,171 @@
+<?xml version="1.0" ?>
+<robot name="motoman_gp7">
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://motoman_gp7_support/meshes/visual/gp7_base_link.stl"/>
+      </geometry>
+      <material name="yaskawa_blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_gp7_support/meshes/collision/gp7_base_link.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link_1_s">
+    <visual>
+      <geometry>
+        <mesh filename="package://motoman_gp7_support/meshes/visual/gp7_link_1_s.stl"/>
+      </geometry>
+      <material name="yaskawa_blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_gp7_support/meshes/collision/gp7_link_1_s.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link_2_l">
+    <visual>
+      <geometry>
+        <mesh filename="package://motoman_gp7_support/meshes/visual/gp7_link_2_l.stl"/>
+      </geometry>
+      <material name="yaskawa_blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_gp7_support/meshes/collision/gp7_link_2_l.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link_3_u">
+    <visual>
+      <geometry>
+        <mesh filename="package://motoman_gp7_support/meshes/visual/gp7_link_3_u.stl"/>
+      </geometry>
+      <material name="yaskawa_blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_gp7_support/meshes/collision/gp7_link_3_u.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link_4_r">
+    <visual>
+      <geometry>
+        <mesh filename="package://motoman_gp7_support/meshes/visual/gp7_link_4_r.stl"/>
+      </geometry>
+      <material name="yaskawa_blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_gp7_support/meshes/collision/gp7_link_4_r.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link_5_b">
+    <visual>
+      <geometry>
+        <mesh filename="package://motoman_gp7_support/meshes/visual/gp7_link_5_b.stl"/>
+      </geometry>
+      <material name="yaskawa_blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_gp7_support/meshes/collision/gp7_link_5_b.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link_6_t">
+    <visual>
+      <geometry>
+        <mesh filename="package://motoman_gp7_support/meshes/visual/gp7_link_6_t.stl"/>
+      </geometry>
+      <material name="yaskawa_blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://motoman_gp7_support/meshes/collision/gp7_link_6_t.stl"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="joint_1_s" type="revolute">
+    <parent link="base_link"/>
+    <child link="link_1_s"/>
+    <origin xyz="0 0 0.330" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-2.967059728" upper="2.967059728" effort="212.66" velocity="6.544984695"/>
+  </joint>
+
+  <joint name="joint_2_l" type="revolute">
+    <parent link="link_1_s"/>
+    <child link="link_2_l"/>
+    <origin xyz="0.040 0 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.134464014" upper="2.530727415" effort="205.80" velocity="5.497787144"/>
+  </joint>
+
+  <joint name="joint_3_u" type="revolute">
+    <parent link="link_2_l"/>
+    <child link="link_3_u"/>
+    <origin xyz="0 0 0.445" rpy="0 0 0"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-1.221730476" upper="3.316125579" effort="106.82" velocity="7.155849932"/>
+  </joint>
+
+  <joint name="joint_4_r" type="revolute">
+    <parent link="link_3_u"/>
+    <child link="link_4_r"/>
+    <origin xyz="0.440 0 0.040" rpy="0 0 0"/>
+    <axis xyz="-1 0 0"/>
+    <limit lower="-3.316125579" upper="3.316125579" effort="55.86" velocity="9.599310886"/>
+  </joint>
+
+  <joint name="joint_5_b" type="revolute">
+    <parent link="link_4_r"/>
+    <child link="link_5_b"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 -1 0"/>
+    <limit lower="-2.35619449" upper="2.35619449" effort="32.68" velocity="9.599310886"/>
+  </joint>
+
+  <joint name="joint_6_t" type="revolute">
+    <parent link="link_5_b"/>
+    <child link="link_6_t"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="-1 0 0"/>
+    <limit lower="-6.283185307" upper="6.283185307" effort="22.54" velocity="17.45329252"/>
+  </joint>
+
+  <link name="flange"/>
+  <joint name="joint_6_t-flange" type="fixed">
+    <origin xyz="0.080 0 0" rpy="0 0 0"/>
+    <parent link="link_6_t"/>
+    <child link="flange"/>
+  </joint>
+
+  <link name="tool0"/>
+  <joint name="flange-tool0" type="fixed">
+    <origin xyz="0 0 0" rpy="3.141592654 -1.570796327 0"/>
+    <parent link="flange"/>
+    <child link="tool0"/>
+  </joint>
+
+  <link name="base"/>
+  <joint name="base_link-base" type="fixed">
+    <origin xyz="0 0 0.330" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="base"/>
+  </joint>
+
+</robot>

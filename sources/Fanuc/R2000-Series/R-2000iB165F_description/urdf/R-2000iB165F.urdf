@@ -1,0 +1,247 @@
+<?xml version="1.0" ?>
+<robot name="R-2000iB165F">
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.037879164166560654 -0.00035405652218739765 0.13141499989367714" rpy="0 0 0"/>
+    <mass value="698.3112209081493"/>
+    <inertia ixx="20.138303" iyy="30.414323" izz="40.474229" ixy="0.008484" iyz="0.00934" ixz="-0.655378"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="R-2000iB165F_balancer_1">
+  <inertial>
+    <origin xyz="0.07566220010371172 -0.16200000000000017 -0.0003551560308208135" rpy="0 0 0"/>
+    <mass value="275.23991339396815"/>
+    <inertia ixx="2.981929" iyy="7.663648" izz="7.69313" ixy="-0.0" iyz="0.0" ixz="0.000199"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.308 -0.351 -0.67" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/R-2000iB165F_balancer_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.308 -0.351 -0.67" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/R-2000iB165F_balancer_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="R-2000iB165F_balancer_shaft_1">
+  <inertial>
+    <origin xyz="-0.10430557148470784 -1.6653345369377348e-16 3.3306690738754696e-16" rpy="0 0 0"/>
+    <mass value="8.474324371670116"/>
+    <inertia ixx="0.004244" iyy="0.280895" izz="0.279655" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0195 -0.189 -0.67" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/R-2000iB165F_balancer_shaft_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0195 -0.189 -0.67" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/R-2000iB165F_balancer_shaft_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="R-2000iB165F_axis1_1">
+  <inertial>
+    <origin xyz="0.1156591740015417 0.028802444930390622 0.30150715330236844" rpy="0 0 0"/>
+    <mass value="628.8529969771986"/>
+    <inertia ixx="30.524667" iyy="40.781068" izz="38.3381" ixy="2.707063" iyz="0.699204" ixz="-7.988069"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.2125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/R-2000iB165F_axis1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.2125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/R-2000iB165F_axis1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="R-2000iB165F_axis2_1">
+  <inertial>
+    <origin xyz="0.04749850152528434 0.14651285802308925 0.4507764443958385" rpy="0 0 0"/>
+    <mass value="475.30296599938805"/>
+    <inertia ixx="58.180445" iyy="59.793713" izz="6.364159" ixy="-0.151462" iyz="-6.221692" ixz="-1.343039"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.312 -0.091 -0.67" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/R-2000iB165F_axis2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.312 -0.091 -0.67" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/R-2000iB165F_axis2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="R-2000iB165F_axis3_1">
+  <inertial>
+    <origin xyz="0.22122764340676587 -0.2662330407452187 0.1237122635750969" rpy="0 0 0"/>
+    <mass value="489.8583330394398"/>
+    <inertia ixx="13.381428" iyy="52.511957" izz="48.281834" ixy="2.863605" iyz="1.895937" ixz="-7.877489"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.312 -0.2975 -1.745" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/R-2000iB165F_axis3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.312 -0.2975 -1.745" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/R-2000iB165F_axis3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="R-2000iB165F_axis4_1">
+  <inertial>
+    <origin xyz="0.12366225187789204 -0.002278870057403738 -5.995711119366476e-06" rpy="0 0 0"/>
+    <mass value="22.16718673001882"/>
+    <inertia ixx="0.049685" iyy="0.165963" izz="0.165646" ixy="0.005939" iyz="-6e-06" ixz="6e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.374 0.0 -1.97" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/R-2000iB165F_axis4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.374 0.0 -1.97" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/R-2000iB165F_axis4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="R-2000iB165F_axis5_1">
+  <inertial>
+    <origin xyz="0.0560393014276086 0.03150301861219611 3.629545131600409e-05" rpy="0 0 0"/>
+    <mass value="46.64200192672853"/>
+    <inertia ixx="0.361686" iyy="0.35645" izz="0.531207" ixy="-0.092013" iyz="6.5e-05" ixz="0.000179"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.592 0.0555 -1.97" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/R-2000iB165F_axis5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.592 0.0555 -1.97" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/R-2000iB165F_axis5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="R-2000iB165F_axis6_1">
+  <inertial>
+    <origin xyz="0.01861728864378054 -1.2601414478894442e-17 1.021405182655144e-14" rpy="0 0 0"/>
+    <mass value="5.7455800479736485"/>
+    <inertia ixx="0.019071" iyy="0.010207" izz="0.010269" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.7675 0.0 -1.97" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/R-2000iB165F_axis6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.7675 0.0 -1.97" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://R-2000iB165F_description/meshes/R-2000iB165F_axis6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid 9" type="fixed">
+  <origin xyz="-0.308 0.351 0.4575" rpy="0 0 0"/>
+  <parent link="R-2000iB165F_axis1_1"/>
+  <child link="R-2000iB165F_balancer_1"/>
+</joint>
+
+<joint name="Rigid 10" type="fixed">
+  <origin xyz="0.3275 -0.162 0.0" rpy="0 0 0"/>
+  <parent link="R-2000iB165F_balancer_1"/>
+  <child link="R-2000iB165F_balancer_shaft_1"/>
+</joint>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.0 0.0 0.2125" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="R-2000iB165F_axis1_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="0.312 0.091 0.4575" rpy="0 0 0"/>
+  <parent link="R-2000iB165F_axis1_1"/>
+  <child link="R-2000iB165F_axis2_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="j3" type="continuous">
+  <origin xyz="0.0 0.2065 1.075" rpy="0 0 0"/>
+  <parent link="R-2000iB165F_axis2_1"/>
+  <child link="R-2000iB165F_axis3_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="j4" type="continuous">
+  <origin xyz="1.062 -0.2975 0.225" rpy="0 0 0"/>
+  <parent link="R-2000iB165F_axis3_1"/>
+  <child link="R-2000iB165F_axis4_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="j5" type="continuous">
+  <origin xyz="0.218 -0.0555 0.0" rpy="0 0 0"/>
+  <parent link="R-2000iB165F_axis4_1"/>
+  <child link="R-2000iB165F_axis5_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="j6" type="continuous">
+  <origin xyz="0.1755 0.0555 0.0" rpy="0 0 0"/>
+  <parent link="R-2000iB165F_axis5_1"/>
+  <child link="R-2000iB165F_axis6_1"/>
+  <axis xyz="-1.0 -0.0 -0.0"/>
+</joint>
+
+</robot>

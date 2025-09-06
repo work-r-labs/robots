@@ -1,0 +1,223 @@
+<?xml version="1.0" ?>
+<robot name="LR_Mate-200iD-7L_rear-cable-exit" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find LR_Mate-200iD-7L_rear-cable-exit_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find LR_Mate-200iD-7L_rear-cable-exit_description)/urdf/LR_Mate-200iD-7L_rear-cable-exit.trans" />
+<xacro:include filename="$(find LR_Mate-200iD-7L_rear-cable-exit_description)/urdf/LR_Mate-200iD-7L_rear-cable-exit.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.020896786437573707 -0.002865040209298718 0.08187568387547586" rpy="0 0 0"/>
+    <mass value="41.02118056052303"/>
+    <inertia ixx="0.171046" iyy="0.269042" izz="0.264022" ixy="-0.014386" iyz="-0.000951" ixz="1.7e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://LR_Mate-200iD-7L_rear-cable-exit_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://LR_Mate-200iD-7L_rear-cable-exit_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LR_Mate_200iD_7L_J6RB_cover_1">
+  <inertial>
+    <origin xyz="0.0030769105063848112 -0.022626999486451884 -0.022627002983735878" rpy="0 0 0"/>
+    <mass value="0.053319637184794905"/>
+    <inertia ixx="5.6e-05" iyy="2.8e-05" izz="2.8e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.54 -0.022627 -0.827627" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://LR_Mate-200iD-7L_rear-cable-exit_description/meshes/LR_Mate_200iD_7L_J6RB_cover_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.54 -0.022627 -0.827627" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://LR_Mate-200iD-7L_rear-cable-exit_description/meshes/LR_Mate_200iD_7L_J6RB_cover_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LR_Mate_200iD_7L_axis_1_1">
+  <inertial>
+    <origin xyz="0.017117829782352875 -0.0003327357881739591 0.08045714078701785" rpy="0 0 0"/>
+    <mass value="25.025507724281777"/>
+    <inertia ixx="0.227453" iyy="0.129262" izz="0.183055" ixy="-1.9e-05" iyz="0.000172" ixz="-0.026917"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.167104" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://LR_Mate-200iD-7L_rear-cable-exit_description/meshes/LR_Mate_200iD_7L_axis_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.167104" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://LR_Mate-200iD-7L_rear-cable-exit_description/meshes/LR_Mate_200iD_7L_axis_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LR_Mate_200iD_7L_axis_2_1">
+  <inertial>
+    <origin xyz="-0.009667741040001128 0.07694444841246284 0.175564425359446" rpy="0 0 0"/>
+    <mass value="62.538023341031476"/>
+    <inertia ixx="1.536298" iyy="1.37182" izz="0.281227" ixy="0.00075" iyz="-0.006959" ixz="0.021395"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.05 0.078491 -0.33" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://LR_Mate-200iD-7L_rear-cable-exit_description/meshes/LR_Mate_200iD_7L_axis_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.05 0.078491 -0.33" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://LR_Mate-200iD-7L_rear-cable-exit_description/meshes/LR_Mate_200iD_7L_axis_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LR_Mate_200iD_7L_axis_3_1">
+  <inertial>
+    <origin xyz="0.008475384528387649 0.06563350002433473 0.017696665180766624" rpy="0 0 0"/>
+    <mass value="18.850460230642536"/>
+    <inertia ixx="0.049783" iyy="0.057924" izz="0.057377" ixy="-0.000385" iyz="-0.000521" ixz="-0.006054"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.05 0.064955 -0.77" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://LR_Mate-200iD-7L_rear-cable-exit_description/meshes/LR_Mate_200iD_7L_axis_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.05 0.064955 -0.77" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://LR_Mate-200iD-7L_rear-cable-exit_description/meshes/LR_Mate_200iD_7L_axis_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LR_Mate_200iD_7L_axis_4_1">
+  <inertial>
+    <origin xyz="0.1500245301638382 0.004016723921991212 0.00028051764282432945" rpy="0 0 0"/>
+    <mass value="22.693190455608324"/>
+    <inertia ixx="0.037809" iyy="0.209411" izz="0.212881" ixy="-0.001913" iyz="3.3e-05" ixz="5e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1401 0.0 -0.805" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://LR_Mate-200iD-7L_rear-cable-exit_description/meshes/LR_Mate_200iD_7L_axis_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1401 0.0 -0.805" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://LR_Mate-200iD-7L_rear-cable-exit_description/meshes/LR_Mate_200iD_7L_axis_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LR_Mate_200iD_7L_axis_5_1">
+  <inertial>
+    <origin xyz="0.015733337708009443 0.03232666711168098 -6.01609089836419e-05" rpy="0 0 0"/>
+    <mass value="3.3977919662277167"/>
+    <inertia ixx="0.002322" iyy="0.004355" izz="0.004169" ixy="0.000199" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.47 0.02925 -0.805" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://LR_Mate-200iD-7L_rear-cable-exit_description/meshes/LR_Mate_200iD_7L_axis_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.47 0.02925 -0.805" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://LR_Mate-200iD-7L_rear-cable-exit_description/meshes/LR_Mate_200iD_7L_axis_5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LR_Mate_200iD_7L_axis_6_1">
+  <inertial>
+    <origin xyz="-0.005885565178660679 -6.590142225256426e-17 -0.0001732487818839612" rpy="0 0 0"/>
+    <mass value="0.10510241753083373"/>
+    <inertia ixx="2.2e-05" iyy="1.2e-05" izz="1.2e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.5495 0.0 -0.805" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://LR_Mate-200iD-7L_rear-cable-exit_description/meshes/LR_Mate_200iD_7L_axis_6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.5495 0.0 -0.805" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://LR_Mate-200iD-7L_rear-cable-exit_description/meshes/LR_Mate_200iD_7L_axis_6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid 7" type="fixed">
+  <origin xyz="0.07 0.051877 0.022627" rpy="0 0 0"/>
+  <parent link="LR_Mate_200iD_7L_axis_5_1"/>
+  <child link="LR_Mate_200iD_7L_J6RB_cover_1"/>
+</joint>
+
+<joint name="Revolute 1" type="continuous">
+  <origin xyz="0.0 0.0 0.167104" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="LR_Mate_200iD_7L_axis_1_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="Revolute 2" type="continuous">
+  <origin xyz="0.05 -0.078491 0.162896" rpy="0 0 0"/>
+  <parent link="LR_Mate_200iD_7L_axis_1_1"/>
+  <child link="LR_Mate_200iD_7L_axis_2_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 3" type="continuous">
+  <origin xyz="0.0 0.013536 0.44" rpy="0 0 0"/>
+  <parent link="LR_Mate_200iD_7L_axis_2_1"/>
+  <child link="LR_Mate_200iD_7L_axis_3_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 4" type="continuous">
+  <origin xyz="0.0901 0.064955 0.035" rpy="0 0 0"/>
+  <parent link="LR_Mate_200iD_7L_axis_3_1"/>
+  <child link="LR_Mate_200iD_7L_axis_4_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Revolute 5" type="continuous">
+  <origin xyz="0.3299 -0.02925 0.0" rpy="0 0 0"/>
+  <parent link="LR_Mate_200iD_7L_axis_4_1"/>
+  <child link="LR_Mate_200iD_7L_axis_5_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 6" type="continuous">
+  <origin xyz="0.0795 0.02925 0.0" rpy="0 0 0"/>
+  <parent link="LR_Mate_200iD_7L_axis_5_1"/>
+  <child link="LR_Mate_200iD_7L_axis_6_1"/>
+  <axis xyz="-1.0 0.0 -0.0"/>
+</joint>
+
+</robot>

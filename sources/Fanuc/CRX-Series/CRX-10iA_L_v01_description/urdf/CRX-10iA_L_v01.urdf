@@ -1,0 +1,193 @@
+<?xml version="1.0" ?>
+<robot name="CRX-10iA_L_v01">
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.0054015345486125585 -3.9403481603570603e-07 0.040867773188912555" rpy="0 0 0"/>
+    <mass value="14.941659808739926"/>
+    <inertia ixx="0.034902" iyy="0.04052" izz="0.059728" ixy="-9e-06" iyz="-0.0" ixz="0.000382"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRX-10iA_L_v01_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRX-10iA_L_v01_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CRX-10iAL_Axis1_1">
+  <inertial>
+    <origin xyz="1.7623721147745205e-07 -0.017682509953102638 0.13404286563745443" rpy="0 0 0"/>
+    <mass value="43.22512126266493"/>
+    <inertia ixx="0.287629" iyy="0.245503" izz="0.180242" ixy="-0.0" iyz="0.027946" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.075864" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRX-10iA_L_v01_description/meshes/CRX-10iAL_Axis1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.075864" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRX-10iA_L_v01_description/meshes/CRX-10iAL_Axis1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CRX-10iAL_Axis2_1">
+  <inertial>
+    <origin xyz="-7.212107296331125e-08 -0.0841638676147729 0.34017734873461336" rpy="0 0 0"/>
+    <mass value="95.1521398855206"/>
+    <inertia ixx="7.528384" iyy="7.437878" izz="0.2985" ixy="0.0" iyz="-0.19885" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.119 -0.245" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRX-10iA_L_v01_description/meshes/CRX-10iAL_Axis2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.119 -0.245" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRX-10iA_L_v01_description/meshes/CRX-10iAL_Axis2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CRX-10iAL_Axis3_1">
+  <inertial>
+    <origin xyz="0.035204615255027695 0.06853222346662526 -4.3105047009550645e-07" rpy="0 0 0"/>
+    <mass value="22.32713023721424"/>
+    <inertia ixx="0.050731" iyy="0.098635" izz="0.100913" ixy="-0.00592" iyz="0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.075 -0.955" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRX-10iA_L_v01_description/meshes/CRX-10iAL_Axis3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.075 -0.955" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRX-10iA_L_v01_description/meshes/CRX-10iAL_Axis3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CRX-10iAL_Axis4_1">
+  <inertial>
+    <origin xyz="0.2283450554330899 -0.0016927561209420406 -7.60731250215585e-08" rpy="0 0 0"/>
+    <mass value="26.825264786189535"/>
+    <inertia ixx="0.035351" iyy="0.464269" izz="0.466364" ixy="0.007332" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.154 0.0 -0.955" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRX-10iA_L_v01_description/meshes/CRX-10iAL_Axis4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.154 0.0 -0.955" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRX-10iA_L_v01_description/meshes/CRX-10iAL_Axis4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CRX-10iAL_Axis5_1">
+  <inertial>
+    <origin xyz="0.02021862782701833 -0.07403780959883086 3.237921801790833e-07" rpy="0 0 0"/>
+    <mass value="11.641570814191905"/>
+    <inertia ixx="0.021516" iyy="0.025088" izz="0.031492" ixy="0.003018" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.54 0.064 -0.955" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRX-10iA_L_v01_description/meshes/CRX-10iAL_Axis5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.54 0.064 -0.955" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRX-10iA_L_v01_description/meshes/CRX-10iAL_Axis5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CRX-10iAL_Axis6_WithConnectors_1">
+  <inertial>
+    <origin xyz="0.028566866322102036 0.0004749335113843345 4.432046094682285e-06" rpy="0 0 0"/>
+    <mass value="2.89390904764713"/>
+    <inertia ixx="0.003054" iyy="0.002221" izz="0.002302" ixy="-8e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.6395 0.15 -0.955" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRX-10iA_L_v01_description/meshes/CRX-10iAL_Axis6_WithConnectors_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.6395 0.15 -0.955" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRX-10iA_L_v01_description/meshes/CRX-10iAL_Axis6_WithConnectors_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="j1" type="continuous">
+  <origin xyz="0.0 0.0 0.075864" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="CRX-10iAL_Axis1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="j2" type="continuous">
+  <origin xyz="-0.0 -0.119 0.169136" rpy="0 0 0"/>
+  <parent link="CRX-10iAL_Axis1_1"/>
+  <child link="CRX-10iAL_Axis2_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="j3" type="continuous">
+  <origin xyz="0.0 0.044 0.71" rpy="0 0 0"/>
+  <parent link="CRX-10iAL_Axis2_1"/>
+  <child link="CRX-10iAL_Axis3_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+</joint>
+
+<joint name="j4" type="continuous">
+  <origin xyz="0.154 0.075 0.0" rpy="0 0 0"/>
+  <parent link="CRX-10iAL_Axis3_1"/>
+  <child link="CRX-10iAL_Axis4_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="j5" type="continuous">
+  <origin xyz="0.386 -0.064 0.0" rpy="0 0 0"/>
+  <parent link="CRX-10iAL_Axis4_1"/>
+  <child link="CRX-10iAL_Axis5_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="j6" type="continuous">
+  <origin xyz="0.0995 -0.086 0.0" rpy="0 0 0"/>
+  <parent link="CRX-10iAL_Axis5_1"/>
+  <child link="CRX-10iAL_Axis6_WithConnectors_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+</robot>
