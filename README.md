@@ -31,12 +31,12 @@ Video Tutorial: https://youtu.be/07S_P-3OKPc
 | ABB | CRB15000_10kg_152 | Cobot | [URDF](library/ABB/CRB15000_10kg_152_v1/CRB15000_10kg_152.urdf) | [USD](library/ABB/CRB15000_10kg_152_v1/CRB15000_10kg_152/CRB15000_10kg_152.usd) |
 | ABB | CRB15000_12kg_127 | Cobot | [URDF](library/ABB/CRB15000_12kg_127_v1/CRB15000_12kg_127.urdf) | [USD](library/ABB/CRB15000_12kg_127_v1/CRB15000_12kg_127/CRB15000_12kg_127.usd) |
 | ABB | CRB15000_5kg_950 | Cobot | [URDF](library/ABB/CRB15000_5kg_950_v1/CRB15000_5kg_950.urdf) | [USD](library/ABB/CRB15000_5kg_950_v1/CRB15000_5kg_950/CRB15000_5kg_950.usd) |
-| ABB | IRB1010_1_5kg_370 | SCARA Robot | [URDF](library/ABB/IRB1010_1_5kg_370_v1/IRB1010_1_5kg_370.urdf) | [USD](library/ABB/IRB1010_1_5kg_370_v1/IRB1010_1_5kg_370/IRB1010_1_5kg_370.usd) |
+| ABB | IRB1010_1_5kg_370 | Industrial Robot | [URDF](library/ABB/IRB1010_1_5kg_370_v1/IRB1010_1_5kg_370.urdf) | [USD](library/ABB/IRB1010_1_5kg_370_v1/IRB1010_1_5kg_370/IRB1010_1_5kg_370.usd) |
 | ABB | IRB1100_4kg_475_STD | Industrial Robot | [URDF](library/ABB/IRB1100_4kg_475_STD_v1/IRB1100_4kg_475_STD.urdf) | [USD](library/ABB/IRB1100_4kg_475_STD_v1/IRB1100_4kg_475_STD/IRB1100_4kg_475_STD.usd) |
 | ABB | IRB1100_4kg_580_STD | Industrial Robot | [URDF](library/ABB/IRB1100_4kg_580_STD_v1/IRB1100_4kg_580_STD.urdf) | [USD](library/ABB/IRB1100_4kg_580_STD_v1/IRB1100_4kg_580_STD/IRB1100_4kg_580_STD.usd) |
+| ABB | IRB1200_5_90_STD | Industrial Robot | [URDF](library/ABB/IRB1200_5_90_STD_v1/IRB1200_5_90_STD.urdf) | [USD](library/ABB/IRB1200_5_90_STD_v1/IRB1200_5_90_STD/IRB1200_5_90_STD.usd) |
 | ABB | IRB1200H_5_90_STD | Industrial Robot | [URDF](library/ABB/IRB1200H_5_90_STD_v1/IRB1200H_5_90_STD.urdf) | [USD](library/ABB/IRB1200H_5_90_STD_v1/IRB1200H_5_90_STD/IRB1200H_5_90_STD.usd) |
 | ABB | IRB1200H_7_70_STD | Industrial Robot | [URDF](library/ABB/IRB1200H_7_70_STD_v1/IRB1200H_7_70_STD.urdf) | [USD](library/ABB/IRB1200H_7_70_STD_v1/IRB1200H_7_70_STD/IRB1200H_7_70_STD.usd) |
-| ABB | IRB1200_5_90_STD | Industrial Robot | [URDF](library/ABB/IRB1200_5_90_STD_v1/IRB1200_5_90_STD.urdf) | [USD](library/ABB/IRB1200_5_90_STD_v1/IRB1200_5_90_STD/IRB1200_5_90_STD.usd) |
 | ABB | IRB14000_Yumi | Cobot | [URDF](library/ABB/IRB14000_Yumi_v1/IRB14000_Yumi.urdf) | [USD](library/ABB/IRB14000_Yumi_v1/IRB14000_Yumi/IRB14000_Yumi.usd) |
 | ABB | IRB14050_SAYuMi | Cobot | [URDF](library/ABB/IRB14050_SAYuMi_v1/IRB14050_SAYuMi.urdf) | [USD](library/ABB/IRB14050_SAYuMi_v1/IRB14050_SAYuMi/IRB14050_SAYuMi.usd) |
 | ABB | IRB1520ID_4_150 | Industrial Robot | [URDF](library/ABB/IRB1520ID_4_150_v1/IRB1520ID_4_150.urdf) | [USD](library/ABB/IRB1520ID_4_150_v1/IRB1520ID_4_150/IRB1520ID_4_150.usd) |
@@ -51,9 +51,9 @@ Video Tutorial: https://youtu.be/07S_P-3OKPc
 | ABB | IRB8700_800_350 | Industrial Robot | [URDF](library/ABB/IRB8700_800_350_v1/IRB8700_800_350.urdf) | [USD](library/ABB/IRB8700_800_350_v1/IRB8700_800_350/IRB8700_800_350.usd) |
 | ABB | IRB910INV-350 | SCARA Robot | [URDF](library/ABB/IRB910INV-350_v1/IRB910INV-350.urdf) | [USD](library/ABB/IRB910INV-350_v1/IRB910INV-350/IRB910INV-350.usd) |
 | ABB | IRB910INV-550 | SCARA Robot | [URDF](library/ABB/IRB910INV-550_v1/IRB910INV-550.urdf) | [USD](library/ABB/IRB910INV-550_v1/IRB910INV-550/IRB910INV-550.usd) |
-| ABB | IRB920T_6kg_450_180_STD | SCARA Robot | [URDF](library/ABB/IRB920T_6kg_450_180_STD_v1/IRB920T_6kg_450_180_STD.urdf) | [USD](library/ABB/IRB920T_6kg_450_180_STD_v1/IRB920T_6kg_450_180_STD/IRB920T_6kg_450_180_STD.usd) |
 | ABB | IRB920_6kg_550-180-STD | SCARA Robot | [URDF](library/ABB/IRB920_6kg_550-180-STD_v1/IRB920_6kg_550_180_STD.urdf) | [USD](library/ABB/IRB920_6kg_550-180-STD_v1/IRB920_6kg_550_180_STD/IRB920_6kg_550_180_STD.usd) |
 | ABB | IRB920_6kg_650_180_STD | SCARA Robot | [URDF](library/ABB/IRB920_6kg_650_180_STD_v1/IRB920_6kg_650_180_STD.urdf) | [USD](library/ABB/IRB920_6kg_650_180_STD_v1/IRB920_6kg_650_180_STD/IRB920_6kg_650_180_STD.usd) |
+| ABB | IRB920T_6kg_450_180_STD | SCARA Robot | [URDF](library/ABB/IRB920T_6kg_450_180_STD_v1/IRB920T_6kg_450_180_STD.urdf) | [USD](library/ABB/IRB920T_6kg_450_180_STD_v1/IRB920T_6kg_450_180_STD/IRB920T_6kg_450_180_STD.usd) |
 | ABB | IRB930_12kg_1050_300_STD | SCARA Robot | [URDF](library/ABB/IRB930_12kg_1050_300_STD_v1/IRB930_12kg_1050_300_STD.urdf) | [USD](library/ABB/IRB930_12kg_1050_300_STD_v1/IRB930_12kg_1050_300_STD/IRB930_12kg_1050_300_STD.usd) |
 | ABB | Irbpa_250_D1000_IRC5_rev02_CAD | Positioner | [URDF](library/ABB/Irbpa_250_D1000_IRC5_rev02_CAD_v1/Irbpa_250_D1000_IRC5_rev02_CAD.urdf) | [USD](library/ABB/Irbpa_250_D1000_IRC5_rev02_CAD_v1/Irbpa_250_D1000_IRC5_rev02_CAD/Irbpa_250_D1000_IRC5_rev02_CAD.usd) |
 | ABB | Irbpa_500_D1000_H700_IRC5_rev02_CAD | Positioner | [URDF](library/ABB/Irbpa_500_D1000_H700_IRC5_rev02_CAD_v1/Irbpa_500_D1000_H700_IRC5_rev02_CAD.urdf) | [USD](library/ABB/Irbpa_500_D1000_H700_IRC5_rev02_CAD_v1/Irbpa_500_D1000_H700_IRC5_rev02_CAD/Irbpa_500_D1000_H700_IRC5_rev02_CAD.usd) |
@@ -72,11 +72,13 @@ Video Tutorial: https://youtu.be/07S_P-3OKPc
 | ABB | Irbpl_5000 | Positioner | [URDF](library/ABB/Irbpl_5000_v1/Irbpl_5000.urdf) | [USD](library/ABB/Irbpl_5000_v1/Irbpl_5000/Irbpl_5000.usd) |
 | ABB | Irbpr_1000_D1200_L2000_IRC5_rev02_CAD | Positioner | [URDF](library/ABB/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD_v1/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD.urdf) | [USD](library/ABB/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD_v1/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD/Irbpr_1000_D1200_L2000_IRC5_rev02_CAD.usd) |
 | ABB | Irbpr_300_D1000_L1250 | Positioner | [URDF](library/ABB/Irbpr_300_D1000_L1250_v1/Irbpr_300_D1000_L1250.urdf) | [USD](library/ABB/Irbpr_300_D1000_L1250_v1/Irbpr_300_D1000_L1250/Irbpr_300_D1000_L1250.usd) |
-| Kawasaki | BT200L | Industrial Robot | [URDF](library/Kawasaki/BT200L_v1/BT200L_B001.urdf) | [USD](library/Kawasaki/BT200L_v1/BT200L_B001/BT200L_B001.usd) |
-| Kawasaki | BX100N | Industrial Robot | [URDF](library/Kawasaki/BX100N_v1/BX100N.urdf) | [USD](library/Kawasaki/BX100N_v1/BX100N/BX100N.usd) |
-| Kawasaki | BX100S | Industrial Robot | [URDF](library/Kawasaki/BX100S_v1/BX100S.urdf) | [USD](library/Kawasaki/BX100S_v1/BX100S/BX100S.usd) |
-| Kawasaki | BX130X | Industrial Robot | [URDF](library/Kawasaki/BX130X_v1/BX130X.urdf) | [USD](library/Kawasaki/BX130X_v1/BX130X/BX130X.usd) |
-| Kawasaki | BX200L | Industrial Robot | [URDF](library/Kawasaki/BX200L_v1/BX200L_C001.urdf) | [USD](library/Kawasaki/BX200L_v1/BX200L_C001/BX200L_C001.usd) |
+| Fanuc | CRX_10iA_L | Cobot | [URDF](library/Fanuc/CRX_10iA_L_v1/CRX_10iA_L.urdf) | [USD](library/Fanuc/CRX_10iA_L_v1/CRX_10iA_L/CRX_10iA_L.usd) |
+| Fanuc | R_2000iB_165F | Industrial Robot | [URDF](library/Fanuc/R_2000iB_165F_v1/R_2000iB_165F.urdf) | [USD](library/Fanuc/R_2000iB_165F_v1/R_2000iB_165F/R_2000iB_165F.usd) |
+| Kawasaki | BT200L | SCARA Robot | [URDF](library/Kawasaki/BT200L_v1/BT200L_B001.urdf) | [USD](library/Kawasaki/BT200L_v1/BT200L_B001/BT200L_B001.usd) |
+| Kawasaki | BX100N | SCARA Robot | [URDF](library/Kawasaki/BX100N_v1/BX100N.urdf) | [USD](library/Kawasaki/BX100N_v1/BX100N/BX100N.usd) |
+| Kawasaki | BX100S | SCARA Robot | [URDF](library/Kawasaki/BX100S_v1/BX100S.urdf) | [USD](library/Kawasaki/BX100S_v1/BX100S/BX100S.usd) |
+| Kawasaki | BX130X | SCARA Robot | [URDF](library/Kawasaki/BX130X_v1/BX130X.urdf) | [USD](library/Kawasaki/BX130X_v1/BX130X/BX130X.usd) |
+| Kawasaki | BX200L | SCARA Robot | [URDF](library/Kawasaki/BX200L_v1/BX200L_C001.urdf) | [USD](library/Kawasaki/BX200L_v1/BX200L_C001/BX200L_C001.usd) |
 | Kawasaki | CL103 | Cobot | [URDF](library/Kawasaki/CL103_v1/CL103_CAD.urdf) | [USD](library/Kawasaki/CL103_v1/CL103_CAD/CL103_CAD.usd) |
 | Kawasaki | RS003N_A001 | Industrial Robot | [URDF](library/Kawasaki/RS003N_A001_v1/RS003N_A001.urdf) | [USD](library/Kawasaki/RS003N_A001_v1/RS003N_A001/RS003N_A001.usd) |
 | Kawasaki | RS005L_A001 | Industrial Robot | [URDF](library/Kawasaki/RS005L_A001_v1/RS005L_A001.urdf) | [USD](library/Kawasaki/RS005L_A001_v1/RS005L_A001/RS005L_A001.usd) |
@@ -91,8 +93,10 @@ Video Tutorial: https://youtu.be/07S_P-3OKPc
 | Kawasaki | RS030N_B001 | Industrial Robot | [URDF](library/Kawasaki/RS030N_B001_v1/RS030N_B001.urdf) | [USD](library/Kawasaki/RS030N_B001_v1/RS030N_B001/RS030N_B001.usd) |
 | Kawasaki | RS050N_B001 | Industrial Robot | [URDF](library/Kawasaki/RS050N_B001_v1/RS050N_B001.urdf) | [USD](library/Kawasaki/RS050N_B001_v1/RS050N_B001/RS050N_B001.usd) |
 | Kawasaki | RS080N_B001 | Industrial Robot | [URDF](library/Kawasaki/RS080N_B001_v1/RS080N_B001.urdf) | [USD](library/Kawasaki/RS080N_B001_v1/RS080N_B001/RS080N_B001.usd) |
+| Yaskawa | GP110 | Industrial Robot | [URDF](library/Yaskawa/GP110_v1/GP110.urdf) | [USD](library/Yaskawa/GP110_v1/GP110/GP110.usd) |
+| Yaskawa | GP7 | Industrial Robot | [URDF](library/Yaskawa/GP7_v1/GP7.urdf) | [USD](library/Yaskawa/GP7_v1/GP7/GP7.usd) |
 
-**Total**: 63 robot models available (44 ABB + 19 Kawasaki)
+**Total**: 62 robot models available (44 ABB + 16 Kawasaki + 2 Fanuc + 2 Yaskawa)
 
 ## Demos
 
