@@ -1,0 +1,345 @@
+<?xml version="1.0" ?>
+<robot name="CRB1920_30kg-1350">
+
+<!-- ============================================================ -->
+<!-- Materials                                                    -->
+<!-- ============================================================ -->
+
+<material name="silver">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+
+<material name="workr_blue">
+  <color rgba="0.639 0.776 0.933 1.000"/>
+</material>
+
+<material name="workr_white">
+  <color rgba="0.941 0.937 0.914 1.000"/>
+</material>
+
+<!-- ============================================================ -->
+<!-- Links                                                        -->
+<!-- ============================================================ -->
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.013748053497019361 1.5352797966516314e-05 0.07313534357409504" rpy="0 0 0"/>
+    <mass value="43.786575652618225"/>
+    <inertia ixx="0.199319" iyy="0.25663" izz="0.268539" ixy="-0.000119" iyz="-7e-06" ixz="0.001847"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRB1920_30kg-1350/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="workr_blue"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRB1920_30kg-1350/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CRB1920_30kg-1350_OmniCore_rev00_Link1_CAD_1">
+  <inertial>
+    <origin xyz="0.09352597257880885 0.001908057321604242 0.16518881292340185" rpy="0 0 0"/>
+    <mass value="91.8705648520533"/>
+    <inertia ixx="0.83724" iyy="1.412697" izz="1.062026" ixy="-0.01516" iyz="-0.010573" ixz="-0.467381"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.158" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRB1920_30kg-1350/meshes/CRB1920_30kg-1350_OmniCore_rev00_Link1_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="workr_blue"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.158" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRB1920_30kg-1350/meshes/CRB1920_30kg-1350_OmniCore_rev00_Link1_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CRB1920_30kg-1350_OmniCore_rev00_Link2_CAD_1">
+  <inertial>
+    <origin xyz="-4.827215487890335e-07 -0.09286265539830621 0.28607810437630105" rpy="0 0 0"/>
+    <mass value="108.83218077246676"/>
+    <inertia ixx="7.148843" iyy="7.059123" izz="0.466148" ixy="1e-06" iyz="-0.088826" ixz="-2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.179995 0.098 -0.3845" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRB1920_30kg-1350/meshes/CRB1920_30kg-1350_OmniCore_rev00_Link2_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="workr_blue"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.179995 0.098 -0.3845" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRB1920_30kg-1350/meshes/CRB1920_30kg-1350_OmniCore_rev00_Link2_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CRB1920_30kg-1350_OmniCore_rev00_Link3_CAD_1">
+  <inertial>
+    <origin xyz="0.06063952028097447 0.09434110798428284 -0.0010180364369341" rpy="0 0 0"/>
+    <mass value="35.89736119395556"/>
+    <inertia ixx="0.116626" iyy="0.263329" izz="0.291349" ixy="-0.054115" iyz="-1e-06" ixz="-1.4e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.179989 0.059 -1.0245" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRB1920_30kg-1350/meshes/CRB1920_30kg-1350_OmniCore_rev00_Link3_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="workr_blue"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.179989 0.059 -1.0245" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRB1920_30kg-1350n/meshes/CRB1920_30kg-1350_OmniCore_rev00_Link3_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CRB1920_30kg-1350_OmniCore_rev00_Link4_CAD_1">
+  <inertial>
+    <origin xyz="0.1836097165940313 -0.007906218537085376 3.2557004865374495e-06" rpy="0 0 0"/>
+    <mass value="32.19944800202387"/>
+    <inertia ixx="0.064544" iyy="0.388681" izz="0.397997" ixy="0.033875" iyz="5e-06" ixz="5.9e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.400021 -0.0601 -1.0235" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRB1920_30kg-1350/meshes/CRB1920_30kg-1350_OmniCore_rev00_Link4_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="workr_white"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.400021 -0.0601 -1.0235" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRB1920_30kg-1350/meshes/CRB1920_30kg-1350_OmniCore_rev00_Link4_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CRB1920_30kg-1350_OmniCore_rev00_Link5_CAD_1">
+  <inertial>
+    <origin xyz="-0.0019503983373090339 -0.07827100688073438 0.03521212321002931" rpy="0 0 0"/>
+    <mass value="22.045227021700022"/>
+    <inertia ixx="0.089231" iyy="0.090549" izz="0.065384" ixy="0.000211" iyz="-0.002731" ixz="0.003481"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.713041 0.0259 -1.0245" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRB1920_30kg-1350/meshes/CRB1920_30kg-1350_OmniCore_rev00_Link5_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="workr_white"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.713041 0.0259 -1.0245" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRB1920_30kg-1350/meshes/CRB1920_30kg-1350_OmniCore_rev00_Link5_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CRB1920_30kg-1350_OmniCore_rev00_Link6_CAD_1">
+  <inertial>
+    <origin xyz="0.01754992322199811 -2.780658988482676e-05 -0.0008720270696518373" rpy="0 0 0"/>
+    <mass value="1.8506171377042822"/>
+    <inertia ixx="0.001763" iyy="0.001121" izz="0.001116" ixy="-0.0" iyz="3e-06" ixz="2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.792941 0.1009 -1.1145" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRB1920_30kg-1350/meshes/CRB1920_30kg-1350_OmniCore_rev00_Link6_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="workr_white"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.792941 0.1009 -1.1145" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://CRB1920_30kg-1350/meshes/CRB1920_30kg-1350_OmniCore_rev00_Link6_CAD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<!-- ============================================================ -->
+<!-- Joints                                                       -->
+<!-- ============================================================ -->
+
+<joint name="Revolute 2" type="continuous">
+  <origin xyz="0.0 0.0 0.158" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="CRB1920_30kg-1350_OmniCore_rev00_Link1_CAD_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Revolute 3" type="continuous">
+  <origin xyz="0.179995 -0.098 0.2265" rpy="0 0 0"/>
+  <parent link="CRB1920_30kg-1350_OmniCore_rev00_Link1_CAD_1"/>
+  <child link="CRB1920_30kg-1350_OmniCore_rev00_Link2_CAD_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 4" type="continuous">
+  <origin xyz="-6e-06 0.039 0.64" rpy="0 0 0"/>
+  <parent link="CRB1920_30kg-1350_OmniCore_rev00_Link2_CAD_1"/>
+  <child link="CRB1920_30kg-1350_OmniCore_rev00_Link3_CAD_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 5" type="continuous">
+  <origin xyz="0.220032 0.1191 -0.001" rpy="0 0 0"/>
+  <parent link="CRB1920_30kg-1350_OmniCore_rev00_Link3_CAD_1"/>
+  <child link="CRB1920_30kg-1350_OmniCore_rev00_Link4_CAD_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Revolute 6" type="continuous">
+  <origin xyz="0.31302 -0.086 0.001" rpy="0 0 0"/>
+  <parent link="CRB1920_30kg-1350_OmniCore_rev00_Link4_CAD_1"/>
+  <child link="CRB1920_30kg-1350_OmniCore_rev00_Link5_CAD_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 7" type="continuous">
+  <origin xyz="0.0799 -0.075 0.09" rpy="0 0 0"/>
+  <parent link="CRB1920_30kg-1350_OmniCore_rev00_Link5_CAD_1"/>
+  <child link="CRB1920_30kg-1350_OmniCore_rev00_Link6_CAD_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<!-- ============================================================ -->
+<!-- Transmissions                                                -->
+<!-- ============================================================ -->
+
+<transmission name="Revolute 2_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute 2">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute 2_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Revolute 3_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute 3">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute 3_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Revolute 4_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute 4">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute 4_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Revolute 5_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute 5">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute 5_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Revolute 6_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute 6">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute 6_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Revolute 7_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute 7">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute 7_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<!-- ============================================================ -->
+<!-- Gazebo                                                       -->
+<!-- ============================================================ -->
+
+<gazebo>
+  <plugin name="control" filename="libgazebo_ros_control.so"/>
+</gazebo>
+
+<gazebo reference="base_link">
+  <material>Gazebo/Silver</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <selfCollide>true</selfCollide>
+  <gravity>true</gravity>
+</gazebo>
+
+<gazebo reference="CRB1920_30kg-1350_OmniCore_rev00_Link1_CAD_1">
+  <material>Gazebo/Silver</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="CRB1920_30kg-1350_OmniCore_rev00_Link2_CAD_1">
+  <material>Gazebo/Silver</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="CRB1920_30kg-1350_OmniCore_rev00_Link3_CAD_1">
+  <material>Gazebo/Silver</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="CRB1920_30kg-1350_OmniCore_rev00_Link4_CAD_1">
+  <material>Gazebo/Silver</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="CRB1920_30kg-1350_OmniCore_rev00_Link5_CAD_1">
+  <material>Gazebo/Silver</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="CRB1920_30kg-1350_OmniCore_rev00_Link6_CAD_1">
+  <material>Gazebo/Silver</material>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+</robot>
